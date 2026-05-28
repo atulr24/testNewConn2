@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "msexcel",
+ "data": {
+  "createdAt": "2026-05-28T04:27:23.482Z",
+  "updatedAt": "2026-05-28T04:27:33.391095Z",
+  "isDeleted": false,
+  "entityId": "e6651a6e-7612-4e38-987a-6e4c17a8f1d5",
+  "name": "msExcel2",
+  "isDemo": false,
+  "category": "third-party",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": false
+ }
+}

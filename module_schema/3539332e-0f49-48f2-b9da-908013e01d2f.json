@@ -1,0 +1,27 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2026-05-22T07:17:01.897Z",
+  "updatedAt": "2026-05-22T08:42:16.780396Z",
+  "isDeleted": false,
+  "entityId": "3539332e-0f49-48f2-b9da-908013e01d2f",
+  "name": "json",
+  "moduleId": "4f86e571-fa52-49a9-8071-80f678c9b3bf",
+  "dataType": "json",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": {
+     "LastName": "Raizada1",
+     "Name1": "Atul1"
+    }
+   },
+   {
+    "value": {
+     "LastName2": "Raizada2",
+     "Name2": "Atul2"
+    }
+   }
+  ]
+ }
+}

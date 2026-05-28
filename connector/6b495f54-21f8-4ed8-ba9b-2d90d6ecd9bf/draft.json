@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "msexcel",
+ "data": {
+  "createdAt": "2026-05-12T07:29:13.185Z",
+  "updatedAt": "2026-05-13T12:45:10.318149Z",
+  "isDeleted": false,
+  "entityId": "6b495f54-21f8-4ed8-ba9b-2d90d6ecd9bf",
+  "name": "msexcel1",
+  "isDemo": false,
+  "category": "third-party",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": false
+ }
+}

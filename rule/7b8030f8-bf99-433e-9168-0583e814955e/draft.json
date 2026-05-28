@@ -1,0 +1,1411 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2026-05-20T11:21:52.531Z",
+  "updatedAt": "2026-05-22T08:43:02.609527Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "7b8030f8-bf99-433e-9168-0583e814955e",
+  "version": "draft",
+  "name": "ageVerDT",
+  "commitId": "commit-725b05a0-a851-499c-af5e-e37b48d67d18",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-20 11:21:52",
+   "timeStamp": "2026-05-20T11:21:52.531996083Z"
+  },
+  "customInput": {
+   "age": {
+ "name": "age",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 17,
+ "config": {
+  
+ },
+ "value": "",
+ "next": "hasId",
+ "previous": "",
+ "schemaId": ""
+},
+   "hasConsent": {
+ "name": "hasConsent",
+ "dataType": "boolean",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": false,
+ "config": {
+  
+ },
+ "value": "",
+ "next": "json",
+ "previous": "hasId",
+ "schemaId": ""
+},
+   "hasId": {
+ "name": "hasId",
+ "dataType": "boolean",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": true,
+ "config": {
+  
+ },
+ "value": "",
+ "next": "hasConsent",
+ "previous": "age",
+ "schemaId": ""
+},
+   "json": {
+ "name": "json",
+ "dataType": "json",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": {
+  "LastName": "Raizada1",
+  "Name1": "Atul1"
+ },
+ "config": null,
+ "value": "",
+ "next": "",
+ "previous": "hasConsent",
+ "schemaId": "3539332e-0f49-48f2-b9da-908013e01d2f"
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "0_1": {
+ "nextId": "1_1",
+ "prevId": "",
+ "firstOutputData": "0_0",
+ "isEnabled": true,
+ "annotation": "R1: Below minimum age (COPPA) - deny all under 13 regardless of ID or consent"
+},
+    "1_1": {
+ "nextId": "2_1",
+ "prevId": "0_1",
+ "firstOutputData": "1_0",
+ "isEnabled": true,
+ "annotation": "R2: Minor (13-17) without ID - deny, ID required for minors"
+},
+    "2_1": {
+ "nextId": "3_1",
+ "prevId": "1_1",
+ "firstOutputData": "2_0",
+ "isEnabled": true,
+ "annotation": "R3: Minor (13-17) with ID but no parental consent - deny"
+},
+    "3_1": {
+ "nextId": "4_1",
+ "prevId": "2_1",
+ "firstOutputData": "3_0",
+ "isEnabled": true,
+ "annotation": "R4: Minor (13-17) with ID and parental consent - grant restricted access"
+},
+    "4_1": {
+ "nextId": "5_1",
+ "prevId": "3_1",
+ "firstOutputData": "4_0",
+ "isEnabled": true,
+ "annotation": "R5: Young adult (18-20) without ID - deny, must verify identity"
+},
+    "5_1": {
+ "nextId": "6_1",
+ "prevId": "4_1",
+ "firstOutputData": "5_0",
+ "isEnabled": true,
+ "annotation": "R6: Young adult (18-20) with ID - grant standard access, no alcohol"
+},
+    "6_1": {
+ "nextId": "7_1",
+ "prevId": "5_1",
+ "firstOutputData": "6_0",
+ "isEnabled": true,
+ "annotation": "R7: Adult (21+) without ID - deny, must verify identity"
+},
+    "7_1": {
+ "nextId": "8_1",
+ "prevId": "6_1",
+ "firstOutputData": "7_0",
+ "isEnabled": true,
+ "annotation": "R8: Adult (21+) with ID - grant full access, all content unlocked"
+},
+    "8_1": {
+ "nextId": "",
+ "prevId": "7_1",
+ "firstOutputData": "8_0",
+ "isEnabled": true,
+ "annotation": "Catch-all: default deny for any unmatched combination"
+}
+   },
+   "properties": {
+    "0_3": {
+ "nextId": "0_6",
+ "prevId": "",
+ "type": "simpleCondition"
+},
+    "0_6": {
+ "nextId": "0_8",
+ "prevId": "0_3",
+ "type": "simpleCondition"
+},
+    "0_8": {
+ "nextId": "",
+ "prevId": "0_6",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "0": {
+ "nextId": "1",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "decision",
+ "schemaId": ""
+},
+    "1": {
+ "nextId": "",
+ "prevId": "0",
+ "dataType": "string",
+ "keyName": "reason",
+ "schemaId": ""
+}
+   },
+   "firstRow": "0_1",
+   "firstProperty": "0_3",
+   "firstResult": "0",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "0_0": {
+ "name": "decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "DENY",
+ "next": "0_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "0_1": {
+ "name": "reason",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Below minimum age (COPPA)",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "1_0": {
+ "name": "decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "DENY",
+ "next": "1_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "1_1": {
+ "name": "reason",
+ "dataType": "string",
+ "returnType": "",
+ "value": "ID required for minors",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "2_0": {
+ "name": "decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "DENY",
+ "next": "2_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "2_1": {
+ "name": "reason",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Parental consent required",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "3_0": {
+ "name": "decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "GRANT (Restricted)",
+ "next": "3_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "3_1": {
+ "name": "reason",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Limited / age-gated content",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "4_0": {
+ "name": "decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "DENY",
+ "next": "4_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "4_1": {
+ "name": "reason",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Must verify identity",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "5_0": {
+ "name": "decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "GRANT (Standard)",
+ "next": "5_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "5_1": {
+ "name": "reason",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Full access, no alcohol",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "6_0": {
+ "name": "decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "DENY",
+ "next": "6_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "6_1": {
+ "name": "reason",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Must verify identity",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "7_0": {
+ "name": "decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "GRANT (Full)",
+ "next": "7_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "7_1": {
+ "name": "reason",
+ "dataType": "string",
+ "returnType": "",
+ "value": "All content unlocked",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "8_0": {
+ "name": "decision",
+ "dataType": "string",
+ "returnType": "",
+ "value": "DENY",
+ "next": "8_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "8_1": {
+ "name": "reason",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Access denied - unmatched criteria",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "0_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "0_2",
+  "0_5",
+  "0_7"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "lt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "0_4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_3": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "age",
+ "query": "",
+ "parent": "0_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "numeric"
+},
+    "0_4": {
+ "value": 13,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "0_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_6": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "boolean",
+ "nodeType": "params",
+ "attribute": "hasId",
+ "query": "",
+ "parent": "0_5",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "boolean"
+},
+    "0_7": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_1",
+ "children": null,
+ "leftNode": [
+  "0_8"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_8": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "boolean",
+ "nodeType": "params",
+ "attribute": "hasConsent",
+ "query": "",
+ "parent": "0_7",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "boolean"
+},
+    "1_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "1_2",
+  "1_5",
+  "1_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "1_3",
+  "1_4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_3": {
+ "value": 13,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "1_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_4": {
+ "value": 17,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "1_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "f",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_1",
+ "children": null,
+ "leftNode": [
+  "0_8"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "2_2",
+  "2_5",
+  "2_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "2_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "2_3",
+  "2_4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_3": {
+ "value": 13,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "2_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_4": {
+ "value": 17,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "2_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "t",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "2_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "f",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "2_1",
+ "children": null,
+ "leftNode": [
+  "0_8"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "3_2",
+  "3_5",
+  "3_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "3_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "3_3",
+  "3_4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_3": {
+ "value": 13,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "3_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_4": {
+ "value": 17,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "3_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "t",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "3_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "t",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "3_1",
+ "children": null,
+ "leftNode": [
+  "0_8"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "4_2",
+  "4_5",
+  "4_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "4_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "4_3",
+  "4_4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_3": {
+ "value": 18,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "4_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_4": {
+ "value": 20,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "4_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "f",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "4_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "4_1",
+ "children": null,
+ "leftNode": [
+  "0_8"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "5_2",
+  "5_5",
+  "5_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "5_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "5_3",
+  "5_4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_3": {
+ "value": 18,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "5_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_4": {
+ "value": 20,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "5_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "t",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "5_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "5_1",
+ "children": null,
+ "leftNode": [
+  "0_8"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "6_2",
+  "6_4",
+  "6_5"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gte",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "6_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "6_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_3": {
+ "value": 21,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "6_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "f",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "6_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "6_1",
+ "children": null,
+ "leftNode": [
+  "0_8"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "7_2",
+  "7_4",
+  "7_5"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gte",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "7_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "7_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_3": {
+ "value": 21,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "7_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "t",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "7_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "7_1",
+ "children": null,
+ "leftNode": [
+  "0_8"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "8_2",
+  "8_3",
+  "8_4"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "8_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_3": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "8_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "boolean",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "8_1",
+ "children": null,
+ "leftNode": [
+  "0_8"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "age",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "first",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-22T08:43:02.618361Z",
+   "updatedAt": "2026-05-22T08:43:02.618361Z",
+   "entityCommitId": "commit-725b05a0-a851-499c-af5e-e37b48d67d18",
+   "entityType": "rule",
+   "entityId": "7b8030f8-bf99-433e-9168-0583e814955e",
+   "entityVersion": "draft",
+   "entityNodeId": "ci-json",
+   "dependencyType": "module_schema",
+   "dependencyId": "3539332e-0f49-48f2-b9da-908013e01d2f",
+   "dependencyVersion": "live"
+  }
+ ]
+}

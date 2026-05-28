@@ -1,0 +1,23 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2026-05-11T09:36:21.558Z",
+  "updatedAt": "2026-05-11T09:36:21.558Z",
+  "isDeleted": false,
+  "entityId": "932da364-556d-429e-8877-9ed0c8115d3f",
+  "name": "globalJson",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "json",
+  "value": {
+   "data": {
+    "Age": 30,
+    "Name": "Atul"
+   },
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

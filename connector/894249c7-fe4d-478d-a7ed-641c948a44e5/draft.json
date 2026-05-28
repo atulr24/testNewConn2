@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "mysql",
+ "data": {
+  "createdAt": "2026-05-13T07:37:44.463Z",
+  "updatedAt": "2026-05-13T07:38:59.965275Z",
+  "isDeleted": false,
+  "entityId": "894249c7-fe4d-478d-a7ed-641c948a44e5",
+  "name": "mySql",
+  "isDemo": false,
+  "category": "database",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

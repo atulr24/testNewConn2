@@ -1,0 +1,506 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2026-05-28T06:18:46.138Z",
+  "updatedAt": "2026-05-28T06:19:16.55335Z",
+  "isDeleted": false,
+  "testedAt": "2026-05-28T06:19:16.552Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "e7c1276a-c04a-4848-bd68-96fd9ccd8c6d",
+  "version": "draft",
+  "name": "nameVal",
+  "commitId": "commit-d378e9e7-2ddc-4efa-8093-0f06f28f42e4",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-28 06:18:46",
+   "timeStamp": "2026-05-28T06:18:46.13814739Z"
+  },
+  "customInput": {
+   "names": {
+ "name": "names",
+ "dataType": "list",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": [
+  "At1",
+  "At2",
+  "B1"
+ ],
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "0_1": {
+ "nextId": "1_1",
+ "prevId": "",
+ "firstOutputData": "0_0",
+ "isEnabled": true,
+ "annotation": "Count of names starting with 'At' is greater than 3 — valid"
+},
+    "1_1": {
+ "nextId": "",
+ "prevId": "0_1",
+ "firstOutputData": "1_0",
+ "isEnabled": true,
+ "annotation": "Count of names starting with 'At' is 3 or fewer — invalid"
+}
+   },
+   "properties": {
+    "0_4": {
+ "nextId": "",
+ "prevId": "",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "0": {
+ "nextId": "1",
+ "prevId": "",
+ "dataType": "boolean",
+ "keyName": "valid",
+ "schemaId": ""
+},
+    "1": {
+ "nextId": "",
+ "prevId": "0",
+ "dataType": "string",
+ "keyName": "msg",
+ "schemaId": ""
+}
+   },
+   "firstRow": "0_1",
+   "firstProperty": "0_4",
+   "firstResult": "0",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "0_0": {
+ "name": "valid",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": true,
+ "next": "0_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "0_1": {
+ "name": "msg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "ok",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "1_0": {
+ "name": "valid",
+ "dataType": "boolean",
+ "returnType": "",
+ "value": false,
+ "next": "1_1",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "1_1": {
+ "name": "msg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "fail",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "0_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "0_2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "countFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_1",
+ "children": null,
+ "leftNode": [
+  "0_4"
+ ],
+ "rightNode": [
+  "0_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_2___1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "0_2___2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_2___2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "sw",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_2___1",
+ "children": null,
+ "leftNode": [
+  "0_2___3"
+ ],
+ "rightNode": [
+  "0_2___4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_2___3": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "item",
+ "query": "",
+ "parent": "0_2___2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "string"
+},
+    "0_2___4": {
+ "value": "At",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "0_2___2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_3": {
+ "value": {
+  "aggOperator": "gt",
+  "compareNodeId": "0_5",
+  "filterKeys": [
+ {
+  "label": "item",
+  "value": "item"
+ }
+],
+  "startNodeId": "0_2___1"
+ },
+ "sourceType": "",
+ "name": "atCnt",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "0_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_4": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "params",
+ "attribute": "names",
+ "query": "",
+ "parent": "0_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "list"
+},
+    "0_5": {
+ "value": 3,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "0_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "1_2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "countFilter",
+ "dataType": "list",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_1",
+ "children": null,
+ "leftNode": [
+  "0_4"
+ ],
+ "rightNode": [
+  "1_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_2___1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "1_2___2"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_2___2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "sw",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_2___1",
+ "children": null,
+ "leftNode": [
+  "1_2___3"
+ ],
+ "rightNode": [
+  "1_2___4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_2___3": {
+ "value": null,
+ "sourceType": "list",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "item",
+ "query": "",
+ "parent": "1_2___2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "string"
+},
+    "1_2___4": {
+ "value": "At",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "1_2___2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_3": {
+ "value": {
+  "aggOperator": "lte",
+  "compareNodeId": "1_4",
+  "filterKeys": [
+ {
+  "label": "item",
+  "value": "item"
+ }
+],
+  "startNodeId": "1_2___1"
+ },
+ "sourceType": "",
+ "name": "atCnt",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "listFilter",
+ "attribute": "",
+ "query": "",
+ "parent": "1_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_4": {
+ "value": 3,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "1_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "names",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "first",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": null,
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ }
+}

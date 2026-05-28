@@ -1,0 +1,23 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2026-05-11T09:31:45.826Z",
+  "updatedAt": "2026-05-11T09:31:45.826Z",
+  "isDeleted": false,
+  "entityId": "2c5ce627-2a7f-4b49-ae01-714350b37292",
+  "name": "globalList",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "list",
+  "value": {
+   "data": [
+    "Atul",
+    "Raizada"
+   ],
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

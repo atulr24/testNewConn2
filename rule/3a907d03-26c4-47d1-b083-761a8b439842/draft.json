@@ -1,0 +1,136 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2026-05-25T14:46:02.53Z",
+  "updatedAt": "2026-05-26T17:54:24.575193Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "3a907d03-26c4-47d1-b083-761a8b439842",
+  "version": "draft",
+  "name": "evenSumChk",
+  "commitId": "commit-83ab3ffd-7147-4ec9-9158-8e2d900abc30",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-25 14:46:02",
+   "timeStamp": "2026-05-25T14:46:02.530206501Z"
+  },
+  "customInput": {
+   "nums": {
+ "name": "nums",
+ "dataType": "list",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": [
+  "a",
+  "b"
+ ],
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    
+   },
+   "properties": {
+    "0_4": {
+ "nextId": "",
+ "prevId": "",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "0": {
+ "nextId": "1",
+ "prevId": "",
+ "dataType": "boolean",
+ "keyName": "valid",
+ "schemaId": ""
+},
+    "1": {
+ "nextId": "",
+ "prevId": "0",
+ "dataType": "string",
+ "keyName": "msg",
+ "schemaId": ""
+}
+   },
+   "firstRow": "",
+   "firstProperty": "0_4",
+   "firstResult": "0",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "nums",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "first",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ }
+}

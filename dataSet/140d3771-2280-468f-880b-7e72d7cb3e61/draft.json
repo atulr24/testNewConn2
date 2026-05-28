@@ -1,0 +1,111 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-05-14T09:44:31.413Z",
+  "updatedAt": "2026-05-14T09:44:55.689776Z",
+  "isDeleted": false,
+  "testedAt": "2026-05-14T09:44:55.689Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "140d3771-2280-468f-880b-7e72d7cb3e61",
+  "version": "draft",
+  "name": "gsheet",
+  "commitId": "commit-65d469f8-1327-49b7-ac76-72cdeaec0ff7",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-14 09:44:31",
+   "timeStamp": "2026-05-14T09:44:31.413248387Z"
+  },
+  "fields": {
+   "Age": {
+ "ColumnName": "C",
+ "DataType": "numeric",
+ "Order": 3,
+ "ExecutedValue": 100
+},
+   "Date": {
+ "ColumnName": "F",
+ "DataType": "date",
+ "Order": 6,
+ "ExecutedValue": "2026-12-12"
+},
+   "Department": {
+ "ColumnName": "A",
+ "DataType": "string",
+ "Order": 1,
+ "ExecutedValue": "string"
+},
+   "Extra": {
+ "ColumnName": "E",
+ "DataType": "string",
+ "Order": 5,
+ "ExecutedValue": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
+},
+   "Name": {
+ "ColumnName": "B",
+ "DataType": "string",
+ "Order": 2,
+ "ExecutedValue": "Atul"
+},
+   "Salary": {
+ "ColumnName": "D",
+ "DataType": "numeric",
+ "Order": 4,
+ "ExecutedValue": 1000
+},
+   "bool": {
+ "ColumnName": "G",
+ "DataType": "boolean",
+ "Order": 7,
+ "ExecutedValue": true
+},
+   "dateTime": {
+ "ColumnName": "H",
+ "DataType": "dateTime",
+ "Order": 8,
+ "ExecutedValue": "2026-02-11T18:15:35+05:30"
+}
+  },
+  "description": "",
+  "query": "",
+  "params": {
+   "file": {
+ "label": "Employees",
+ "value": "1lI5G1xHg18JwP04ibnkQPT0pCYgPE6r68B3URMfrc98"
+},
+   "hasHeader": true,
+   "isShared": true,
+   "sheet": {
+ "label": "Sheet78",
+ "value": 2120473268
+}
+  },
+  "connectorId": "265c6aee-5599-483c-b112-db290a77fe0e",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "",
+   "dateFormat": "in"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-14T09:44:31.433591Z",
+   "updatedAt": "2026-05-14T09:44:53.405172Z",
+   "entityCommitId": "commit-65d469f8-1327-49b7-ac76-72cdeaec0ff7",
+   "entityType": "dataSet",
+   "entityId": "140d3771-2280-468f-880b-7e72d7cb3e61",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "265c6aee-5599-483c-b112-db290a77fe0e",
+   "dependencyVersion": "live"
+  }
+ ]
+}

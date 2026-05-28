@@ -1,0 +1,126 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-05-20T10:57:33.836Z",
+  "updatedAt": "2026-05-28T04:26:14.845011Z",
+  "isDeleted": false,
+  "testedAt": "2026-05-28T04:26:14.844Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "9b7a93cb-0090-4250-a210-56e008bd38dd",
+  "version": "draft",
+  "name": "db1",
+  "commitId": "commit-0747958f-c3f7-4692-9d36-8a9771dbe369",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-20 10:57:33",
+   "timeStamp": "2026-05-20T10:57:33.836059352Z"
+  },
+  "fields": {
+   "BOOL_COL": {
+ "ColumnName": "BOOL_COL",
+ "DataType": "boolean",
+ "Order": 11,
+ "ExecutedValue": true
+},
+   "DATETIME_COL": {
+ "ColumnName": "DATETIME_COL",
+ "DataType": "dateTime",
+ "Order": 12,
+ "ExecutedValue": "2026-05-20T14:30:00Z"
+},
+   "DATE_COL": {
+ "ColumnName": "DATE_COL",
+ "DataType": "dateTime",
+ "Order": 3,
+ "ExecutedValue": "2026-05-20T00:00:00Z"
+},
+   "DECIMAL_COL": {
+ "ColumnName": "DECIMAL_COL",
+ "DataType": "numeric",
+ "Order": 4,
+ "ExecutedValue": 1234.56
+},
+   "FLOAT_COL": {
+ "ColumnName": "FLOAT_COL",
+ "DataType": "numeric",
+ "Order": 1,
+ "ExecutedValue": 3.14159
+},
+   "ID": {
+ "ColumnName": "ID",
+ "DataType": "string",
+ "Order": 5,
+ "ExecutedValue": "1"
+},
+   "INT_COL": {
+ "ColumnName": "INT_COL",
+ "DataType": "numeric",
+ "Order": 6,
+ "ExecutedValue": 42
+},
+   "JSON_COL": {
+ "ColumnName": "JSON_COL",
+ "DataType": "string",
+ "Order": 7,
+ "ExecutedValue": "{\n  \"active\": true,\n  \"age\": 30,\n  \"name\": \"Alice\"\n}"
+},
+   "LIST_COL": {
+ "ColumnName": "LIST_COL",
+ "DataType": "string",
+ "Order": 8,
+ "ExecutedValue": "[\n  \"apple\",\n  \"banana\",\n  \"cherry\"\n]"
+},
+   "OBJECT_COL": {
+ "ColumnName": "OBJECT_COL",
+ "DataType": "string",
+ "Order": 9,
+ "ExecutedValue": "{\n  \"city\": \"Mumbai\",\n  \"pincode\": 400001\n}"
+},
+   "STR_COL": {
+ "ColumnName": "STR_COL",
+ "DataType": "string",
+ "Order": 10,
+ "ExecutedValue": "hello world"
+},
+   "STR_UNLIMITED": {
+ "ColumnName": "STR_UNLIMITED",
+ "DataType": "string",
+ "Order": 2,
+ "ExecutedValue": "a longer string value"
+}
+  },
+  "description": "",
+  "query": "Select * from PUBLIC.ALL_DATATYPES;",
+  "params": {
+   
+  },
+  "connectorId": "ecf308a0-0748-429d-af8f-d8c32635f581",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "",
+   "dateFormat": "in"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-20T10:57:33.844511Z",
+   "updatedAt": "2026-05-22T06:55:29.92621Z",
+   "entityCommitId": "commit-0747958f-c3f7-4692-9d36-8a9771dbe369",
+   "entityType": "dataSet",
+   "entityId": "9b7a93cb-0090-4250-a210-56e008bd38dd",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "ecf308a0-0748-429d-af8f-d8c32635f581",
+   "dependencyVersion": "live"
+  }
+ ]
+}

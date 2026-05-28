@@ -1,0 +1,16 @@
+{
+ "entityType": "connector",
+ "category": "oracle",
+ "data": {
+  "createdAt": "2026-05-13T08:34:35.575Z",
+  "updatedAt": "2026-05-13T08:35:23.074618Z",
+  "isDeleted": false,
+  "entityId": "0897e130-dc3b-4632-bc30-9f21ea3c8883",
+  "name": "oracel",
+  "isDemo": false,
+  "category": "database",
+  "isSource": true,
+  "isAction": true,
+  "isTrigger": true
+ }
+}

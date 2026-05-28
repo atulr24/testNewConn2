@@ -1,0 +1,78 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-05-14T08:00:46.497Z",
+  "updatedAt": "2026-05-18T12:49:53.303956Z",
+  "isDeleted": false,
+  "testedAt": "2026-05-18T12:49:53.303Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "ae962d8a-6c56-4175-82d2-54b5a364b2ea",
+  "version": "draft",
+  "name": "mySqlDb",
+  "commitId": "commit-8038e22f-83ff-4690-aa11-d2222f90cfe5",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-14 08:00:46",
+   "timeStamp": "2026-05-14T08:00:46.497371932Z"
+  },
+  "fields": {
+   "id": {
+ "ColumnName": "id",
+ "DataType": "numeric",
+ "Order": 2,
+ "ExecutedValue": 1
+},
+   "name": {
+ "ColumnName": "name",
+ "DataType": "string",
+ "Order": 3,
+ "ExecutedValue": "Mechanical Keyboard"
+},
+   "price": {
+ "ColumnName": "price",
+ "DataType": "numeric",
+ "Order": 4,
+ "ExecutedValue": 4999
+},
+   "stock": {
+ "ColumnName": "stock",
+ "DataType": "numeric",
+ "Order": 1,
+ "ExecutedValue": 50
+}
+  },
+  "description": "",
+  "query": "select * from products",
+  "params": {
+   
+  },
+  "connectorId": "894249c7-fe4d-478d-a7ed-641c948a44e5",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "",
+   "dateFormat": "in"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-14T08:00:46.505201Z",
+   "updatedAt": "2026-05-18T12:49:49.520397Z",
+   "entityCommitId": "commit-8038e22f-83ff-4690-aa11-d2222f90cfe5",
+   "entityType": "dataSet",
+   "entityId": "ae962d8a-6c56-4175-82d2-54b5a364b2ea",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "894249c7-fe4d-478d-a7ed-641c948a44e5",
+   "dependencyVersion": "live"
+  }
+ ]
+}

@@ -1,0 +1,183 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2026-05-25T14:49:18.77Z",
+  "updatedAt": "2026-05-26T19:22:35.457884Z",
+  "isDeleted": false,
+  "testedAt": "2026-05-25T14:50:40.642Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "1edc6022-8d00-4e7b-8314-728b349927ea",
+  "version": "draft",
+  "name": "listAggDT",
+  "commitId": "commit-f1f73c35-d3f1-421e-9635-960ccc4da3a0",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-25 14:49:18",
+   "timeStamp": "2026-05-25T14:49:18.770540099Z"
+  },
+  "customInput": {
+   "listVals": {
+ "name": "listVals",
+ "dataType": "list",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": [
+  "1",
+  "2",
+  "3"
+ ],
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    
+   },
+   "properties": {
+    "0_12": {
+ "nextId": "0_16",
+ "prevId": "0_8",
+ "type": "simpleCondition"
+},
+    "0_16": {
+ "nextId": "",
+ "prevId": "0_12",
+ "type": "simpleCondition"
+},
+    "0_4": {
+ "nextId": "0_8",
+ "prevId": "",
+ "type": "simpleCondition"
+},
+    "0_8": {
+ "nextId": "0_12",
+ "prevId": "0_4",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "0": {
+ "nextId": "1",
+ "prevId": "",
+ "dataType": "boolean",
+ "keyName": "cntOk",
+ "schemaId": ""
+},
+    "1": {
+ "nextId": "2",
+ "prevId": "0",
+ "dataType": "boolean",
+ "keyName": "avgOk",
+ "schemaId": ""
+},
+    "2": {
+ "nextId": "3",
+ "prevId": "1",
+ "dataType": "boolean",
+ "keyName": "maxOk",
+ "schemaId": ""
+},
+    "3": {
+ "nextId": "4",
+ "prevId": "2",
+ "dataType": "boolean",
+ "keyName": "minOk",
+ "schemaId": ""
+},
+    "4": {
+ "nextId": "",
+ "prevId": "3",
+ "dataType": "string",
+ "keyName": "result",
+ "schemaId": ""
+}
+   },
+   "firstRow": "",
+   "firstProperty": "0_4",
+   "firstResult": "0",
+   "firstAggOutputData": "aggData_untitled123"
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "aggData_untitled123": {
+ "name": "untitled123",
+ "dataType": "numeric",
+ "returnType": "",
+ "value": 12345,
+ "next": "",
+ "executedValue": 12345,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "listVals",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "first",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "",
+   "dateFormat": "",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ }
+}

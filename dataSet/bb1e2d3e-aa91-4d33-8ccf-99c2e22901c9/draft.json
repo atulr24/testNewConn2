@@ -1,0 +1,53 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-05-20T10:56:28.221Z",
+  "updatedAt": "2026-05-20T10:56:28.221Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "bb1e2d3e-aa91-4d33-8ccf-99c2e22901c9",
+  "version": "draft",
+  "name": "sd",
+  "commitId": "commit-b5b66098-0ab1-4586-9fa4-4851bfdef5d7",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-20 10:56:28",
+   "timeStamp": "2026-05-20T10:56:28.221137997Z"
+  },
+  "fields": null,
+  "description": "",
+  "query": "",
+  "params": {
+   
+  },
+  "connectorId": "ef9cc647-4336-4e8e-a81b-2b3cbef5e06a",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-20T10:56:28.232885Z",
+   "updatedAt": "2026-05-20T10:56:28.232885Z",
+   "entityCommitId": "commit-b5b66098-0ab1-4586-9fa4-4851bfdef5d7",
+   "entityType": "dataSet",
+   "entityId": "bb1e2d3e-aa91-4d33-8ccf-99c2e22901c9",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "ef9cc647-4336-4e8e-a81b-2b3cbef5e06a",
+   "dependencyVersion": "live"
+  }
+ ]
+}

@@ -1,0 +1,647 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2026-05-28T16:34:00.749Z",
+  "updatedAt": "2026-06-01T07:53:15.767332Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "d9ab0ae8-d226-4961-9588-868696f2fe8a",
+  "version": "draft",
+  "name": "natDT",
+  "commitId": "commit-7ed3c58d-e6a8-4adc-8631-0abe57022001",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-28 16:34:00",
+   "timeStamp": "2026-05-28T16:34:00.749383786Z"
+  },
+  "customInput": {
+   "financer": {
+ "name": "financer",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "HCF",
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "nationality",
+ "schemaId": ""
+},
+   "nationality": {
+ "name": "nationality",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "Netherlands",
+ "config": null,
+ "value": null,
+ "next": "financer",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "0_1": {
+ "nextId": "1_1",
+ "prevId": "",
+ "firstOutputData": "0_0",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "1_1": {
+ "nextId": "2_1",
+ "prevId": "0_1",
+ "firstOutputData": "1_0",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "2_1": {
+ "nextId": "3_1",
+ "prevId": "1_1",
+ "firstOutputData": "2_0",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "3_1": {
+ "nextId": "",
+ "prevId": "2_1",
+ "firstOutputData": "3_0",
+ "isEnabled": true,
+ "annotation": ""
+}
+   },
+   "properties": {
+    "0_3": {
+ "nextId": "0_6",
+ "prevId": "",
+ "type": "simpleCondition"
+},
+    "0_6": {
+ "nextId": "",
+ "prevId": "0_3",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "0": {
+ "nextId": "",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "errMsg",
+ "schemaId": ""
+}
+   },
+   "firstRow": "0_1",
+   "firstProperty": "0_3",
+   "firstResult": "0",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "0_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": null,
+ "next": "",
+ "executedValue": "",
+ "attribute": "nationality",
+ "source": "customInput",
+ "schemaId": ""
+},
+     "1_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Lender & Spender: Nationaliteit aanvrager wordt niet geaccepteerd.",
+ "next": "",
+ "executedValue": "Lender & Spender: Nationaliteit aanvrager wordt niet geaccepteerd.",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "2_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Defam: Nationaliteit aanvrager wordt niet geaccepteerd.",
+ "next": "",
+ "executedValue": "Defam: Nationaliteit aanvrager wordt niet geaccepteerd.",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "3_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "CA AutoFinance: Nationaliteit aanvrager wordt niet geaccepteerd.",
+ "next": "",
+ "executedValue": "CA AutoFinance: Nationaliteit aanvrager wordt niet geaccepteerd.",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "0_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "0_2",
+  "0_5"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "0_4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_3": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "financer",
+ "query": "",
+ "parent": "0_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "string"
+},
+    "0_4": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "financer",
+ "query": "",
+ "parent": "0_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "in",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "0_7"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_6": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "nationality",
+ "query": "",
+ "parent": "0_5",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "string"
+},
+    "0_7": {
+ "value": [
+  "Iran",
+  "Myanmar",
+  "North Korea"
+ ],
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "0_5",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "1_2",
+  "1_4"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "1_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_3": {
+ "value": null,
+ "sourceType": "globalVar",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "globalName",
+ "query": "",
+ "parent": "1_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "nin",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "1_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_5": {
+ "value": null,
+ "sourceType": "globalVar",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "params",
+ "attribute": "globalList",
+ "query": "",
+ "parent": "1_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "2_2",
+  "2_4"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "2_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "2_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_3": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "nationality",
+ "query": "",
+ "parent": "2_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "nin",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "2_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "2_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_5": {
+ "value": [
+  "Netherlands"
+ ],
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "2_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "3_2",
+  "3_4"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "3_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "3_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_3": {
+ "value": null,
+ "sourceType": "globalVar",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "globalName",
+ "query": "",
+ "parent": "3_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "nin",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "3_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "3_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_5": {
+ "value": [
+  "Netherlands"
+ ],
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "3_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "nationality",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "collect",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-01T07:23:59.440185Z",
+   "updatedAt": "2026-06-01T07:53:15.77624Z",
+   "entityCommitId": "commit-7ed3c58d-e6a8-4adc-8631-0abe57022001",
+   "entityType": "rule",
+   "entityId": "d9ab0ae8-d226-4961-9588-868696f2fe8a",
+   "entityVersion": "draft",
+   "entityNodeId": "globalName",
+   "dependencyType": "variable",
+   "dependencyId": "3bb04015-53b8-41a9-8ae0-1a9541e44fca",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-01T07:53:15.775242Z",
+   "updatedAt": "2026-06-01T07:53:15.775242Z",
+   "entityCommitId": "commit-7ed3c58d-e6a8-4adc-8631-0abe57022001",
+   "entityType": "rule",
+   "entityId": "d9ab0ae8-d226-4961-9588-868696f2fe8a",
+   "entityVersion": "draft",
+   "entityNodeId": "globalList",
+   "dependencyType": "variable",
+   "dependencyId": "2c5ce627-2a7f-4b49-ae01-714350b37292",
+   "dependencyVersion": "live"
+  }
+ ]
+}

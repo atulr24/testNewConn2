@@ -2,51 +2,52 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-05-28T14:43:49.297Z",
-  "updatedAt": "2026-05-28T14:51:32.511413Z",
+  "createdAt": "2026-06-05T13:03:39.537Z",
+  "updatedAt": "2026-06-05T13:17:01.206356Z",
   "isDeleted": false,
-  "testedAt": "2026-05-28T14:51:26.647Z",
-  "publishedAt": "2026-05-28T14:51:32.499Z",
-  "entityId": "a3907837-6585-4a7f-b46f-f50afead0085",
-  "version": "0.10",
-  "name": "tESTdb",
-  "commitId": "commit-e7697d4c-9f54-4935-9cda-2f4490171072",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "2618d4e6-152d-47fb-b3db-77406c0ca603",
+  "version": "draft",
+  "name": "Dt04",
+  "commitId": "commit-d90009bf-3a5c-4433-9d27-f610c2cb969d",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-05-28 14:43:49",
-   "description": "v1",
-   "timeStamp": "2026-05-28T14:51:32.498Z"
+   "title": "Created at 2026-06-05 13:03:39",
+   "timeStamp": "2026-06-05T13:03:39.53778796Z"
   },
   "customInput": {
-   "Age": {
- "name": "Age",
- "dataType": "numeric",
+   "json": {
+ "name": "json",
+ "dataType": "json",
  "isOptional": false,
  "isNullable": false,
  "isCaseSensitive": false,
- "attribute": "age",
- "sourceType": "dataSet",
- "executedValue": 31,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": {
+  "Name": "Atul"
+ },
  "config": null,
  "value": "",
  "next": "",
- "previous": "name",
+ "previous": "last",
  "schemaId": ""
 },
-   "name": {
- "name": "name",
+   "last": {
+ "name": "last",
  "dataType": "string",
  "isOptional": false,
  "isNullable": false,
  "isCaseSensitive": false,
  "attribute": "",
  "sourceType": "",
- "executedValue": "Atul",
+ "executedValue": "Raizada",
  "config": null,
  "value": "",
- "next": "Age",
+ "next": "json",
  "previous": "",
  "schemaId": ""
 }
@@ -57,30 +58,51 @@
     "rule_01": {
  "nextId": "",
  "prevId": "",
- "firstOutputData": "",
+ "firstOutputData": "output_SVXieU",
  "isEnabled": true,
  "annotation": ""
 }
    },
    "properties": {
-    "rule_03": {
+    "param_qAwAy0": {
  "nextId": "",
+ "prevId": "rule_03",
+ "type": "simpleCondition"
+},
+    "rule_03": {
+ "nextId": "param_qAwAy0",
  "prevId": "",
  "type": "simpleCondition"
 }
    },
    "results": {
-    
+    "result_uzgBM3": {
+ "nextId": "",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "result_1",
+ "schemaId": ""
+}
    },
    "firstRow": "rule_01",
    "firstProperty": "rule_03",
-   "firstResult": "",
+   "firstResult": "result_uzgBM3",
    "firstAggOutputData": ""
   },
   "action": {
    "then": {
     "outputData": {
-     
+     "output_SVXieU": {
+ "name": "result_1",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value",
+ "next": "",
+ "executedValue": "Value",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
     },
     "actionNode": {
      
@@ -97,16 +119,68 @@
   },
   "conditions": {
    "nodes": {
-    "rhs_M2cnKU": {
+    "c_4W39jh": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "param_qAwAy0"
+ ],
+ "rightNode": [
+  "rhs_X1UdgX"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "param_qAwAy0": {
  "value": null,
  "sourceType": "customInput",
  "name": "",
  "operator": "",
  "dataType": "string",
  "nodeType": "params",
- "attribute": "name",
+ "attribute": "last",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_IPuxcj": {
+ "value": "Atul",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
  "query": "",
  "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_X1UdgX": {
+ "value": "Raizada",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "c_4W39jh",
  "children": null,
  "leftNode": null,
  "rightNode": null,
@@ -124,7 +198,8 @@
  "query": "",
  "parent": "",
  "children": [
-  "rule_02"
+  "rule_02",
+  "c_4W39jh"
  ],
  "leftNode": null,
  "rightNode": null,
@@ -146,19 +221,19 @@
   "rule_03"
  ],
  "rightNode": [
-  "rhs_M2cnKU"
+  "rhs_IPuxcj"
  ],
  "siblingIndex": 1,
  "returnType": ""
 },
     "rule_03": {
  "value": null,
- "sourceType": "dataSet",
+ "sourceType": "customInput",
  "name": "",
  "operator": "",
  "dataType": "string",
  "nodeType": "params",
- "attribute": "name",
+ "attribute": "json.Name",
  "query": "",
  "parent": "",
  "children": null,
@@ -170,14 +245,14 @@
    },
    "startNode": ""
   },
-  "firstCustomInput": "name",
+  "firstCustomInput": "last",
   "firstRuleChain": "",
   "ruleSetPolicy": "",
   "description": "",
   "policy": "first",
   "comment": "",
   "type": "decisionTable",
-  "dataSetId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
+  "dataSetId": "",
   "ruleSet": [],
   "settings": {
    "startAt": "0001-01-01T00:00:00Z",
@@ -193,7 +268,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": "d"
+     "Unit": ""
     },
     "CacheKeys": ""
    },

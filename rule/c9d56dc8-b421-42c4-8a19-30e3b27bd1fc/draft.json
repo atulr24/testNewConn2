@@ -2,41 +2,25 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-05-28T14:43:49.297Z",
-  "updatedAt": "2026-05-28T14:51:32.511413Z",
+  "createdAt": "2026-06-10T12:12:54.099Z",
+  "updatedAt": "2026-06-10T12:13:17.142715Z",
   "isDeleted": false,
-  "testedAt": "2026-05-28T14:51:26.647Z",
-  "publishedAt": "2026-05-28T14:51:32.499Z",
-  "entityId": "a3907837-6585-4a7f-b46f-f50afead0085",
-  "version": "0.10",
-  "name": "tESTdb",
-  "commitId": "commit-e7697d4c-9f54-4935-9cda-2f4490171072",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "c9d56dc8-b421-42c4-8a19-30e3b27bd1fc",
+  "version": "draft",
+  "name": "dt17",
+  "commitId": "commit-e0c5da7d-e629-4ba4-9638-395d560da2c9",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-05-28 14:43:49",
-   "description": "v1",
-   "timeStamp": "2026-05-28T14:51:32.498Z"
+   "title": "Created at 2026-06-10 12:12:54",
+   "timeStamp": "2026-06-10T12:12:54.099099625Z"
   },
   "customInput": {
-   "Age": {
- "name": "Age",
- "dataType": "numeric",
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "attribute": "age",
- "sourceType": "dataSet",
- "executedValue": 31,
- "config": null,
- "value": "",
- "next": "",
- "previous": "name",
- "schemaId": ""
-},
-   "name": {
- "name": "name",
+   "Name": {
+ "name": "Name",
  "dataType": "string",
  "isOptional": false,
  "isNullable": false,
@@ -46,7 +30,7 @@
  "executedValue": "Atul",
  "config": null,
  "value": "",
- "next": "Age",
+ "next": "",
  "previous": "",
  "schemaId": ""
 }
@@ -57,7 +41,7 @@
     "rule_01": {
  "nextId": "",
  "prevId": "",
- "firstOutputData": "",
+ "firstOutputData": "output_X69Mfz",
  "isEnabled": true,
  "annotation": ""
 }
@@ -70,17 +54,33 @@
 }
    },
    "results": {
-    
+    "result_O19QqE": {
+ "nextId": "",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "result_1",
+ "schemaId": ""
+}
    },
    "firstRow": "rule_01",
    "firstProperty": "rule_03",
-   "firstResult": "",
+   "firstResult": "result_O19QqE",
    "firstAggOutputData": ""
   },
   "action": {
    "then": {
     "outputData": {
-     
+     "output_X69Mfz": {
+ "name": "result_1",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value",
+ "next": "",
+ "executedValue": "Value",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
     },
     "actionNode": {
      
@@ -97,14 +97,14 @@
   },
   "conditions": {
    "nodes": {
-    "rhs_M2cnKU": {
- "value": null,
- "sourceType": "customInput",
+    "rhs_HvmcW0": {
+ "value": "Atul",
+ "sourceType": "",
  "name": "",
  "operator": "",
  "dataType": "string",
- "nodeType": "params",
- "attribute": "name",
+ "nodeType": "constant",
+ "attribute": "",
  "query": "",
  "parent": "rule_02",
  "children": null,
@@ -146,19 +146,19 @@
   "rule_03"
  ],
  "rightNode": [
-  "rhs_M2cnKU"
+  "rhs_HvmcW0"
  ],
  "siblingIndex": 1,
  "returnType": ""
 },
     "rule_03": {
  "value": null,
- "sourceType": "dataSet",
+ "sourceType": "customInput",
  "name": "",
  "operator": "",
  "dataType": "string",
  "nodeType": "params",
- "attribute": "name",
+ "attribute": "Name",
  "query": "",
  "parent": "",
  "children": null,
@@ -170,14 +170,14 @@
    },
    "startNode": ""
   },
-  "firstCustomInput": "name",
+  "firstCustomInput": "Name",
   "firstRuleChain": "",
   "ruleSetPolicy": "",
   "description": "",
   "policy": "first",
   "comment": "",
   "type": "decisionTable",
-  "dataSetId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
+  "dataSetId": "",
   "ruleSet": [],
   "settings": {
    "startAt": "0001-01-01T00:00:00Z",
@@ -193,7 +193,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": "d"
+     "Unit": ""
     },
     "CacheKeys": ""
    },

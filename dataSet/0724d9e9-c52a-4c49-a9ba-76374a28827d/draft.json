@@ -3,51 +3,50 @@
  "category": "dataSet",
  "data": {
   "createdAt": "2026-05-14T09:43:39.477Z",
-  "updatedAt": "2026-05-28T14:44:23.584359Z",
+  "updatedAt": "2026-06-03T13:33:48.994965Z",
   "isDeleted": false,
-  "testedAt": "2026-05-28T14:42:57.449Z",
+  "testedAt": "2026-06-03T11:28:00.7Z",
   "publishedAt": "2026-05-28T14:44:23.563Z",
   "entityId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
-  "version": "0.10",
+  "version": "draft",
   "name": "pgDB",
-  "commitId": "commit-38a1354c-5801-4a74-b82d-46daa3687198",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "commitId": "commit-50c198ae-f96f-4f2a-80b8-0b1f3222058a",
+  "status": "draft",
+  "lastVersion": "0.10",
+  "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-05-14 09:43:39",
-   "description": "V1",
-   "timeStamp": "2026-05-28T14:44:23.563Z"
+   "title": "Forked from 0.10",
+   "timeStamp": "2026-05-29T09:46:59.596868703Z"
   },
   "fields": {
    "Bday": {
  "ColumnName": "Bday",
  "DataType": "dateTime",
- "Order": 2,
+ "Order": 8,
  "ExecutedValue": "1996-04-15T00:00:00Z"
 },
    "age": {
  "ColumnName": "age",
  "DataType": "numeric",
- "Order": 3,
- "ExecutedValue": 31
+ "Order": 1,
+ "ExecutedValue": 32
 },
    "id": {
  "ColumnName": "id",
  "DataType": "numeric",
- "Order": 4,
+ "Order": 2,
  "ExecutedValue": 1234
 },
    "isTrue": {
  "ColumnName": "isTrue",
  "DataType": "boolean",
- "Order": 5,
+ "Order": 3,
  "ExecutedValue": true
 },
    "metadata": {
  "ColumnName": "metadata",
  "DataType": "json",
- "Order": 6,
+ "Order": 4,
  "ExecutedValue": {
   "name": "Raizada"
  }
@@ -55,13 +54,13 @@
    "name": {
  "ColumnName": "name",
  "DataType": "string",
- "Order": 7,
+ "Order": 5,
  "ExecutedValue": "Ravi Kumar"
 },
    "scores": {
  "ColumnName": "scores",
  "DataType": "list",
- "Order": 8,
+ "Order": 6,
  "ExecutedValue": [
   85,
   92,
@@ -71,7 +70,7 @@
    "tags": {
  "ColumnName": "tags",
  "DataType": "list",
- "Order": 1,
+ "Order": 7,
  "ExecutedValue": [
   "cricket",
   "travel"
@@ -79,7 +78,7 @@
 }
   },
   "description": "",
-  "query": "select * from dummy_data1;",
+  "query": "select * from dummy_data1.age\n",
   "params": {
    
   },
@@ -93,5 +92,20 @@
    "timezone": "Asia/Calcutta",
    "dateFormat": "in"
   }
- }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-29T09:46:59.608948Z",
+   "updatedAt": "2026-06-03T13:33:48.997124Z",
+   "entityCommitId": "commit-50c198ae-f96f-4f2a-80b8-0b1f3222058a",
+   "entityType": "dataSet",
+   "entityId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "3ba03417-26f8-4a99-846d-d1c78614dcec",
+   "dependencyVersion": "live"
+  }
+ ]
 }

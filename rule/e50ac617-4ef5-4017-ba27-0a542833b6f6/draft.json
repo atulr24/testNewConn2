@@ -1,0 +1,1759 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2026-05-28T16:34:00.728Z",
+  "updatedAt": "2026-05-28T16:34:00.728Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "e50ac617-4ef5-4017-ba27-0a542833b6f6",
+  "version": "draft",
+  "name": "loanDT",
+  "commitId": "commit-29a1d02e-7921-4baf-ab84-3a2cb0579e22",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-28 16:34:00",
+   "timeStamp": "2026-05-28T16:34:00.728627706Z"
+  },
+  "customInput": {
+   "age": {
+ "name": "age",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 30,
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "financer",
+ "schemaId": ""
+},
+   "financer": {
+ "name": "financer",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "HCF",
+ "config": null,
+ "value": null,
+ "next": "age",
+ "previous": "loanAmt",
+ "schemaId": ""
+},
+   "loanAmt": {
+ "name": "loanAmt",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 75001,
+ "config": null,
+ "value": null,
+ "next": "financer",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "0_1": {
+ "nextId": "1_1",
+ "prevId": "",
+ "firstOutputData": "0_0",
+ "isEnabled": true,
+ "annotation": "HCF: loan amount exceeds 75.000"
+},
+    "10_1": {
+ "nextId": "",
+ "prevId": "9_1",
+ "firstOutputData": "10_0",
+ "isEnabled": true,
+ "annotation": "Santander: loan amount exceeds 100.000"
+},
+    "1_1": {
+ "nextId": "2_1",
+ "prevId": "0_1",
+ "firstOutputData": "1_0",
+ "isEnabled": true,
+ "annotation": "Lender & Spender: loan amount exceeds 75.000"
+},
+    "2_1": {
+ "nextId": "3_1",
+ "prevId": "1_1",
+ "firstOutputData": "2_0",
+ "isEnabled": true,
+ "annotation": "Qander: age < 59 and loan amount exceeds 75.000"
+},
+    "3_1": {
+ "nextId": "4_1",
+ "prevId": "2_1",
+ "firstOutputData": "3_0",
+ "isEnabled": true,
+ "annotation": "Qander: age >= 59 and loan amount exceeds 50.000"
+},
+    "4_1": {
+ "nextId": "5_1",
+ "prevId": "3_1",
+ "firstOutputData": "4_0",
+ "isEnabled": true,
+ "annotation": "Dutch Finance: loan amount exceeds 350.000"
+},
+    "5_1": {
+ "nextId": "6_1",
+ "prevId": "4_1",
+ "firstOutputData": "5_0",
+ "isEnabled": true,
+ "annotation": "Defam: age < 24 and loan amount exceeds 15.000"
+},
+    "6_1": {
+ "nextId": "7_1",
+ "prevId": "5_1",
+ "firstOutputData": "6_0",
+ "isEnabled": true,
+ "annotation": "Defam: age >= 24 and age < 60 and loan amount exceeds 100.000"
+},
+    "7_1": {
+ "nextId": "8_1",
+ "prevId": "6_1",
+ "firstOutputData": "7_0",
+ "isEnabled": true,
+ "annotation": "Defam: age >= 60 and age < 65 and loan amount exceeds 50.000"
+},
+    "8_1": {
+ "nextId": "9_1",
+ "prevId": "7_1",
+ "firstOutputData": "8_0",
+ "isEnabled": true,
+ "annotation": "Defam: age >= 65 and loan amount exceeds 30.000"
+},
+    "9_1": {
+ "nextId": "10_1",
+ "prevId": "8_1",
+ "firstOutputData": "9_0",
+ "isEnabled": true,
+ "annotation": "CA AutoFinance: loan amount exceeds 750.000"
+}
+   },
+   "properties": {
+    "0_3": {
+ "nextId": "0_6",
+ "prevId": "",
+ "type": "simpleCondition"
+},
+    "0_6": {
+ "nextId": "0_9",
+ "prevId": "0_3",
+ "type": "simpleCondition"
+},
+    "0_9": {
+ "nextId": "",
+ "prevId": "0_6",
+ "type": "simpleCondition"
+}
+   },
+   "results": {
+    "0": {
+ "nextId": "",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "errMsg",
+ "schemaId": ""
+}
+   },
+   "firstRow": "0_1",
+   "firstProperty": "0_3",
+   "firstResult": "0",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "0_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "HCF: Financieringsbedrag mag niet groter zijn dan 75.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "10_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Santander: Financieringsbedrag mag niet groter zijn dan 100.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "1_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Lender & Spender: Financieringsbedrag mag niet groter zijn dan 75.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "2_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Qander: Financieringsbedrag mag niet groter zijn dan 75.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "3_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Qander: Financieringsbedrag mag niet groter zijn dan 50.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "4_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Dutch Finance: Financieringsbedrag mag niet groter zijn dan 350.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "5_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Defam: Financieringsbedrag mag niet groter zijn dan 15.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "6_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Defam: Financieringsbedrag mag niet groter zijn dan 100.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "7_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Defam: Financieringsbedrag mag niet groter zijn dan 50.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "8_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Defam: Financieringsbedrag mag niet groter zijn dan 30.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "9_0": {
+ "name": "errMsg",
+ "dataType": "string",
+ "returnType": "",
+ "value": "CA AutoFinance: Financieringsbedrag mag niet groter zijn dan 750.000.",
+ "next": "",
+ "executedValue": null,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "0_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "0_2",
+  "0_5",
+  "0_8"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "0_4"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_3": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "financer",
+ "query": "",
+ "parent": "0_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "string"
+},
+    "0_4": {
+ "value": "HCF",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "0_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_5": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "0_7"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_6": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "loanAmt",
+ "query": "",
+ "parent": "0_5",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "numeric"
+},
+    "0_7": {
+ "value": 75000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "0_5",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_8": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "0_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "0_9": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "age",
+ "query": "",
+ "parent": "0_8",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": "numeric"
+},
+    "10_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "10_2",
+  "10_4",
+  "10_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "10_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "10_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "10_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "10_3": {
+ "value": "Santander",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "10_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "10_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "10_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "10_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "10_5": {
+ "value": 100000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "10_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "10_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "10_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "1_2",
+  "1_4",
+  "1_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "1_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_3": {
+ "value": "Lender & Spender",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "1_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "1_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_5": {
+ "value": 75000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "1_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "1_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "1_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "2_2",
+  "2_4",
+  "2_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "2_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "2_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_3": {
+ "value": "Qander",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "2_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "2_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "2_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_5": {
+ "value": 75000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "2_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "lt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "2_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": [
+  "2_7"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "2_7": {
+ "value": 59,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "2_6",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "3_2",
+  "3_4",
+  "3_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "3_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "3_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_3": {
+ "value": "Qander",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "3_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "3_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "3_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_5": {
+ "value": 50000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "3_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gte",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "3_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": [
+  "3_7"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "3_7": {
+ "value": 59,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "3_6",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "4_2",
+  "4_4",
+  "4_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "4_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "4_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_3": {
+ "value": "Dutch Finance",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "4_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "4_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "4_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_5": {
+ "value": 350000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "4_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "4_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "4_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "5_2",
+  "5_4",
+  "5_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "5_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "5_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_3": {
+ "value": "Defam",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "5_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "5_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "5_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_5": {
+ "value": 15000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "5_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "lt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "5_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": [
+  "5_7"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "5_7": {
+ "value": 24,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "5_6",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "6_2",
+  "6_4",
+  "6_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "6_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "6_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_3": {
+ "value": "Defam",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "6_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "6_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "6_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_5": {
+ "value": 100000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "6_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "6_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": [
+  "6_7",
+  "6_8"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_7": {
+ "value": 24,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "6_6",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "6_8": {
+ "value": 59,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "6_6",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "7_2",
+  "7_4",
+  "7_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "7_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "7_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_3": {
+ "value": "Defam",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "7_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "7_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "7_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_5": {
+ "value": 50000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "7_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "bet",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "7_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": [
+  "7_7",
+  "7_8"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_7": {
+ "value": 60,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "7_6",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "7_8": {
+ "value": 64,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "7_6",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "8_2",
+  "8_4",
+  "8_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "8_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "8_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_3": {
+ "value": "Defam",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "8_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "8_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "8_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_5": {
+ "value": 30000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "8_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gte",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "8_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": [
+  "8_7"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "8_7": {
+ "value": 65,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "8_6",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "9_1": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "9_2",
+  "9_4",
+  "9_6"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "9_2": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "9_1",
+ "children": null,
+ "leftNode": [
+  "0_3"
+ ],
+ "rightNode": [
+  "9_3"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "9_3": {
+ "value": "CA AutoFinance",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "9_2",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "9_4": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "gt",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "9_1",
+ "children": null,
+ "leftNode": [
+  "0_6"
+ ],
+ "rightNode": [
+  "9_5"
+ ],
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "9_5": {
+ "value": 750000,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "9_4",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+},
+    "9_6": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "9_1",
+ "children": null,
+ "leftNode": [
+  "0_9"
+ ],
+ "rightNode": null,
+ "siblingIndex": 0,
+ "returnType": ""
+}
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "loanAmt",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "collect",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": null,
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ }
+}

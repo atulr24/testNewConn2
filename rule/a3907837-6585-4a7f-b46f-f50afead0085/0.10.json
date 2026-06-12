@@ -1,16 +1,17 @@
 {
  "entityType": "rule",
  "category": "decisionTable",
+ "live": true,
  "data": {
   "createdAt": "2026-05-28T14:43:49.297Z",
-  "updatedAt": "2026-05-28T14:51:32.511413Z",
+  "updatedAt": "2026-05-28T14:51:32.503Z",
   "isDeleted": false,
   "testedAt": "2026-05-28T14:51:26.647Z",
   "publishedAt": "2026-05-28T14:51:32.499Z",
   "entityId": "a3907837-6585-4a7f-b46f-f50afead0085",
   "version": "0.10",
   "name": "tESTdb",
-  "commitId": "commit-e7697d4c-9f54-4935-9cda-2f4490171072",
+  "commitId": "commit-b31cb19d-ae5f-4de4-9264-8a01117d2452",
   "status": "published",
   "lastVersion": "draft",
   "isLive": true,
@@ -207,5 +208,20 @@
   "isDemo": false,
   "warnings": [],
   "schemaVersion": "0.1.1"
- }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-28T14:47:43.127055Z",
+   "updatedAt": "2026-05-28T14:51:32.501903Z",
+   "entityCommitId": "commit-b31cb19d-ae5f-4de4-9264-8a01117d2452",
+   "entityType": "rule",
+   "entityId": "a3907837-6585-4a7f-b46f-f50afead0085",
+   "entityVersion": "0.10",
+   "entityNodeId": "dataSet",
+   "dependencyType": "dataSet",
+   "dependencyId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
+   "dependencyVersion": "live"
+  }
+ ]
 }

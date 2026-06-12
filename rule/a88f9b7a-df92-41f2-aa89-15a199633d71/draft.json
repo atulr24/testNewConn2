@@ -2,39 +2,23 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-05-28T14:43:49.297Z",
-  "updatedAt": "2026-05-28T14:51:32.511413Z",
+  "createdAt": "2026-06-09T09:24:00Z",
+  "updatedAt": "2026-06-09T09:24:18.739139Z",
   "isDeleted": false,
-  "testedAt": "2026-05-28T14:51:26.647Z",
-  "publishedAt": "2026-05-28T14:51:32.499Z",
-  "entityId": "a3907837-6585-4a7f-b46f-f50afead0085",
-  "version": "0.10",
-  "name": "tESTdb",
-  "commitId": "commit-e7697d4c-9f54-4935-9cda-2f4490171072",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "testedAt": "2026-06-09T09:24:18.737Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "a88f9b7a-df92-41f2-aa89-15a199633d71",
+  "version": "draft",
+  "name": "dtTest",
+  "commitId": "commit-55b00404-b51a-4600-bce5-aa7460cb0c79",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-05-28 14:43:49",
-   "description": "v1",
-   "timeStamp": "2026-05-28T14:51:32.498Z"
+   "title": "Created at 2026-06-09 09:24:00",
+   "timeStamp": "2026-06-09T09:24:00.000096812Z"
   },
   "customInput": {
-   "Age": {
- "name": "Age",
- "dataType": "numeric",
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "attribute": "age",
- "sourceType": "dataSet",
- "executedValue": 31,
- "config": null,
- "value": "",
- "next": "",
- "previous": "name",
- "schemaId": ""
-},
    "name": {
  "name": "name",
  "dataType": "string",
@@ -46,7 +30,7 @@
  "executedValue": "Atul",
  "config": null,
  "value": "",
- "next": "Age",
+ "next": "",
  "previous": "",
  "schemaId": ""
 }
@@ -97,22 +81,6 @@
   },
   "conditions": {
    "nodes": {
-    "rhs_M2cnKU": {
- "value": null,
- "sourceType": "customInput",
- "name": "",
- "operator": "",
- "dataType": "string",
- "nodeType": "params",
- "attribute": "name",
- "query": "",
- "parent": "rule_02",
- "children": null,
- "leftNode": null,
- "rightNode": null,
- "siblingIndex": 1,
- "returnType": ""
-},
     "rule_01": {
  "value": null,
  "sourceType": "",
@@ -135,7 +103,7 @@
  "value": "",
  "sourceType": "",
  "name": "",
- "operator": "eq",
+ "operator": "any",
  "dataType": "string",
  "nodeType": "condition",
  "attribute": "",
@@ -145,15 +113,13 @@
  "leftNode": [
   "rule_03"
  ],
- "rightNode": [
-  "rhs_M2cnKU"
- ],
+ "rightNode": [],
  "siblingIndex": 1,
  "returnType": ""
 },
     "rule_03": {
  "value": null,
- "sourceType": "dataSet",
+ "sourceType": "customInput",
  "name": "",
  "operator": "",
  "dataType": "string",
@@ -177,7 +143,7 @@
   "policy": "first",
   "comment": "",
   "type": "decisionTable",
-  "dataSetId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
+  "dataSetId": "",
   "ruleSet": [],
   "settings": {
    "startAt": "0001-01-01T00:00:00Z",
@@ -193,7 +159,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": "d"
+     "Unit": ""
     },
     "CacheKeys": ""
    },

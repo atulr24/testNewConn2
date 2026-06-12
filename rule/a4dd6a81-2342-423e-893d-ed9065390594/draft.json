@@ -2,53 +2,40 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-05-28T14:43:49.297Z",
-  "updatedAt": "2026-05-28T14:51:32.511413Z",
+  "createdAt": "2026-05-29T09:40:17.334Z",
+  "updatedAt": "2026-06-01T05:09:25.874434Z",
   "isDeleted": false,
-  "testedAt": "2026-05-28T14:51:26.647Z",
-  "publishedAt": "2026-05-28T14:51:32.499Z",
-  "entityId": "a3907837-6585-4a7f-b46f-f50afead0085",
-  "version": "0.10",
-  "name": "tESTdb",
-  "commitId": "commit-e7697d4c-9f54-4935-9cda-2f4490171072",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "testedAt": "2026-06-01T05:09:25.872Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "a4dd6a81-2342-423e-893d-ed9065390594",
+  "version": "draft",
+  "name": "DTlks",
+  "commitId": "commit-44f80af4-a70f-4614-b36b-0747c4e3109a",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-05-28 14:43:49",
-   "description": "v1",
-   "timeStamp": "2026-05-28T14:51:32.498Z"
+   "title": "Created at 2026-05-29 09:40:17",
+   "timeStamp": "2026-05-29T09:40:17.334584843Z"
   },
   "customInput": {
-   "Age": {
- "name": "Age",
- "dataType": "numeric",
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "attribute": "age",
- "sourceType": "dataSet",
- "executedValue": 31,
- "config": null,
- "value": "",
- "next": "",
- "previous": "name",
- "schemaId": ""
-},
-   "name": {
- "name": "name",
- "dataType": "string",
+   "json": {
+ "name": "json",
+ "dataType": "json",
  "isOptional": false,
  "isNullable": false,
  "isCaseSensitive": false,
  "attribute": "",
  "sourceType": "",
- "executedValue": "Atul",
+ "executedValue": {
+  "LastName": "Raizada1",
+  "Name1": "Atul1"
+ },
  "config": null,
  "value": "",
- "next": "Age",
+ "next": "",
  "previous": "",
- "schemaId": ""
+ "schemaId": "3539332e-0f49-48f2-b9da-908013e01d2f"
 }
   },
   "ruleChain": null,
@@ -97,22 +84,6 @@
   },
   "conditions": {
    "nodes": {
-    "rhs_M2cnKU": {
- "value": null,
- "sourceType": "customInput",
- "name": "",
- "operator": "",
- "dataType": "string",
- "nodeType": "params",
- "attribute": "name",
- "query": "",
- "parent": "rule_02",
- "children": null,
- "leftNode": null,
- "rightNode": null,
- "siblingIndex": 1,
- "returnType": ""
-},
     "rule_01": {
  "value": null,
  "sourceType": "",
@@ -135,7 +106,7 @@
  "value": "",
  "sourceType": "",
  "name": "",
- "operator": "eq",
+ "operator": "any",
  "dataType": "string",
  "nodeType": "condition",
  "attribute": "",
@@ -145,20 +116,18 @@
  "leftNode": [
   "rule_03"
  ],
- "rightNode": [
-  "rhs_M2cnKU"
- ],
+ "rightNode": [],
  "siblingIndex": 1,
  "returnType": ""
 },
     "rule_03": {
  "value": null,
- "sourceType": "dataSet",
+ "sourceType": "customInput",
  "name": "",
  "operator": "",
  "dataType": "string",
  "nodeType": "params",
- "attribute": "name",
+ "attribute": "json.Name1",
  "query": "",
  "parent": "",
  "children": null,
@@ -170,14 +139,14 @@
    },
    "startNode": ""
   },
-  "firstCustomInput": "name",
+  "firstCustomInput": "json",
   "firstRuleChain": "",
   "ruleSetPolicy": "",
   "description": "",
   "policy": "first",
   "comment": "",
   "type": "decisionTable",
-  "dataSetId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
+  "dataSetId": "",
   "ruleSet": [],
   "settings": {
    "startAt": "0001-01-01T00:00:00Z",
@@ -193,7 +162,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": "d"
+     "Unit": ""
     },
     "CacheKeys": ""
    },
@@ -207,5 +176,20 @@
   "isDemo": false,
   "warnings": [],
   "schemaVersion": "0.1.1"
- }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-29T09:40:44.460521Z",
+   "updatedAt": "2026-05-29T09:40:47.823028Z",
+   "entityCommitId": "commit-44f80af4-a70f-4614-b36b-0747c4e3109a",
+   "entityType": "rule",
+   "entityId": "a4dd6a81-2342-423e-893d-ed9065390594",
+   "entityVersion": "draft",
+   "entityNodeId": "ci-json",
+   "dependencyType": "module_schema",
+   "dependencyId": "3539332e-0f49-48f2-b9da-908013e01d2f",
+   "dependencyVersion": "live"
+  }
+ ]
 }

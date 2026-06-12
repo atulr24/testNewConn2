@@ -1,0 +1,333 @@
+{
+ "entityType": "testcase",
+ "category": "workflow",
+ "isList": true,
+ "dataList": [
+  {
+   "createdAt": "2026-06-12T05:53:51.368Z",
+   "updatedAt": "2026-06-12T05:53:51.368Z",
+   "isDeleted": false,
+   "entityId": "ab11c2ba-db25-4df0-99d6-42b4bf6e9cdc",
+   "name": "TC5",
+   "group": [
+    "G3"
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul5"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": {
+ "key_0": "Value"
+}
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:53:51.366Z",
+   "updatedAt": "2026-06-12T05:53:51.366Z",
+   "isDeleted": false,
+   "entityId": "d5e9e2e7-fecd-40f8-be1f-97649dfdd758",
+   "name": "TC4",
+   "group": [
+    "G2"
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul4"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": {
+ "key_0": "Value"
+}
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:53:51.364Z",
+   "updatedAt": "2026-06-12T05:53:51.364Z",
+   "isDeleted": false,
+   "entityId": "97732457-fcc3-48f6-b89b-c0fe54214316",
+   "name": "TC3",
+   "group": [
+    "G2"
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul3"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": {
+ "key_0": "Value"
+}
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:53:51.363Z",
+   "updatedAt": "2026-06-12T05:53:51.363Z",
+   "isDeleted": false,
+   "entityId": "8ab12e00-a2be-44c1-b6cb-1221c9d677c9",
+   "name": "TC2",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul2"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": {
+ "key_0": "Value"
+}
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:53:51.36Z",
+   "updatedAt": "2026-06-12T05:53:51.36Z",
+   "isDeleted": false,
+   "entityId": "cd2bb0db-a3f3-4b37-a98b-43752b756d9b",
+   "name": "TC1",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul1"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": {
+ "key_0": "Value"
+}
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:40:12.003Z",
+   "updatedAt": "2026-06-12T05:40:12.003Z",
+   "isDeleted": false,
+   "entityId": "da381d7d-94ac-4304-95a4-47f3ae81c484",
+   "name": "Atul",
+   "group": [
+    "g1"
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Raizada"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": {
+ "key_0": "Value"
+}
+   }
+  },
+  {
+   "createdAt": "2026-06-11T10:21:02.549Z",
+   "updatedAt": "2026-06-11T10:21:02.549Z",
+   "isDeleted": false,
+   "entityId": "bda0b85b-290f-4b3c-bbff-9e673310d483",
+   "name": "Test 3",
+   "group": [
+    "sd"
+   ],
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 23
+},
+     "Name": {
+ "value": "Raizada"
+},
+     "bool": {
+ "value": true
+},
+     "date": {
+ "value": "2026-06-11"
+},
+     "dateTime": {
+ "value": "2026-06-11T02:02:00+05:30"
+},
+     "json": {
+ "value": {
+  "Test": 123
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "output": {
+ "key_0": "2026-06-09",
+ "key_1": true,
+ "key_2": true,
+ "key_3": [
+ 1,
+ 2,
+ 3
+]
+}
+   }
+  },
+  {
+   "createdAt": "2026-06-11T07:57:45.469Z",
+   "updatedAt": "2026-06-11T08:07:16.445358Z",
+   "isDeleted": false,
+   "entityId": "4ded9fdb-fdde-43d6-9ab8-1f3daf06f4fb",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 29
+},
+     "Date": {
+ "value": "2026-06-18"
+},
+     "DateTime": {
+ "value": "2026-06-10T00:00:00+05:30"
+},
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "output": {
+ "key_0": 10
+}
+   }
+  },
+  {
+   "createdAt": "2026-06-11T07:16:01.734Z",
+   "updatedAt": "2026-06-11T07:16:01.734Z",
+   "isDeleted": false,
+   "entityId": "b8a9b7d6-50a6-4579-8670-594cba030c85",
+   "name": "Test 2",
+   "group": [
+    "sd"
+   ],
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 23
+},
+     "Name": {
+ "value": "Raizada"
+},
+     "bool": {
+ "value": true
+},
+     "date": {
+ "value": "2026-06-11"
+},
+     "dateTime": {
+ "value": "2026-06-11T02:02:00+05:30"
+},
+     "json": {
+ "value": {
+  "Test": 123
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "output": {
+ "key_0": "2026-06-09",
+ "key_1": true,
+ "key_2": true,
+ "key_3": [
+ 1,
+ 2,
+ 3
+]
+}
+   }
+  },
+  {
+   "createdAt": "2026-06-10T13:24:55.95Z",
+   "updatedAt": "2026-06-10T13:24:55.95Z",
+   "isDeleted": false,
+   "entityId": "a1e18ddb-30b1-4d3e-acec-85956c8b950a",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "age": {
+ "value": 9
+},
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+}
+    }
+   },
+   "output": {
+    "output": {
+ 
+}
+   }
+  }
+ ]
+}

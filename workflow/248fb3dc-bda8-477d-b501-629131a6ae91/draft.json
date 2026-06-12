@@ -1,0 +1,512 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "createdAt": "2026-06-03T10:53:33.973Z",
+  "updatedAt": "2026-06-03T11:36:57.324311Z",
+  "isDeleted": false,
+  "testedAt": "2026-06-03T11:36:57.323Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "248fb3dc-bda8-477d-b501-629131a6ae91",
+  "version": "draft",
+  "name": "libWf",
+  "commitId": "commit-863433ca-b27f-4e8b-8d78-a04ce350cb95",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-06-03 10:53:33",
+   "timeStamp": "2026-06-03T10:53:33.973910383Z"
+  },
+  "startNode": "3",
+  "description": "",
+  "trigger": {
+   "apiNode": "1",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "acs": {
+ "value": null,
+ "executedValue": "borrow",
+ "name": "acs",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "bookCat": {
+ "value": null,
+ "executedValue": "fiction",
+ "name": "bookCat",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "bookId": {
+ "value": null,
+ "executedValue": "B01",
+ "name": "bookId",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "bookStatus": {
+ "value": null,
+ "executedValue": "available",
+ "name": "bookStatus",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "booksHeld": {
+ "value": null,
+ "executedValue": 2,
+ "name": "booksHeld",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "memId": {
+ "value": null,
+ "executedValue": "M01",
+ "name": "memId",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "memStatus": {
+ "value": null,
+ "executedValue": "active",
+ "name": "memStatus",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "memType": {
+ "value": null,
+ "executedValue": "gold",
+ "name": "memType",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "overdueDays": {
+ "value": null,
+ "executedValue": 0,
+ "name": "overdueDays",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "acs": "borrow",
+      "bookCat": "fiction",
+      "bookId": "B01",
+      "bookStatus": "available",
+      "booksHeld": 2,
+      "memId": "M01",
+      "memStatus": "active",
+      "memType": "gold",
+      "overdueDays": 0
+     },
+     "settings": {
+      "authType": "private",
+      "cacheEnabled": false,
+      "cacheKeys": "",
+      "durationUnit": "d",
+      "durationValue": 0,
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "Trigger",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 130
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "2",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "3",
+    "type": "rule",
+    "data": {
+     "input": {
+      "booksHeld": {
+ "value": null,
+ "executedValue": null,
+ "name": "booksHeld",
+ "dataType": "numeric",
+ "source": "Trigger",
+ "attribute": "booksHeld",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "memStatus": {
+ "value": "",
+ "executedValue": null,
+ "name": "memStatus",
+ "dataType": "string",
+ "source": "Trigger",
+ "attribute": "memStatus",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "memType": {
+ "value": "",
+ "executedValue": null,
+ "name": "memType",
+ "dataType": "string",
+ "source": "Trigger",
+ "attribute": "memType",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "action": null,
+      "additionalOutput": {
+ 
+},
+      "error": "",
+      "executionTime": "1ms",
+      "name": "memChk",
+      "output": [
+ {
+  "borrowLimit": 0,
+  "defaultOutputData": true,
+  "eligible": false,
+  "reason": "inactive",
+  "rowError": null,
+  "rowId": 4,
+  "tier": "none"
+ }
+],
+      "ruleId": "9e8a53f8-02dc-409d-941b-79bd980c0d60",
+      "version": "draft",
+      "warnings": []
+     },
+     "settings": {
+      "actionInSync": false,
+      "errorContinue": false,
+      "runAction": false,
+      "timeout": 10,
+      "timeoutAsyc": 20
+     },
+     "nodeType": "dtNode",
+     "entity": "rule",
+     "entityId": "9e8a53f8-02dc-409d-941b-79bd980c0d60",
+     "pluginName": "",
+     "status": "success",
+     "name": "memChkNd",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "decisionTable",
+     "testedAt": "2026-06-03T11:36:57.323Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "4",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [
+   {
+    "style": null,
+    "id": "1",
+    "markerEnd": "",
+    "label": "",
+    "source": "1",
+    "target": "2",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": null,
+    "id": "2",
+    "markerEnd": "",
+    "label": "",
+    "source": "2",
+    "target": "3",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": null,
+    "id": "3",
+    "markerEnd": "",
+    "label": "",
+    "source": "3",
+    "target": "4",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": false,
+   "timezone": "UTC",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-03T10:53:33.981515Z",
+   "updatedAt": "2026-06-03T11:18:46.726179Z",
+   "entityCommitId": "commit-863433ca-b27f-4e8b-8d78-a04ce350cb95",
+   "entityType": "workflow",
+   "entityId": "248fb3dc-bda8-477d-b501-629131a6ae91",
+   "entityVersion": "draft",
+   "entityNodeId": "3",
+   "dependencyType": "rule",
+   "dependencyId": "9e8a53f8-02dc-409d-941b-79bd980c0d60",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

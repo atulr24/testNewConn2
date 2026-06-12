@@ -3,9 +3,9 @@
  "category": "dataSet",
  "data": {
   "createdAt": "2026-05-28T10:02:35.79Z",
-  "updatedAt": "2026-05-28T14:41:31.118306Z",
+  "updatedAt": "2026-05-29T09:47:25.86782Z",
   "isDeleted": false,
-  "testedAt": "2026-05-28T14:41:31.117Z",
+  "testedAt": "2026-05-29T09:47:25.867Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "8a506294-c967-41bc-b172-70bdb131f338",
   "version": "draft",
@@ -22,49 +22,49 @@
    "BOOL_COL": {
  "ColumnName": "BOOL_COL",
  "DataType": "boolean",
- "Order": 7,
+ "Order": 4,
  "ExecutedValue": true
 },
    "DATETIME_COL": {
  "ColumnName": "DATETIME_COL",
  "DataType": "dateTime",
- "Order": 1,
+ "Order": 12,
  "ExecutedValue": "2026-05-20T14:30:00Z"
 },
    "DATE_COL": {
  "ColumnName": "DATE_COL",
  "DataType": "dateTime",
- "Order": 8,
+ "Order": 5,
  "ExecutedValue": "2026-05-20T00:00:00Z"
 },
    "DECIMAL_COL": {
  "ColumnName": "DECIMAL_COL",
  "DataType": "numeric",
- "Order": 9,
+ "Order": 1,
  "ExecutedValue": 1234.56
 },
    "FLOAT_COL": {
  "ColumnName": "FLOAT_COL",
  "DataType": "numeric",
- "Order": 2,
+ "Order": 6,
  "ExecutedValue": 3.14159
 },
    "ID": {
  "ColumnName": "ID",
  "DataType": "numeric",
- "Order": 10,
+ "Order": 7,
  "ExecutedValue": 1
 },
    "INT_COL": {
  "ColumnName": "INT_COL",
  "DataType": "numeric",
- "Order": 3,
+ "Order": 8,
  "ExecutedValue": 42
 },
    "JSON_COL": {
  "ColumnName": "JSON_COL",
  "DataType": "json",
- "Order": 4,
+ "Order": 9,
  "ExecutedValue": {
   "active": true,
   "age": 30,
@@ -74,7 +74,7 @@
    "LIST_COL": {
  "ColumnName": "LIST_COL",
  "DataType": "list",
- "Order": 11,
+ "Order": 10,
  "ExecutedValue": [
   "apple",
   "banana",
@@ -84,7 +84,7 @@
    "OBJECT_COL": {
  "ColumnName": "OBJECT_COL",
  "DataType": "json",
- "Order": 5,
+ "Order": 2,
  "ExecutedValue": {
   "city": "Mumbai",
   "pincode": 400001
@@ -93,18 +93,18 @@
    "STR_COL": {
  "ColumnName": "STR_COL",
  "DataType": "string",
- "Order": 12,
+ "Order": 11,
  "ExecutedValue": "hello world"
 },
    "STR_UNLIMITED": {
  "ColumnName": "STR_UNLIMITED",
  "DataType": "string",
- "Order": 6,
+ "Order": 3,
  "ExecutedValue": "a longer string value"
 }
   },
   "description": "",
-  "query": "select * from PUBLIC.ALL_DATATYPES;",
+  "query": "select * from PUBLIC.ALL_DATATYPES",
   "params": {
    
   },
@@ -123,7 +123,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-05-28T10:02:35.799794Z",
-   "updatedAt": "2026-05-28T10:03:22.265486Z",
+   "updatedAt": "2026-05-29T09:47:22.852012Z",
    "entityCommitId": "commit-505549eb-236e-4a30-9b17-3644d064c94f",
    "entityType": "dataSet",
    "entityId": "8a506294-c967-41bc-b172-70bdb131f338",

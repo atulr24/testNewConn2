@@ -2,41 +2,79 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-05-28T14:43:49.297Z",
-  "updatedAt": "2026-05-28T14:51:32.511413Z",
+  "createdAt": "2026-06-11T07:34:48.554Z",
+  "updatedAt": "2026-06-11T07:43:48.654829Z",
   "isDeleted": false,
-  "testedAt": "2026-05-28T14:51:26.647Z",
-  "publishedAt": "2026-05-28T14:51:32.499Z",
-  "entityId": "a3907837-6585-4a7f-b46f-f50afead0085",
-  "version": "0.10",
-  "name": "tESTdb",
-  "commitId": "commit-e7697d4c-9f54-4935-9cda-2f4490171072",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "testedAt": "2026-06-11T07:43:48.654Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "32dd2c11-aadf-46a1-a2d2-35749bc44f53",
+  "version": "draft",
+  "name": "dt18",
+  "commitId": "commit-e878e264-159c-4361-88ea-5ee5ac03120d",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-05-28 14:43:49",
-   "description": "v1",
-   "timeStamp": "2026-05-28T14:51:32.498Z"
+   "title": "Created at 2026-06-11 07:34:48",
+   "timeStamp": "2026-06-11T07:34:48.554450289Z"
   },
   "customInput": {
    "Age": {
  "name": "Age",
  "dataType": "numeric",
  "isOptional": false,
- "isNullable": false,
+ "isNullable": true,
  "isCaseSensitive": false,
- "attribute": "age",
- "sourceType": "dataSet",
- "executedValue": 31,
- "config": null,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 29,
+ "config": {
+  
+ },
  "value": "",
- "next": "",
- "previous": "name",
+ "next": "Date",
+ "previous": "Name",
  "schemaId": ""
 },
-   "name": {
- "name": "name",
+   "Date": {
+ "name": "Date",
+ "dataType": "date",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "2026-06-12",
+ "config": {
+  
+ },
+ "value": "",
+ "next": "List",
+ "previous": "Age",
+ "schemaId": ""
+},
+   "List": {
+ "name": "List",
+ "dataType": "list",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": [
+  "Atul",
+  "Raizada"
+ ],
+ "config": {
+  
+ },
+ "value": "",
+ "next": "",
+ "previous": "Date",
+ "schemaId": ""
+},
+   "Name": {
+ "name": "Name",
  "dataType": "string",
  "isOptional": false,
  "isNullable": false,
@@ -44,7 +82,9 @@
  "attribute": "",
  "sourceType": "",
  "executedValue": "Atul",
- "config": null,
+ "config": {
+  
+ },
  "value": "",
  "next": "Age",
  "previous": "",
@@ -57,7 +97,7 @@
     "rule_01": {
  "nextId": "",
  "prevId": "",
- "firstOutputData": "",
+ "firstOutputData": "output_LKXpIN",
  "isEnabled": true,
  "annotation": ""
 }
@@ -70,17 +110,33 @@
 }
    },
    "results": {
-    
+    "result_jrRd8B": {
+ "nextId": "",
+ "prevId": "",
+ "dataType": "string",
+ "keyName": "result_1",
+ "schemaId": ""
+}
    },
    "firstRow": "rule_01",
    "firstProperty": "rule_03",
-   "firstResult": "",
+   "firstResult": "result_jrRd8B",
    "firstAggOutputData": ""
   },
   "action": {
    "then": {
     "outputData": {
-     
+     "output_LKXpIN": {
+ "name": "result_1",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value",
+ "next": "",
+ "executedValue": "Value",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
     },
     "actionNode": {
      
@@ -97,14 +153,14 @@
   },
   "conditions": {
    "nodes": {
-    "rhs_M2cnKU": {
- "value": null,
- "sourceType": "customInput",
+    "rhs_4IqYsE": {
+ "value": "2026-06-11",
+ "sourceType": "",
  "name": "",
  "operator": "",
- "dataType": "string",
- "nodeType": "params",
- "attribute": "name",
+ "dataType": "date",
+ "nodeType": "constant",
+ "attribute": "",
  "query": "",
  "parent": "rule_02",
  "children": null,
@@ -136,7 +192,7 @@
  "sourceType": "",
  "name": "",
  "operator": "eq",
- "dataType": "string",
+ "dataType": "date",
  "nodeType": "condition",
  "attribute": "",
  "query": "",
@@ -146,19 +202,19 @@
   "rule_03"
  ],
  "rightNode": [
-  "rhs_M2cnKU"
+  "rhs_4IqYsE"
  ],
  "siblingIndex": 1,
  "returnType": ""
 },
     "rule_03": {
  "value": null,
- "sourceType": "dataSet",
+ "sourceType": "customInput",
  "name": "",
  "operator": "",
- "dataType": "string",
+ "dataType": "date",
  "nodeType": "params",
- "attribute": "name",
+ "attribute": "Date",
  "query": "",
  "parent": "",
  "children": null,
@@ -170,14 +226,14 @@
    },
    "startNode": ""
   },
-  "firstCustomInput": "name",
+  "firstCustomInput": "Name",
   "firstRuleChain": "",
   "ruleSetPolicy": "",
   "description": "",
   "policy": "first",
   "comment": "",
   "type": "decisionTable",
-  "dataSetId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
+  "dataSetId": "",
   "ruleSet": [],
   "settings": {
    "startAt": "0001-01-01T00:00:00Z",
@@ -193,7 +249,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": "d"
+     "Unit": ""
     },
     "CacheKeys": ""
    },

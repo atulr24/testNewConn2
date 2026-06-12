@@ -2,39 +2,23 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-05-28T14:43:49.297Z",
-  "updatedAt": "2026-05-28T14:51:32.511413Z",
+  "createdAt": "2026-06-03T07:07:28.079Z",
+  "updatedAt": "2026-06-03T07:23:46.450053Z",
   "isDeleted": false,
-  "testedAt": "2026-05-28T14:51:26.647Z",
-  "publishedAt": "2026-05-28T14:51:32.499Z",
-  "entityId": "a3907837-6585-4a7f-b46f-f50afead0085",
-  "version": "0.10",
-  "name": "tESTdb",
-  "commitId": "commit-e7697d4c-9f54-4935-9cda-2f4490171072",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "testedAt": "2026-06-03T07:23:46.449Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "7d493f74-2f23-4faf-8714-aa79d8ae060d",
+  "version": "draft",
+  "name": "nmn",
+  "commitId": "commit-6bfcc193-5098-4f02-a1ed-265af4e128d2",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-05-28 14:43:49",
-   "description": "v1",
-   "timeStamp": "2026-05-28T14:51:32.498Z"
+   "title": "Created at 2026-06-03 07:07:28",
+   "timeStamp": "2026-06-03T07:07:28.079246213Z"
   },
   "customInput": {
-   "Age": {
- "name": "Age",
- "dataType": "numeric",
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "attribute": "age",
- "sourceType": "dataSet",
- "executedValue": 31,
- "config": null,
- "value": "",
- "next": "",
- "previous": "name",
- "schemaId": ""
-},
    "name": {
  "name": "name",
  "dataType": "string",
@@ -43,10 +27,10 @@
  "isCaseSensitive": false,
  "attribute": "",
  "sourceType": "",
- "executedValue": "Atul",
+ "executedValue": "atuk",
  "config": null,
  "value": "",
- "next": "Age",
+ "next": "",
  "previous": "",
  "schemaId": ""
 }
@@ -83,10 +67,58 @@
      
     },
     "actionNode": {
-     
+     "actionData_action_1": {
+ "name": "action_1",
+ "connectorId": "",
+ "entity": "rule",
+ "entityId": "21c43e50-d169-44c4-a9e8-60a457fc19c1",
+ "pluginName": "",
+ "config": {
+  "query": ""
+ },
+ "input": {
+  "age": {
+ "name": "age",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "value": 29,
+ "sendNull": false,
+ "notSend": false
+},
+  "designation": {
+ "name": "designation",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "value": "IT",
+ "sendNull": false,
+ "notSend": false
+},
+  "name": {
+ "name": "name",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "value": "Atul",
+ "sendNull": false,
+ "notSend": false
+},
+  "salary": {
+ "name": "salary",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "value": 200,
+ "sendNull": false,
+ "notSend": false
+}
+ },
+ "next": ""
+}
     },
     "firstOutputData": "",
-    "firstActionNode": ""
+    "firstActionNode": "actionData_action_1"
    },
    "else": {
     "outputData": null,
@@ -97,14 +129,14 @@
   },
   "conditions": {
    "nodes": {
-    "rhs_M2cnKU": {
- "value": null,
- "sourceType": "customInput",
+    "rhs_TU8TR9": {
+ "value": "Atul",
+ "sourceType": "",
  "name": "",
  "operator": "",
  "dataType": "string",
- "nodeType": "params",
- "attribute": "name",
+ "nodeType": "constant",
+ "attribute": "",
  "query": "",
  "parent": "rule_02",
  "children": null,
@@ -146,14 +178,14 @@
   "rule_03"
  ],
  "rightNode": [
-  "rhs_M2cnKU"
+  "rhs_TU8TR9"
  ],
  "siblingIndex": 1,
  "returnType": ""
 },
     "rule_03": {
  "value": null,
- "sourceType": "dataSet",
+ "sourceType": "customInput",
  "name": "",
  "operator": "",
  "dataType": "string",
@@ -177,7 +209,7 @@
   "policy": "first",
   "comment": "",
   "type": "decisionTable",
-  "dataSetId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
+  "dataSetId": "",
   "ruleSet": [],
   "settings": {
    "startAt": "0001-01-01T00:00:00Z",
@@ -193,7 +225,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": "d"
+     "Unit": ""
     },
     "CacheKeys": ""
    },
@@ -207,5 +239,20 @@
   "isDemo": false,
   "warnings": [],
   "schemaVersion": "0.1.1"
- }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-03T07:16:14.793099Z",
+   "updatedAt": "2026-06-03T07:16:31.033612Z",
+   "entityCommitId": "commit-6bfcc193-5098-4f02-a1ed-265af4e128d2",
+   "entityType": "rule",
+   "entityId": "7d493f74-2f23-4faf-8714-aa79d8ae060d",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_action_1",
+   "dependencyType": "rule",
+   "dependencyId": "21c43e50-d169-44c4-a9e8-60a457fc19c1",
+   "dependencyVersion": "draft"
+  }
+ ]
 }

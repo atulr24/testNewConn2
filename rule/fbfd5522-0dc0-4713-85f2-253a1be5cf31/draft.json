@@ -2,38 +2,40 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-05-28T14:43:49.297Z",
-  "updatedAt": "2026-05-28T14:51:32.511413Z",
+  "createdAt": "2026-06-02T14:22:34.538Z",
+  "updatedAt": "2026-06-03T11:10:43.791561Z",
   "isDeleted": false,
-  "testedAt": "2026-05-28T14:51:26.647Z",
-  "publishedAt": "2026-05-28T14:51:32.499Z",
-  "entityId": "a3907837-6585-4a7f-b46f-f50afead0085",
-  "version": "0.10",
-  "name": "tESTdb",
-  "commitId": "commit-e7697d4c-9f54-4935-9cda-2f4490171072",
-  "status": "published",
-  "lastVersion": "draft",
-  "isLive": true,
+  "testedAt": "2026-06-03T11:10:43.791Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "fbfd5522-0dc0-4713-85f2-253a1be5cf31",
+  "version": "draft",
+  "name": "TestDT",
+  "commitId": "commit-bc35e57f-fd95-4d69-b25a-a776a194b90b",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-05-28 14:43:49",
-   "description": "v1",
-   "timeStamp": "2026-05-28T14:51:32.498Z"
+   "title": "Created at 2026-06-02 14:22:34",
+   "timeStamp": "2026-06-02T14:22:34.538811791Z"
   },
   "customInput": {
-   "Age": {
- "name": "Age",
- "dataType": "numeric",
+   "json": {
+ "name": "json",
+ "dataType": "json",
  "isOptional": false,
  "isNullable": false,
  "isCaseSensitive": false,
- "attribute": "age",
- "sourceType": "dataSet",
- "executedValue": 31,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": {
+  "LastName": "Raizada1",
+  "Name1": "Atul1"
+ },
  "config": null,
  "value": "",
  "next": "",
  "previous": "name",
- "schemaId": ""
+ "schemaId": "3539332e-0f49-48f2-b9da-908013e01d2f"
 },
    "name": {
  "name": "name",
@@ -44,9 +46,11 @@
  "attribute": "",
  "sourceType": "",
  "executedValue": "Atul",
- "config": null,
+ "config": {
+  
+ },
  "value": "",
- "next": "Age",
+ "next": "json",
  "previous": "",
  "schemaId": ""
 }
@@ -63,8 +67,13 @@
 }
    },
    "properties": {
-    "rule_03": {
+    "param_J3KKyC": {
  "nextId": "",
+ "prevId": "rule_03",
+ "type": "simpleCondition"
+},
+    "rule_03": {
+ "nextId": "param_J3KKyC",
  "prevId": "",
  "type": "simpleCondition"
 }
@@ -97,14 +106,48 @@
   },
   "conditions": {
    "nodes": {
-    "rhs_M2cnKU": {
+    "c_SbBADo": {
+ "value": "",
+ "sourceType": "",
+ "name": "",
+ "operator": "any",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "param_J3KKyC"
+ ],
+ "rightNode": [],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "param_J3KKyC": {
  "value": null,
  "sourceType": "customInput",
  "name": "",
  "operator": "",
  "dataType": "string",
  "nodeType": "params",
- "attribute": "name",
+ "attribute": "json.LastName",
+ "query": "",
+ "parent": "",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_r01NSp": {
+ "value": null,
+ "sourceType": "systemVar",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "ExecutionId",
  "query": "",
  "parent": "rule_02",
  "children": null,
@@ -124,7 +167,8 @@
  "query": "",
  "parent": "",
  "children": [
-  "rule_02"
+  "rule_02",
+  "c_SbBADo"
  ],
  "leftNode": null,
  "rightNode": null,
@@ -146,14 +190,14 @@
   "rule_03"
  ],
  "rightNode": [
-  "rhs_M2cnKU"
+  "rhs_r01NSp"
  ],
  "siblingIndex": 1,
  "returnType": ""
 },
     "rule_03": {
  "value": null,
- "sourceType": "dataSet",
+ "sourceType": "customInput",
  "name": "",
  "operator": "",
  "dataType": "string",
@@ -177,7 +221,7 @@
   "policy": "first",
   "comment": "",
   "type": "decisionTable",
-  "dataSetId": "0724d9e9-c52a-4c49-a9ba-76374a28827d",
+  "dataSetId": "",
   "ruleSet": [],
   "settings": {
    "startAt": "0001-01-01T00:00:00Z",
@@ -193,7 +237,7 @@
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": "d"
+     "Unit": ""
     },
     "CacheKeys": ""
    },
@@ -207,5 +251,20 @@
   "isDemo": false,
   "warnings": [],
   "schemaVersion": "0.1.1"
- }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-03T11:10:35.933752Z",
+   "updatedAt": "2026-06-03T11:10:41.617899Z",
+   "entityCommitId": "commit-bc35e57f-fd95-4d69-b25a-a776a194b90b",
+   "entityType": "rule",
+   "entityId": "fbfd5522-0dc0-4713-85f2-253a1be5cf31",
+   "entityVersion": "draft",
+   "entityNodeId": "ci-json",
+   "dependencyType": "module_schema",
+   "dependencyId": "3539332e-0f49-48f2-b9da-908013e01d2f",
+   "dependencyVersion": "live"
+  }
+ ]
 }

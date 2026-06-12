@@ -1,0 +1,113 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2026-05-28T15:26:18.4Z",
+  "updatedAt": "2026-05-28T15:26:27.823629Z",
+  "isDeleted": false,
+  "testedAt": "2026-05-28T15:26:27.823Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "8463f20b-7aa7-44c4-abf4-ee42eb9e9550",
+  "version": "draft",
+  "name": ",J",
+  "commitId": "commit-6da34f12-0d00-4472-b387-4edbbf18328a",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-28 15:26:18",
+   "timeStamp": "2026-05-28T15:26:18.400923717Z"
+  },
+  "fields": {
+   "Bool": {
+ "ColumnName": "Bool",
+ "DataType": "boolean",
+ "Order": 2,
+ "ExecutedValue": false
+},
+   "Integer": {
+ "ColumnName": "Integer",
+ "DataType": "string",
+ "Order": 3,
+ "ExecutedValue": "100"
+},
+   "_id": {
+ "ColumnName": "_id",
+ "DataType": "objectid",
+ "Order": 4,
+ "ExecutedValue": "5a9427648b0beebeb69579e7"
+},
+   "date": {
+ "ColumnName": "date",
+ "DataType": "dateTime",
+ "Order": 1,
+ "ExecutedValue": "2002-08-18T04:56:07Z"
+},
+   "email": {
+ "ColumnName": "email",
+ "DataType": "string",
+ "Order": 6,
+ "ExecutedValue": "mercedes_tyler@fakegmail.com"
+},
+   "movie_id": {
+ "ColumnName": "movie_id",
+ "DataType": "objectid",
+ "Order": 7,
+ "ExecutedValue": "573a1390f29313caabcd4323"
+},
+   "name": {
+ "ColumnName": "name",
+ "DataType": "string",
+ "Order": 5,
+ "ExecutedValue": "email@email.com"
+},
+   "text": {
+ "ColumnName": "text",
+ "DataType": "json",
+ "Order": 8,
+ "ExecutedValue": {
+  "$cond": {
+ "else": "NegativeReview",
+ "if": {
+ "$eq": [
+ "$Bool",
+ true
+]
+},
+ "then": "PositiveReview"
+}
+ }
+}
+  },
+  "description": "",
+  "query": "db.comments.find({})",
+  "params": {
+   
+  },
+  "connectorId": "81fdaada-0374-4403-9490-e258b74dd4f4",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-28T15:26:18.411137Z",
+   "updatedAt": "2026-05-28T15:26:26.621768Z",
+   "entityCommitId": "commit-6da34f12-0d00-4472-b387-4edbbf18328a",
+   "entityType": "dataSet",
+   "entityId": "8463f20b-7aa7-44c4-abf4-ee42eb9e9550",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "81fdaada-0374-4403-9490-e258b74dd4f4",
+   "dependencyVersion": "live"
+  }
+ ]
+}

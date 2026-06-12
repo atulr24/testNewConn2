@@ -1,0 +1,1256 @@
+{
+ "entityType": "testcase",
+ "category": "rule",
+ "isList": true,
+ "dataList": [
+  {
+   "createdAt": "2026-06-12T05:17:46.331Z",
+   "updatedAt": "2026-06-12T05:19:46.683596Z",
+   "isDeleted": false,
+   "entityId": "9e270d77-3af4-471c-be07-a2db5842d368",
+   "name": "AtulTC7",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "bool": {
+ "value": false
+},
+     "name": {
+ "value": "Atul6"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value",
+  "rowError": null,
+  "rowId": 2
+ },
+ {
+  "defaultOutputData": false,
+  "result_1": "Value",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:17:46.329Z",
+   "updatedAt": "2026-06-12T05:17:46.329Z",
+   "isDeleted": false,
+   "entityId": "56d6fd71-75a3-4601-b264-963400242273",
+   "name": "AtulTC6",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "bool": {
+ "value": false
+},
+     "name": {
+ "value": "Atul5"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Test",
+  "rowId": 2
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:17:46.328Z",
+   "updatedAt": "2026-06-12T05:17:46.328Z",
+   "isDeleted": false,
+   "entityId": "088c9005-98e3-48aa-85a4-f0666fe52e87",
+   "name": "AtulTC5",
+   "group": [
+    "G2"
+   ],
+   "input": {
+    "ci": {
+     "bool": {
+ "value": false
+},
+     "name": {
+ "value": "Atul4"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Test",
+  "rowId": 2
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:17:46.326Z",
+   "updatedAt": "2026-06-12T05:17:46.326Z",
+   "isDeleted": false,
+   "entityId": "3455129b-f7df-4c49-82c8-19e542f73c46",
+   "name": "AtulTC4",
+   "group": [
+    "G2"
+   ],
+   "input": {
+    "ci": {
+     "bool": {
+ "value": true
+},
+     "name": {
+ "value": "Atul3"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Test",
+  "rowId": 2
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:17:46.324Z",
+   "updatedAt": "2026-06-12T05:17:46.324Z",
+   "isDeleted": false,
+   "entityId": "6cacfe62-f063-4f5f-b190-92ad7725f1de",
+   "name": "AtulTC3",
+   "group": [
+    "G2"
+   ],
+   "input": {
+    "ci": {
+     "bool": {
+ "value": true
+},
+     "name": {
+ "value": "Atul2"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Test",
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:17:46.322Z",
+   "updatedAt": "2026-06-12T05:17:46.322Z",
+   "isDeleted": false,
+   "entityId": "f6a0214d-3a39-4f8c-a255-0d0f516cd59c",
+   "name": "AtulTC2",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "bool": {
+ "value": true
+},
+     "name": {
+ "value": "Atul1"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Test",
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T05:17:46.32Z",
+   "updatedAt": "2026-06-12T05:17:46.32Z",
+   "isDeleted": false,
+   "entityId": "4b4f682a-f75b-4ecc-8159-0f61d8bdae66",
+   "name": "AtulTC1",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "bool": {
+ "value": true
+},
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Test",
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-11T11:49:59.177Z",
+   "updatedAt": "2026-06-11T11:49:59.177Z",
+   "isDeleted": false,
+   "entityId": "6d2699eb-9f5d-4abc-9a04-4615b469bee8",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "bool": {
+ "value": true
+},
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-11T10:58:30.812Z",
+   "updatedAt": "2026-06-11T11:01:50.55438Z",
+   "isDeleted": false,
+   "entityId": "f16fe7d1-2fe2-42bc-8645-d07e5015c32e",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": null,
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "Value"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-11T07:38:49.664Z",
+   "updatedAt": "2026-06-11T07:49:54.813654Z",
+   "isDeleted": false,
+   "entityId": "f0524193-6949-4abb-96e6-775c863e65dd",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 29
+},
+     "Date": {
+ "value": "2026-06-11"
+},
+     "List": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+},
+     "Name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T12:37:34.291Z",
+   "updatedAt": "2026-06-11T07:34:16.21203Z",
+   "isDeleted": false,
+   "entityId": "e3aca11f-04f1-4c00-91b6-88f734d6fdfc",
+   "name": "Test 5",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Atul2"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value3",
+  "rowError": null,
+  "rowId": 3
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-11T07:33:34.131Z",
+   "updatedAt": "2026-06-11T07:33:34.131Z",
+   "isDeleted": false,
+   "entityId": "d36f7c44-f4b6-48d2-ac32-beff43938ba4",
+   "name": "Test 3",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Atul2"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value3",
+  "rowError": null,
+  "rowId": 3
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T12:42:43.047Z",
+   "updatedAt": "2026-06-10T13:01:07.268331Z",
+   "isDeleted": false,
+   "entityId": "afb3860e-e9f7-4a87-a506-21e1cdbfd8d2",
+   "name": "Test 4 jshbdjchsbd sjhdbcjhsbdc sjdhbcjshdbc sdhcbjshdbcjshd csdhbc jshbdc",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Subhanshu Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum."
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value1",
+  "rowError": null,
+  "rowId": 4
+ },
+ {
+  "defaultOutputData": true,
+  "result_1": "Value",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T12:15:33.114Z",
+   "updatedAt": "2026-06-10T12:18:24.049801Z",
+   "isDeleted": false,
+   "entityId": "641fecfb-c056-436d-9792-a205a525a7e6",
+   "name": "Test3",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value3",
+  "rowError": null,
+  "rowId": 3
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T12:14:49.658Z",
+   "updatedAt": "2026-06-10T12:14:49.658Z",
+   "isDeleted": false,
+   "entityId": "e796b10d-9647-4ef2-bfa8-faa744e458aa",
+   "name": "TC1",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "result_1": "value"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T11:55:48.005Z",
+   "updatedAt": "2026-06-10T12:00:35.453451Z",
+   "isDeleted": false,
+   "entityId": "2dca29f1-2453-4113-b390-fd1e800cd2e2",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul2"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T11:56:06.332Z",
+   "updatedAt": "2026-06-10T11:56:06.332Z",
+   "isDeleted": false,
+   "entityId": "1cdd9947-244e-4935-ab3e-be4f822aac7a",
+   "name": "Test 2",
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul1"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value1",
+  "rowError": null,
+  "rowId": 2
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T10:54:41.449Z",
+   "updatedAt": "2026-06-10T11:06:31.992181Z",
+   "isDeleted": false,
+   "entityId": "36f61c6e-6c49-4022-aa33-396c2cb437cb",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": false,
+  "result_1": "gh",
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T09:37:48.989Z",
+   "updatedAt": "2026-06-10T09:37:48.989Z",
+   "isDeleted": false,
+   "entityId": "a0594fa3-048b-4271-a172-67452a68e9b4",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": false,
+  "result_1": "Value",
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T09:36:13.277Z",
+   "updatedAt": "2026-06-10T09:36:13.277Z",
+   "isDeleted": false,
+   "entityId": "c68d6a31-b2ed-48e9-8659-0335f6cc1979",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "output": [
+ {
+  "defaultOutputData": false,
+  "key_name_1": "Value"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-09T12:41:49.459Z",
+   "updatedAt": "2026-06-10T05:14:26.437713Z",
+   "isDeleted": false,
+   "entityId": "92cb3dc5-4f24-43f7-8e65-0b493bf9ee88",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 29
+},
+     "CusmInfo": {
+ "value": {
+  "Salary": 1000
+ }
+},
+     "Date": {
+ "value": "2026-06-09"
+},
+     "DateTime": {
+ "value": "2026-06-10T00:00:00+05:30"
+},
+     "List": {
+ "value": [
+  "Atul",
+  "Raizada"
+ ]
+},
+     "name": {
+ "value": "Atul1"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Row1",
+  "result_2": 12,
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-10T05:14:26.428Z",
+   "updatedAt": "2026-06-10T05:14:26.428Z",
+   "isDeleted": false,
+   "entityId": "bb529244-2375-4d1e-8128-5f5fdbe548e8",
+   "name": "Test 2",
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 29
+},
+     "CusmInfo": {
+ "value": {
+  "Salary": 1000
+ }
+},
+     "Date": {
+ "value": "2026-06-09"
+},
+     "DateTime": {
+ "value": "2026-06-10T00:00:00+05:30"
+},
+     "List": {
+ "value": [
+  "Atul",
+  "Raizada"
+ ]
+},
+     "name": {
+ "value": "Atul1"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Row1",
+  "result_2": 12,
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-09T11:21:01.171Z",
+   "updatedAt": "2026-06-09T11:27:04.172358Z",
+   "isDeleted": false,
+   "entityId": "376cc0c0-acb2-484f-9f60-ffb61298a669",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "list": {
+ "value": [
+  1,
+  2,
+  3,
+  4
+ ]
+},
+     "name": {
+ "value": "s"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "s",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-09T10:36:57.811Z",
+   "updatedAt": "2026-06-09T10:36:57.811Z",
+   "isDeleted": false,
+   "entityId": "63c2f4e0-e078-4746-90b3-727a56e240e5",
+   "name": "Test4",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Raizada"
+},
+     "Names": {
+ "value": "atul"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ "result_1": {
+ "notSend": false,
+ "sendNull": false,
+ "value": "Test"
+}
+},
+    "output": [
+ {
+  "Names": "Atul",
+  "result_1": "Test"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-09T10:35:36.256Z",
+   "updatedAt": "2026-06-09T10:35:45.476169Z",
+   "isDeleted": false,
+   "entityId": "6a397e33-1585-4a0f-a172-0a726f923889",
+   "name": "Test 3",
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "atul"
+},
+     "Names": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-09T10:34:39.506Z",
+   "updatedAt": "2026-06-09T10:34:39.506Z",
+   "isDeleted": false,
+   "entityId": "bace4c80-0970-41de-bd25-96d6248abb6f",
+   "name": "Test 2",
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Raizada"
+},
+     "Names": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ "result_1": "sd"
+},
+    "output": [
+ {
+  "Names": "asd",
+  "defaultOutputData": true,
+  "result_1": "asd",
+  "rowError": null
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-09T09:52:40.609Z",
+   "updatedAt": "2026-06-09T09:59:00.426455Z",
+   "isDeleted": false,
+   "entityId": "53cd7aa1-e4e8-441d-926f-e089e7e6626e",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul"
+},
+     "Names": {
+ "value": "Raizada"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ "result_1": "asd"
+},
+    "output": [
+ {
+  "Names": "sd",
+  "defaultOutputData": true,
+  "result_1": "2",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-09T09:09:38.614Z",
+   "updatedAt": "2026-06-09T09:13:57.968084Z",
+   "isDeleted": false,
+   "entityId": "453d8ff5-a750-462f-b9d4-93dbc50f515e",
+   "name": "Test 2",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Afds"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": false,
+  "result_1": "we",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-09T09:13:57.96Z",
+   "updatedAt": "2026-06-09T09:13:57.96Z",
+   "isDeleted": false,
+   "entityId": "eec84342-43c9-483d-b66d-a5590ca05154",
+   "name": "Test 3",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Afds"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": false,
+  "result_1": "we",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-09T07:47:32.608Z",
+   "updatedAt": "2026-06-09T09:09:38.62226Z",
+   "isDeleted": false,
+   "entityId": "11900fc4-a89c-4b70-9d7c-c1cbab2c676f",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Atmuk"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": false,
+  "result_1": "sd",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-05T13:13:44.917Z",
+   "updatedAt": "2026-06-05T13:18:24.64238Z",
+   "isDeleted": false,
+   "entityId": "3b20b646-2242-4928-9a82-f6162753cd21",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul"
+},
+     "json": {
+ "value": {
+  "Age": "20"
+ }
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": {
+ "Name": 20
+},
+  "result_2": "Atul",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-05T13:05:19.095Z",
+   "updatedAt": "2026-06-05T13:05:24.114911Z",
+   "isDeleted": false,
+   "entityId": "02d09f2d-6222-4dc7-9250-b0354079ee06",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "last": {
+ "value": "Raizada"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": {
+ 
+},
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-05T12:12:37.22Z",
+   "updatedAt": "2026-06-05T12:47:23.071406Z",
+   "isDeleted": false,
+   "entityId": "b435156c-04b0-4d4e-acc2-262775b9edfa",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Bool": {
+ "value": true
+},
+     "List": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+},
+     "json": {
+ "value": {
+  "name": "Raizada"
+ }
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": {
+ "Name": "Atul"
+},
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-05T11:06:10.592Z",
+   "updatedAt": "2026-06-05T11:40:02.959321Z",
+   "isDeleted": false,
+   "entityId": "603c00b0-57dc-48fb-a7c8-9e194e9da4f5",
+   "name": "Test 3",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 30
+},
+     "Date": {
+ "value": "2026-06-05"
+},
+     "Name": {
+ "value": "Raizada"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "last match",
+  "result_2": 2,
+  "result_3": "Value",
+  "result_4": "var a=\"atu\";a;",
+  "rowError": null,
+  "rowId": 2
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-05T10:55:40.849Z",
+   "updatedAt": "2026-06-05T11:34:03.243547Z",
+   "isDeleted": false,
+   "entityId": "702d8ced-ad81-40cc-b0dd-e4481ba692a9",
+   "name": "Test 1",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 29
+},
+     "Date": {
+ "value": "2026-06-05"
+},
+     "Name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Name match",
+  "result_2": 1,
+  "result_3": "Value",
+  "rowError": null,
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-04T06:48:47.057Z",
+   "updatedAt": "2026-06-04T06:48:47.057Z",
+   "isDeleted": false,
+   "entityId": "c734ef74-1fba-4c9a-bcc7-8f70cd36a432",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": null,
+    "output": [
+ {
+  "defaultOutputData": false,
+  "key_name_1": "match"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-04T06:08:30.58Z",
+   "updatedAt": "2026-06-04T06:13:51.202329Z",
+   "isDeleted": false,
+   "entityId": "71c0afef-d711-49ac-acd0-def42e3159ab",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": null,
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Name Matched",
+  "rowId": 1
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-03T04:30:50.352Z",
+   "updatedAt": "2026-06-03T04:30:50.352Z",
+   "isDeleted": false,
+   "entityId": "25c385d7-1a96-4ec2-a26b-8b5ecea43f4c",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "gh"
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "addOutput": null,
+    "output": []
+   }
+  }
+ ]
+}

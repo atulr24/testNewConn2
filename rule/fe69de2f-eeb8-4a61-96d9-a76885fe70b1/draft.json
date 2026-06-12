@@ -1,0 +1,255 @@
+{
+ "entityType": "rule",
+ "category": "ruleSet",
+ "data": {
+  "createdAt": "2026-05-28T16:34:00.851Z",
+  "updatedAt": "2026-05-28T16:34:00.851Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "fe69de2f-eeb8-4a61-96d9-a76885fe70b1",
+  "version": "draft",
+  "name": "valRS",
+  "commitId": "commit-932c845b-7808-4f1c-b41d-36700e0aa9a3",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-05-28 16:34:00",
+   "timeStamp": "2026-05-28T16:34:00.851606825Z"
+  },
+  "customInput": {
+   "age": {
+ "name": "age",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 30,
+ "config": null,
+ "value": null,
+ "next": "loanAmt",
+ "previous": "nationality",
+ "schemaId": ""
+},
+   "duration": {
+ "name": "duration",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 24,
+ "config": null,
+ "value": null,
+ "next": "finalPmt",
+ "previous": "fuel",
+ "schemaId": ""
+},
+   "finalPmt": {
+ "name": "finalPmt",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 0.6,
+ "config": null,
+ "value": null,
+ "next": "financer",
+ "previous": "duration",
+ "schemaId": ""
+},
+   "financer": {
+ "name": "financer",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "HCF",
+ "config": null,
+ "value": null,
+ "next": "nationality",
+ "previous": "finalPmt",
+ "schemaId": ""
+},
+   "fuel": {
+ "name": "fuel",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "petrol",
+ "config": null,
+ "value": null,
+ "next": "duration",
+ "previous": "",
+ "schemaId": ""
+},
+   "loanAmt": {
+ "name": "loanAmt",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 75001,
+ "config": null,
+ "value": null,
+ "next": "",
+ "previous": "age",
+ "schemaId": ""
+},
+   "nationality": {
+ "name": "nationality",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "Netherlands",
+ "config": null,
+ "value": null,
+ "next": "age",
+ "previous": "financer",
+ "schemaId": ""
+}
+  },
+  "ruleChain": {
+   "d6932987-b340-4206-b5b2-5ef793779d10": {
+ "prevRuleId": "d9ab0ae8-d226-4961-9588-868696f2fe8a",
+ "nextRuleId": "",
+ "isEnabled": true
+},
+   "d9ab0ae8-d226-4961-9588-868696f2fe8a": {
+ "prevRuleId": "e50ac617-4ef5-4017-ba27-0a542833b6f6",
+ "nextRuleId": "d6932987-b340-4206-b5b2-5ef793779d10",
+ "isEnabled": true
+},
+   "e50ac617-4ef5-4017-ba27-0a542833b6f6": {
+ "prevRuleId": "",
+ "nextRuleId": "d9ab0ae8-d226-4961-9588-868696f2fe8a",
+ "isEnabled": true
+}
+  },
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": null,
+   "startNode": ""
+  },
+  "firstCustomInput": "fuel",
+  "firstRuleChain": "e50ac617-4ef5-4017-ba27-0a542833b6f6",
+  "ruleSetPolicy": "evaluteAll",
+  "description": "",
+  "policy": "",
+  "comment": "",
+  "type": "ruleSet",
+  "dataSetId": null,
+  "ruleSet": [
+   "e50ac617-4ef5-4017-ba27-0a542833b6f6",
+   "d9ab0ae8-d226-4961-9588-868696f2fe8a",
+   "d6932987-b340-4206-b5b2-5ef793779d10"
+  ],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": ""
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-28T16:34:00.896272Z",
+   "updatedAt": "2026-05-28T16:34:00.896272Z",
+   "entityCommitId": "commit-932c845b-7808-4f1c-b41d-36700e0aa9a3",
+   "entityType": "rule",
+   "entityId": "fe69de2f-eeb8-4a61-96d9-a76885fe70b1",
+   "entityVersion": "draft",
+   "entityNodeId": "d6932987-b340-4206-b5b2-5ef793779d10",
+   "dependencyType": "rule",
+   "dependencyId": "d6932987-b340-4206-b5b2-5ef793779d10",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-28T16:34:00.859119Z",
+   "updatedAt": "2026-05-28T16:34:00.859119Z",
+   "entityCommitId": "commit-932c845b-7808-4f1c-b41d-36700e0aa9a3",
+   "entityType": "rule",
+   "entityId": "fe69de2f-eeb8-4a61-96d9-a76885fe70b1",
+   "entityVersion": "draft",
+   "entityNodeId": "d9ab0ae8-d226-4961-9588-868696f2fe8a",
+   "dependencyType": "rule",
+   "dependencyId": "d9ab0ae8-d226-4961-9588-868696f2fe8a",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-28T16:34:00.856986Z",
+   "updatedAt": "2026-05-28T16:34:00.856986Z",
+   "entityCommitId": "commit-932c845b-7808-4f1c-b41d-36700e0aa9a3",
+   "entityType": "rule",
+   "entityId": "fe69de2f-eeb8-4a61-96d9-a76885fe70b1",
+   "entityVersion": "draft",
+   "entityNodeId": "e50ac617-4ef5-4017-ba27-0a542833b6f6",
+   "dependencyType": "rule",
+   "dependencyId": "e50ac617-4ef5-4017-ba27-0a542833b6f6",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

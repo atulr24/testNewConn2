@@ -1,0 +1,80 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "createdAt": "2026-06-03T09:59:28.468Z",
+  "updatedAt": "2026-06-03T09:59:28.468Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "16d15ba9-19fb-4d64-8735-0f6e22b30092",
+  "version": "draft",
+  "name": "wf1230",
+  "commitId": "commit-2f31641e-bf89-48b5-a5f5-022e8127a106",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-06-03 09:59:28",
+   "timeStamp": "2026-06-03T09:59:28.468653139Z"
+  },
+  "startNode": "",
+  "description": "",
+  "trigger": {
+   "apiNode": "",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "",
+    "id": "1",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": {
+      "authType": "none",
+      "isEnabled": true
+     },
+     "nodeType": "addNodeLg",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": null,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ }
+}

@@ -1,0 +1,1139 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "createdAt": "2026-06-03T11:08:33.985Z",
+  "updatedAt": "2026-06-10T13:25:18.262083Z",
+  "isDeleted": false,
+  "testedAt": "2026-06-03T13:37:22.298Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "d910f364-ba6f-4b86-b7f7-3e80712816c9",
+  "version": "draft",
+  "name": "ageValWf",
+  "commitId": "commit-c663009f-70e7-4060-9b49-438640028d63",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-06-03 11:08:33",
+   "timeStamp": "2026-06-03T11:08:33.985055819Z"
+  },
+  "startNode": "n_CrAsjA",
+  "description": "",
+  "trigger": {
+   "apiNode": "1",
+   "cronNode": ""
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 0
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "age": {
+ "value": null,
+ "executedValue": 25,
+ "name": "age",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "json": {
+ "value": null,
+ "executedValue": {
+  "LastName2": "Raizada2",
+  "Name2": "Atul2"
+ },
+ "name": "json",
+ "dataType": "json",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": "3539332e-0f49-48f2-b9da-908013e01d2f"
+}
+     },
+     "output": null,
+     "executedValue": {
+      "age": 25,
+      "json": {
+ "LastName2": "Raizada2",
+ "Name2": "Atul2"
+}
+     },
+     "settings": {
+      "authType": "private",
+      "cacheEnabled": false,
+      "cacheKeys": "",
+      "durationUnit": "d",
+      "durationValue": 0,
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "Trigger",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 130
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "2",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 895
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_eMMiHN",
+    "type": "rule",
+    "data": {
+     "input": {
+      "json": {
+ "value": {
+  
+ },
+ "executedValue": null,
+ "name": "json",
+ "dataType": "json",
+ "source": "Trigger",
+ "attribute": "json",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": "3539332e-0f49-48f2-b9da-908013e01d2f"
+},
+      "name": {
+ "value": "Atul",
+ "executedValue": null,
+ "name": "name",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "action": null,
+      "additionalOutput": {
+ 
+},
+      "error": "",
+      "executionTime": "781µs",
+      "name": "TestDT",
+      "output": [],
+      "ruleId": "fbfd5522-0dc0-4713-85f2-253a1be5cf31",
+      "version": "draft",
+      "warnings": []
+     },
+     "settings": {
+      "actionInSync": false,
+      "errorContinue": false,
+      "runAction": false,
+      "timeout": 10,
+      "timeoutAsync": 20
+     },
+     "nodeType": "dtNode",
+     "entity": "rule",
+     "entityId": "fbfd5522-0dc0-4713-85f2-253a1be5cf31",
+     "pluginName": "",
+     "status": "success",
+     "name": "TestDT",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "decisionTable",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 1025
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_a0nBfe",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 485
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_qOYlwM",
+    "type": "rule",
+    "data": {
+     "input": {
+      "age": {
+ "value": null,
+ "executedValue": null,
+ "name": "age",
+ "dataType": "numeric",
+ "source": "globalVar",
+ "attribute": "globalAge",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "json": {
+ "value": {
+  
+ },
+ "executedValue": null,
+ "name": "json",
+ "dataType": "json",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": "3539332e-0f49-48f2-b9da-908013e01d2f"
+},
+      "name": {
+ "value": "",
+ "executedValue": null,
+ "name": "name",
+ "dataType": "string",
+ "source": "SwitchBlock",
+ "attribute": "output.path",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "salary": {
+ "value": null,
+ "executedValue": null,
+ "name": "salary",
+ "dataType": "numeric",
+ "source": "globalVar",
+ "attribute": "four",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "action": null,
+      "additionalOutput": {
+ 
+},
+      "error": "",
+      "executionTime": "2ms",
+      "name": "mainDT",
+      "output": [
+ {
+  "defaultOutputData": true,
+  "rowError": null,
+  "rowId": 3,
+  "status": "entry",
+  "tier": "D"
+ }
+],
+      "ruleId": "39f81be0-5ab9-4887-a682-351c6fd13bcf",
+      "version": "draft",
+      "warnings": []
+     },
+     "settings": {
+      "actionInSync": false,
+      "errorContinue": false,
+      "runAction": false,
+      "timeout": 10,
+      "timeoutAsync": 20
+     },
+     "nodeType": "dtNode",
+     "entity": "rule",
+     "entityId": "39f81be0-5ab9-4887-a682-351c6fd13bcf",
+     "pluginName": "",
+     "status": "success",
+     "name": "mainDT",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "decisionTable",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 615
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_pdfrol",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 690
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_Xdk41b",
+    "type": "rule",
+    "data": {
+     "input": {
+      "age": {
+ "value": 23,
+ "executedValue": null,
+ "name": "age",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "json": {
+ "value": {
+  
+ },
+ "executedValue": null,
+ "name": "json",
+ "dataType": "json",
+ "source": "Trigger",
+ "attribute": "json",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": "3539332e-0f49-48f2-b9da-908013e01d2f"
+},
+      "name": {
+ "value": "ddddwwwed",
+ "executedValue": null,
+ "name": "name",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "salary": {
+ "value": 2323,
+ "executedValue": null,
+ "name": "salary",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "action": null,
+      "additionalOutput": {
+ 
+},
+      "error": "",
+      "executionTime": "2ms",
+      "name": "mainDT",
+      "output": [
+ {
+  "defaultOutputData": true,
+  "rowError": null,
+  "rowId": 5,
+  "status": "entry",
+  "tier": "C"
+ }
+],
+      "ruleId": "39f81be0-5ab9-4887-a682-351c6fd13bcf",
+      "version": "draft",
+      "warnings": []
+     },
+     "settings": {
+      "actionInSync": false,
+      "errorContinue": false,
+      "runAction": false,
+      "timeout": 10,
+      "timeoutAsync": 20
+     },
+     "nodeType": "dtNode",
+     "entity": "rule",
+     "entityId": "39f81be0-5ab9-4887-a682-351c6fd13bcf",
+     "pluginName": "",
+     "status": "success",
+     "name": "mainDT1",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "decisionTable",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 820
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_kdhF3W",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_CrAsjA",
+    "type": "switchNode",
+    "data": {
+     "input": {
+      "defaultPath": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "switchNode",
+     "entity": "switch",
+     "entityId": "n_CrAsjA",
+     "pluginName": "",
+     "status": "",
+     "name": "SwitchBlock",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": [
+      {
+       "name": "Path",
+       "pathId": "g_waFN2g"
+      }
+     ],
+     "conditions": {
+      "nodes": {
+ "c_NxDFfy": {
+ "dataType": "",
+ "leftNode": [
+ "lhs_Xpi6Gv"
+],
+ "nodeType": "condition",
+ "operator": "any",
+ "parent": "g_waFN2g",
+ "rightNode": []
+},
+ "g_waFN2g": {
+ "children": [
+ "c_NxDFfy"
+],
+ "name": "Path",
+ "nodeType": "group",
+ "operator": ""
+},
+ "lhs_Xpi6Gv": {
+ "attribute": "",
+ "dataType": "",
+ "nodeType": "params",
+ "parent": "c_NxDFfy",
+ "sourceType": ""
+}
+}
+     },
+     "blockName": "switchBlock",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 445.60186767578125,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_s5Um69",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_CrAsjA",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 675.6018676757812,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_g2VaS6",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_CrAsjA",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 410
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_3tuyMx",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_CrAsjA",
+     "sourceId": null,
+     "isMergeNode": true,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   }
+  ],
+  "edges": [
+   {
+    "style": null,
+    "id": "1",
+    "markerEnd": "",
+    "label": "",
+    "source": "1",
+    "target": "2",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_cDO23z",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_eMMiHN",
+    "target": "n_a0nBfe",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_jQZBeo",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_qOYlwM",
+    "target": "n_pdfrol",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_7wRuiN",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_kdhF3W",
+    "target": "n_eMMiHN",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "source_JDLV1W",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_DcKPSL",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_Xdk41b",
+    "target": "n_kdhF3W",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_gwkVU1",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_pdfrol",
+    "target": "n_Xdk41b",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_E36r8r",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_3tuyMx",
+    "target": "n_qOYlwM",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": null,
+    "id": "e_Pbv9hq",
+    "markerEnd": "",
+    "label": "",
+    "source": "2",
+    "target": "n_CrAsjA",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_d6l1N7",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_CrAsjA",
+    "target": "n_s5Um69",
+    "data": {
+     "edgeType": "case",
+     "pathId": "g_waFN2g"
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_wPUno7",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_CrAsjA",
+    "target": "n_g2VaS6",
+    "data": {
+     "edgeType": "defaultCase",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_H90jgY",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_s5Um69",
+    "target": "n_3tuyMx",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_DAT98r",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_g2VaS6",
+    "target": "n_3tuyMx",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "auditIO": false,
+   "timezone": "UTC",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0
+  },
+  "comment": "",
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-03T11:11:03.898687Z",
+   "updatedAt": "2026-06-10T13:25:18.280372Z",
+   "entityCommitId": "commit-c663009f-70e7-4060-9b49-438640028d63",
+   "entityType": "workflow",
+   "entityId": "d910f364-ba6f-4b86-b7f7-3e80712816c9",
+   "entityVersion": "draft",
+   "entityNodeId": "3539332e-0f49-48f2-b9da-908013e01d2f",
+   "dependencyType": "module_schema",
+   "dependencyId": "3539332e-0f49-48f2-b9da-908013e01d2f",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-03T13:30:52.893419Z",
+   "updatedAt": "2026-06-10T13:25:18.279441Z",
+   "entityCommitId": "commit-c663009f-70e7-4060-9b49-438640028d63",
+   "entityType": "workflow",
+   "entityId": "d910f364-ba6f-4b86-b7f7-3e80712816c9",
+   "entityVersion": "draft",
+   "entityNodeId": "four",
+   "dependencyType": "variable",
+   "dependencyId": "92eb9bd8-7caf-44fa-8091-eef0ab353d83",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-03T13:30:52.894092Z",
+   "updatedAt": "2026-06-10T13:25:18.27847Z",
+   "entityCommitId": "commit-c663009f-70e7-4060-9b49-438640028d63",
+   "entityType": "workflow",
+   "entityId": "d910f364-ba6f-4b86-b7f7-3e80712816c9",
+   "entityVersion": "draft",
+   "entityNodeId": "globalAge",
+   "dependencyType": "variable",
+   "dependencyId": "92ee6fd7-e469-4487-b9c3-1e39a686f6d6",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-03T11:11:09.344383Z",
+   "updatedAt": "2026-06-10T13:25:18.277532Z",
+   "entityCommitId": "commit-c663009f-70e7-4060-9b49-438640028d63",
+   "entityType": "workflow",
+   "entityId": "d910f364-ba6f-4b86-b7f7-3e80712816c9",
+   "entityVersion": "draft",
+   "entityNodeId": "n_eMMiHN",
+   "dependencyType": "rule",
+   "dependencyId": "fbfd5522-0dc0-4713-85f2-253a1be5cf31",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-03T13:30:37.956917Z",
+   "updatedAt": "2026-06-10T13:25:18.276576Z",
+   "entityCommitId": "commit-c663009f-70e7-4060-9b49-438640028d63",
+   "entityType": "workflow",
+   "entityId": "d910f364-ba6f-4b86-b7f7-3e80712816c9",
+   "entityVersion": "draft",
+   "entityNodeId": "n_qOYlwM",
+   "dependencyType": "rule",
+   "dependencyId": "39f81be0-5ab9-4887-a682-351c6fd13bcf",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-03T13:37:02.550363Z",
+   "updatedAt": "2026-06-10T13:25:18.2752Z",
+   "entityCommitId": "commit-c663009f-70e7-4060-9b49-438640028d63",
+   "entityType": "workflow",
+   "entityId": "d910f364-ba6f-4b86-b7f7-3e80712816c9",
+   "entityVersion": "draft",
+   "entityNodeId": "n_Xdk41b",
+   "dependencyType": "rule",
+   "dependencyId": "39f81be0-5ab9-4887-a682-351c6fd13bcf",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

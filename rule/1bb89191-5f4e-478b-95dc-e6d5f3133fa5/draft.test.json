@@ -1,0 +1,551 @@
+{
+ "entityType": "testcase",
+ "category": "rule",
+ "isList": true,
+ "dataList": [
+  {
+   "createdAt": "2026-06-15T06:55:55.506Z",
+   "updatedAt": "2026-06-15T06:55:55.506Z",
+   "isDeleted": false,
+   "entityId": "5fdbbb1a-9533-44c3-af60-ab7d7b3eb95d",
+   "name": "Test 3",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul2"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": false,
+  "rowId": 1
+ },
+ {
+  "defaultOutputData": false,
+  "rowId": 2
+ },
+ {
+  "defaultOutputData": true,
+  "result_1": "Value3",
+  "rowId": 3
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-15T06:52:39.259Z",
+   "updatedAt": "2026-06-15T06:52:39.259Z",
+   "isDeleted": false,
+   "entityId": "f847c2e6-33a9-4f06-b1b8-ddcfc1fde8e3",
+   "name": "Test 2",
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Raizada"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": false,
+  "rowError": null,
+  "rowId": 1
+ },
+ {
+  "defaultOutputData": true,
+  "result_1": "Value2",
+  "rowError": null,
+  "rowId": 2
+ },
+ {
+  "defaultOutputData": false,
+  "rowError": null,
+  "rowId": 3
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-15T06:48:59.494Z",
+   "updatedAt": "2026-06-15T06:51:51.218023Z",
+   "isDeleted": false,
+   "entityId": "d0222841-b45c-4b8d-bcd6-a487bf5babb4",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value1",
+  "rowError": null,
+  "rowId": 1
+ },
+ {
+  "defaultOutputData": false,
+  "rowError": null,
+  "rowId": 2
+ },
+ {
+  "defaultOutputData": false,
+  "rowError": null,
+  "rowId": 3
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-15T06:15:50.97Z",
+   "updatedAt": "2026-06-15T06:44:06.897892Z",
+   "isDeleted": false,
+   "entityId": "00742d4e-0929-4261-8c4c-041c6f574496",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "bool": {
+ "value": false
+},
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "result_1": "Value",
+  "rowError": null,
+  "rowId": 1
+ },
+ {
+  "defaultOutputData": false,
+  "rowError": null,
+  "rowId": 2
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T12:40:50.792Z",
+   "updatedAt": "2026-06-12T12:40:50.792Z",
+   "isDeleted": false,
+   "entityId": "393973f2-42c2-48ce-835b-3dac6ab0e36c",
+   "name": "TC9",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "name": {
+ "value": "AtulNEww21"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "Pass"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T12:40:13.188Z",
+   "updatedAt": "2026-06-12T12:40:13.188Z",
+   "isDeleted": false,
+   "entityId": "959efc3d-824e-4f6c-8e74-7d854b5c23d1",
+   "name": "Manual",
+   "input": {
+    "ci": {
+     "name": {
+ "value": "Atuk"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": null,
+    "output": [
+ {
+  "defaultOutputData": false,
+  "key_name_1": "dfs"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T12:39:06.949Z",
+   "updatedAt": "2026-06-12T12:39:06.949Z",
+   "isDeleted": false,
+   "entityId": "bb0ce2b9-128f-48ad-8277-399e2d0ab724",
+   "name": "TC4",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "name": {
+ "value": "AtulNEww21"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": false,
+  "key_name_1": "Fail"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T12:31:23.949Z",
+   "updatedAt": "2026-06-12T12:39:06.947378Z",
+   "isDeleted": false,
+   "entityId": "78d90ff9-e681-47a9-a244-1268d65eb6bf",
+   "name": "TC3",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "name": {
+ "value": "AtulNEww21"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "Pass"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T10:20:22.835Z",
+   "updatedAt": "2026-06-12T10:20:37.265141Z",
+   "isDeleted": false,
+   "entityId": "8604fa1e-7497-410b-91c3-a7553ead1730",
+   "name": "TC_1",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": null,
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": [
+ {
+  "email": "john@example.com",
+  "id": 1,
+  "name": "John"
+ },
+ {
+  "email": "jane@example.com",
+  "id": 2,
+  "name": "Jane"
+ },
+ {
+  "email": "mike@example.com",
+  "id": 3,
+  "name": "Mike"
+ }
+]
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T10:20:22.837Z",
+   "updatedAt": "2026-06-12T10:20:22.837Z",
+   "isDeleted": false,
+   "entityId": "1465e67c-d11c-4c17-886f-cdcd446d8b9c",
+   "name": "TC_2",
+   "group": [
+    "G2"
+   ],
+   "input": {
+    "ci": {
+     "Name": {
+ "value": "Raizada"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "key_name_1": "\"Atul\",\"Raizada\""
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T10:10:45.235Z",
+   "updatedAt": "2026-06-12T10:16:21.500039Z",
+   "isDeleted": false,
+   "entityId": "6941e058-c617-46ed-90ff-8cb16422aba8",
+   "name": "Tc3",
+   "group": [
+    "F6"
+   ],
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 29
+},
+     "Date": {
+ "value": "29-11-sadsad"
+},
+     "DateTime": {
+ "value": "2026-06-12T15:19:23+05:30"
+},
+     "List": {
+ "value": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ]
+},
+     "bool": {
+ "value": true
+},
+     "json": {
+ "value": {
+  "Nameasdasd": "Atul"
+ }
+},
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": null,
+    "output": [
+ {
+  "defaultOutputData": false,
+  "key_name_1": "\"asdasda\"",
+  "key_name_2": 23.3,
+  "key_name_3": "12-06-2026",
+  "key_name_4": "2026-06-sds",
+  "key_name_5": [
+ 13,
+ 5
+],
+  "key_name_6": {
+ "Name": "Atul"
+}
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-12T10:03:32.525Z",
+   "updatedAt": "2026-06-12T10:05:05.382731Z",
+   "isDeleted": false,
+   "entityId": "9a1005f7-e101-4352-b619-8c774569cf26",
+   "name": "Tc2",
+   "group": [
+    "F6"
+   ],
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 29
+},
+     "Date": {
+ "value": "29-11-2026"
+},
+     "DateTime": {
+ "value": "2026-06-12T15:19:23+05:30"
+},
+     "List": {
+ "value": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ]
+},
+     "bool": {
+ "value": true
+},
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": null,
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "Value1",
+  "key_name_2": 0,
+  "key_name_3": "12-06-2026",
+  "key_name_4": "2026-06-12T15:19:23+05:30",
+  "key_name_5": [
+ 13,
+ 5
+],
+  "key_name_6": {
+ "Name": "Atul"
+}
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-11T10:58:30.812Z",
+   "updatedAt": "2026-06-12T09:53:00.549189Z",
+   "isDeleted": false,
+   "entityId": "f16fe7d1-2fe2-42bc-8645-d07e5015c32e",
+   "name": "Test 1",
+   "input": {
+    "ci": {
+     "Age": {
+ "value": 29
+},
+     "Date": {
+ "value": "2026-06-12"
+},
+     "DateTime": {
+ "value": "2026-06-12T15:19:23+05:30"
+},
+     "List": {
+ "value": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ]
+},
+     "bool": {
+ "value": false
+},
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": null,
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "Value1",
+  "key_name_2": 0,
+  "key_name_3": "2026-06-12",
+  "key_name_4": "2026-06-12T15:19:23+05:30",
+  "key_name_5": [
+ 13,
+ 5
+],
+  "key_name_6": {
+ "Name": "Atul"
+}
+ }
+]
+   }
+  }
+ ]
+}

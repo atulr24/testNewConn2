@@ -3,9 +3,9 @@
  "category": "simpleRule",
  "data": {
   "createdAt": "2026-06-11T10:57:16.485Z",
-  "updatedAt": "2026-06-11T11:01:23.930369Z",
+  "updatedAt": "2026-06-12T10:11:42.749339Z",
   "isDeleted": false,
-  "testedAt": "2026-06-11T10:58:45.078Z",
+  "testedAt": "2026-06-12T09:17:55.249Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "57ba9395-1e68-4e6f-ac4d-709f16816604",
   "version": "draft",
@@ -19,6 +19,104 @@
    "timeStamp": "2026-06-11T10:57:16.485152878Z"
   },
   "customInput": {
+   "Age": {
+ "name": "Age",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 29,
+ "config": null,
+ "value": "",
+ "next": "Date",
+ "previous": "bool",
+ "schemaId": ""
+},
+   "Date": {
+ "name": "Date",
+ "dataType": "date",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "2026-06-12",
+ "config": null,
+ "value": "",
+ "next": "DateTime",
+ "previous": "Age",
+ "schemaId": ""
+},
+   "DateTime": {
+ "name": "DateTime",
+ "dataType": "dateTime",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "2026-06-12T02:00:00+05:30",
+ "config": null,
+ "value": "",
+ "next": "List",
+ "previous": "Date",
+ "schemaId": ""
+},
+   "List": {
+ "name": "List",
+ "dataType": "list",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "config": null,
+ "value": "",
+ "next": "json",
+ "previous": "DateTime",
+ "schemaId": ""
+},
+   "bool": {
+ "name": "bool",
+ "dataType": "boolean",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": true,
+ "config": null,
+ "value": "",
+ "next": "Age",
+ "previous": "name",
+ "schemaId": ""
+},
+   "json": {
+ "name": "json",
+ "dataType": "json",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": {
+  "Age": 20,
+  "Name": "Atul"
+ },
+ "config": null,
+ "value": "",
+ "next": "",
+ "previous": "List",
+ "schemaId": ""
+},
    "name": {
  "name": "name",
  "dataType": "string",
@@ -28,9 +126,11 @@
  "attribute": "",
  "sourceType": "",
  "executedValue": "Atul",
- "config": null,
+ "config": {
+  
+ },
  "value": "",
- "next": "",
+ "next": "bool",
  "previous": "",
  "schemaId": ""
 }
@@ -51,10 +151,123 @@
      "key_name_1": {
  "name": "key_name_1",
  "dataType": "string",
- "returnType": "string",
- "value": "Value",
+ "returnType": "",
+ "value": "Value1",
+ "next": "key_name_2",
+ "executedValue": "Value1",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "key_name_2": {
+ "name": "key_name_2",
+ "dataType": "numeric",
+ "returnType": "numeric",
+ "value": 0,
+ "next": "key_name_3",
+ "executedValue": 0,
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "key_name_3": {
+ "name": "key_name_3",
+ "dataType": "date",
+ "returnType": "date",
+ "value": "2026-06-12",
+ "next": "key_name_4",
+ "executedValue": "2026-06-12",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "key_name_4": {
+ "name": "key_name_4",
+ "dataType": "dateTime",
+ "returnType": "dateTime",
+ "value": "2026-06-12T15:19:23+05:30",
+ "next": "key_name_5",
+ "executedValue": "2026-06-12T15:19:23+05:30",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "key_name_5": {
+ "name": "key_name_5",
+ "dataType": "list",
+ "returnType": "array",
+ "value": "[1,2,3,4,5]",
+ "next": "key_name_6",
+ "executedValue": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "key_name_6": {
+ "name": "key_name_6",
+ "dataType": "json",
+ "returnType": "object",
+ "value": "{\"Name\":\"Atul\"}",
  "next": "",
- "executedValue": "Value",
+ "executedValue": {
+  "Name": "Atul"
+ },
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     "actionData_action_1": {
+ "name": "action_1",
+ "connectorId": "",
+ "entity": "rule",
+ "entityId": "be3b449f-aa0e-4634-adde-a9637e7b3eaf",
+ "pluginName": "",
+ "config": {
+  "query": ""
+ },
+ "input": {
+  "bool": {
+ "name": "bool",
+ "dataType": "boolean",
+ "source": "",
+ "attribute": "",
+ "value": false,
+ "sendNull": false,
+ "notSend": false
+},
+  "name": {
+ "name": "name",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "value": "asd",
+ "sendNull": false,
+ "notSend": false
+}
+ },
+ "next": ""
+}
+    },
+    "firstOutputData": "key_name_1",
+    "firstActionNode": "actionData_action_1"
+   },
+   "else": {
+    "outputData": {
+     "key_name_1": {
+ "name": "key_name_1",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value2",
+ "next": "",
+ "executedValue": "Value2",
  "attribute": "",
  "source": "",
  "schemaId": ""
@@ -64,16 +277,6 @@
      
     },
     "firstOutputData": "key_name_1",
-    "firstActionNode": ""
-   },
-   "else": {
-    "outputData": {
-     
-    },
-    "actionNode": {
-     
-    },
-    "firstOutputData": "",
     "firstActionNode": ""
    }
   },
@@ -189,5 +392,20 @@
   "isDemo": false,
   "warnings": [],
   "schemaVersion": "0.1.1"
- }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-12T07:32:15.277016Z",
+   "updatedAt": "2026-06-12T10:11:42.753475Z",
+   "entityCommitId": "commit-57eb076e-db48-4d20-89d9-d5a0a127af2a",
+   "entityType": "rule",
+   "entityId": "57ba9395-1e68-4e6f-ac4d-709f16816604",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_action_1",
+   "dependencyType": "rule",
+   "dependencyId": "be3b449f-aa0e-4634-adde-a9637e7b3eaf",
+   "dependencyVersion": "draft"
+  }
+ ]
 }

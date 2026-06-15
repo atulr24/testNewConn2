@@ -2,7 +2,7 @@
  "entityType": "workflow",
  "data": {
   "createdAt": "2026-05-13T12:04:20.266Z",
-  "updatedAt": "2026-05-20T11:02:28.807649Z",
+  "updatedAt": "2026-06-15T04:42:24.235457Z",
   "isDeleted": false,
   "testedAt": "2026-05-20T11:02:28.807Z",
   "publishedAt": "0001-01-01T00:00:00Z",
@@ -26,7 +26,7 @@
   "nodes": [
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 0
     },
     "style": null,
@@ -200,7 +200,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 130
     },
     "style": null,
@@ -237,7 +237,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 4045
     },
     "style": null,
@@ -380,7 +380,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 4175
     },
     "style": null,
@@ -417,7 +417,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 4250
     },
     "style": null,
@@ -828,7 +828,7 @@
    },
    {
     "position": {
-     "x": 33.046875,
+     "x": 100.60186767578125,
      "y": 4380
     },
     "style": null,
@@ -865,7 +865,7 @@
    },
    {
     "position": {
-     "x": 263.046875,
+     "x": 330.60186767578125,
      "y": 4380
     },
     "style": null,
@@ -902,7 +902,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 4455
     },
     "style": null,
@@ -939,7 +939,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 4380
     },
     "style": null,
@@ -976,7 +976,7 @@
    },
    {
     "position": {
-     "x": 723.046875,
+     "x": 790.6018676757812,
      "y": 4380
     },
     "style": null,
@@ -1013,7 +1013,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 2460
     },
     "style": null,
@@ -1191,7 +1191,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 2590
     },
     "style": null,
@@ -1228,7 +1228,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1640
     },
     "style": null,
@@ -1440,7 +1440,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1770
     },
     "style": null,
@@ -1477,7 +1477,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1845
     },
     "style": null,
@@ -1837,7 +1837,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1975
     },
     "style": null,
@@ -1874,7 +1874,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 2255
     },
     "style": null,
@@ -2215,7 +2215,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 2385
     },
     "style": null,
@@ -2252,7 +2252,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 2050
     },
     "style": null,
@@ -2597,7 +2597,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 2180
     },
     "style": null,
@@ -2634,7 +2634,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 5015
     },
     "style": null,
@@ -2712,7 +2712,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 5145
     },
     "style": null,
@@ -2749,7 +2749,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 4530
     },
     "style": null,
@@ -2910,7 +2910,7 @@
    },
    {
     "position": {
-     "x": 378.046875,
+     "x": 445.60186767578125,
      "y": 4660
     },
     "style": null,
@@ -2947,7 +2947,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 4940
     },
     "style": null,
@@ -2984,7 +2984,7 @@
    },
    {
     "position": {
-     "x": 608.046875,
+     "x": 675.6018676757812,
      "y": 4865
     },
     "style": null,
@@ -3021,7 +3021,7 @@
    },
    {
     "position": {
-     "x": 378.046875,
+     "x": 445.60186767578125,
      "y": 4735
     },
     "style": null,
@@ -3194,7 +3194,7 @@
    },
    {
     "position": {
-     "x": 378.046875,
+     "x": 445.60186767578125,
      "y": 4865
     },
     "style": null,
@@ -3231,7 +3231,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 5220
     },
     "style": null,
@@ -3435,7 +3435,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 5350
     },
     "style": null,
@@ -3472,7 +3472,7 @@
    },
    {
     "position": {
-     "x": 953.046875,
+     "x": 1020.6018676757812,
      "y": 4380
     },
     "style": null,
@@ -3509,7 +3509,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 2665
     },
     "style": null,
@@ -3576,7 +3576,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 2795
     },
     "style": null,
@@ -3613,7 +3613,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 3075
     },
     "style": null,
@@ -3692,7 +3692,7 @@
    },
    {
     "position": {
-     "x": 378.046875,
+     "x": 445.60186767578125,
      "y": 3205
     },
     "style": null,
@@ -3729,7 +3729,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 3970
     },
     "style": null,
@@ -3766,7 +3766,7 @@
    },
    {
     "position": {
-     "x": 670.546875,
+     "x": 738.1018676757812,
      "y": 3895
     },
     "style": null,
@@ -3803,7 +3803,7 @@
    },
    {
     "position": {
-     "x": 378.046875,
+     "x": 445.60186767578125,
      "y": 3280
     },
     "style": null,
@@ -3960,7 +3960,7 @@
    },
    {
     "position": {
-     "x": 378.046875,
+     "x": 445.60186767578125,
      "y": 3410
     },
     "style": null,
@@ -3997,7 +3997,7 @@
    },
    {
     "position": {
-     "x": 378.046875,
+     "x": 445.60186767578125,
      "y": 3485
     },
     "style": null,
@@ -4107,7 +4107,7 @@
    },
    {
     "position": {
-     "x": 263.046875,
+     "x": 330.60186767578125,
      "y": 3615
     },
     "style": null,
@@ -4144,7 +4144,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 3820
     },
     "style": null,
@@ -4181,7 +4181,7 @@
    },
    {
     "position": {
-     "x": 378.046875,
+     "x": 445.60186767578125,
      "y": 3895
     },
     "style": null,
@@ -4218,7 +4218,7 @@
    },
    {
     "position": {
-     "x": 263.046875,
+     "x": 330.60186767578125,
      "y": 3690
     },
     "style": null,
@@ -4285,7 +4285,7 @@
    },
    {
     "position": {
-     "x": 263.046875,
+     "x": 330.60186767578125,
      "y": 3820
     },
     "style": null,
@@ -4322,7 +4322,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1435
     },
     "style": null,
@@ -4408,7 +4408,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1565
     },
     "style": null,
@@ -4445,7 +4445,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1230
     },
     "style": null,
@@ -4531,7 +4531,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1360
     },
     "style": null,
@@ -4568,7 +4568,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1025
     },
     "style": null,
@@ -4656,7 +4656,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 1155
     },
     "style": null,
@@ -4693,7 +4693,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 2870
     },
     "style": null,
@@ -4778,7 +4778,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 3000
     },
     "style": null,
@@ -4815,7 +4815,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 615
     },
     "style": null,
@@ -4905,7 +4905,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 745
     },
     "style": null,
@@ -4942,7 +4942,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 820
     },
     "style": null,
@@ -5013,7 +5013,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 950
     },
     "style": null,
@@ -5050,7 +5050,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 205
     },
     "style": null,
@@ -5130,7 +5130,7 @@
      "nodeType": "dbNode",
      "entity": "connector",
      "entityId": "ecf308a0-0748-429d-af8f-d8c32635f581",
-     "pluginName": "snowflake",
+     "pluginName": "",
      "status": "success",
      "name": "snowflake1",
      "rootId": "",
@@ -5151,7 +5151,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 335
     },
     "style": null,
@@ -5188,7 +5188,7 @@
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 410
     },
     "style": null,
@@ -5249,13 +5249,13 @@
      "switcher": null,
      "conditions": null,
      "blockName": "setVariable",
-     "testedAt": "2026-05-20T11:02:28.807Z"
+     "testedAt": "0001-01-01T00:00:00Z"
     },
     "draggable": false
    },
    {
     "position": {
-     "x": 493.046875,
+     "x": 560.6018676757812,
      "y": 540
     },
     "style": null,
@@ -6513,34 +6513,21 @@
  "dependencies": [
   {
    "isDeleted": false,
-   "createdAt": "2026-05-13T12:10:03.388988Z",
-   "updatedAt": "2026-05-20T11:02:27.526534Z",
+   "createdAt": "2026-05-13T12:38:50.424203Z",
+   "updatedAt": "2026-06-15T04:42:24.627265Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
    "entityVersion": "draft",
-   "entityNodeId": "four",
-   "dependencyType": "variable",
-   "dependencyId": "92eb9bd8-7caf-44fa-8091-eef0ab353d83",
-   "dependencyVersion": "live"
-  },
-  {
-   "isDeleted": false,
-   "createdAt": "2026-05-13T12:07:18.778032Z",
-   "updatedAt": "2026-05-20T11:02:27.52574Z",
-   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
-   "entityType": "workflow",
-   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
-   "entityVersion": "draft",
-   "entityNodeId": "globalName",
-   "dependencyType": "variable",
-   "dependencyId": "3bb04015-53b8-41a9-8ae0-1a9541e44fca",
-   "dependencyVersion": "live"
+   "entityNodeId": "n_IeH2Hs",
+   "dependencyType": "workflow",
+   "dependencyId": "1e817591-f046-46e1-a970-259233c54f28",
+   "dependencyVersion": "draft"
   },
   {
    "isDeleted": false,
    "createdAt": "2026-05-13T13:05:38.962884Z",
-   "updatedAt": "2026-05-20T11:02:27.525063Z",
+   "updatedAt": "2026-06-15T04:42:24.626294Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
@@ -6553,7 +6540,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-05-13T12:59:58.052586Z",
-   "updatedAt": "2026-05-20T11:02:27.524345Z",
+   "updatedAt": "2026-06-15T04:42:24.625463Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
@@ -6566,7 +6553,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-05-13T12:50:54.937181Z",
-   "updatedAt": "2026-05-20T11:02:27.523455Z",
+   "updatedAt": "2026-06-15T04:42:24.624441Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
@@ -6578,8 +6565,34 @@
   },
   {
    "isDeleted": false,
+   "createdAt": "2026-05-13T12:10:03.388988Z",
+   "updatedAt": "2026-06-15T04:42:24.596236Z",
+   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
+   "entityType": "workflow",
+   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
+   "entityVersion": "draft",
+   "entityNodeId": "four",
+   "dependencyType": "variable",
+   "dependencyId": "92eb9bd8-7caf-44fa-8091-eef0ab353d83",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-13T12:07:18.778032Z",
+   "updatedAt": "2026-06-15T04:42:24.546498Z",
+   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
+   "entityType": "workflow",
+   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
+   "entityVersion": "draft",
+   "entityNodeId": "globalName",
+   "dependencyType": "variable",
+   "dependencyId": "3bb04015-53b8-41a9-8ae0-1a9541e44fca",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
    "createdAt": "2026-05-13T12:40:57.758621Z",
-   "updatedAt": "2026-05-20T11:02:27.522678Z",
+   "updatedAt": "2026-06-15T04:42:24.544285Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
@@ -6592,7 +6605,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-05-13T12:53:50.848619Z",
-   "updatedAt": "2026-05-20T11:02:27.52199Z",
+   "updatedAt": "2026-06-15T04:42:24.54302Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
@@ -6605,7 +6618,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-05-13T13:05:17.579523Z",
-   "updatedAt": "2026-05-20T11:02:27.521232Z",
+   "updatedAt": "2026-06-15T04:42:24.541011Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
@@ -6617,86 +6630,8 @@
   },
   {
    "isDeleted": false,
-   "createdAt": "2026-05-13T12:44:19.202198Z",
-   "updatedAt": "2026-05-20T11:02:27.52055Z",
-   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
-   "entityType": "workflow",
-   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
-   "entityVersion": "draft",
-   "entityNodeId": "n_mTTT9b",
-   "dependencyType": "connector",
-   "dependencyId": "6b495f54-21f8-4ed8-ba9b-2d90d6ecd9bf",
-   "dependencyVersion": "live"
-  },
-  {
-   "isDeleted": false,
-   "createdAt": "2026-05-20T10:59:20.418758Z",
-   "updatedAt": "2026-05-20T11:02:27.519664Z",
-   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
-   "entityType": "workflow",
-   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
-   "entityVersion": "draft",
-   "entityNodeId": "n_OutRKD",
-   "dependencyType": "connector",
-   "dependencyId": "ecf308a0-0748-429d-af8f-d8c32635f581",
-   "dependencyVersion": "live"
-  },
-  {
-   "isDeleted": false,
-   "createdAt": "2026-05-20T08:17:50.563204Z",
-   "updatedAt": "2026-05-20T11:02:27.518927Z",
-   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
-   "entityType": "workflow",
-   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
-   "entityVersion": "draft",
-   "entityNodeId": "n_lRl23l",
-   "dependencyType": "connector",
-   "dependencyId": "ecf308a0-0748-429d-af8f-d8c32635f581",
-   "dependencyVersion": "live"
-  },
-  {
-   "isDeleted": false,
-   "createdAt": "2026-05-20T07:39:56.874979Z",
-   "updatedAt": "2026-05-20T11:02:27.518224Z",
-   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
-   "entityType": "workflow",
-   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
-   "entityVersion": "draft",
-   "entityNodeId": "n_zmsPcl",
-   "dependencyType": "connector",
-   "dependencyId": "0897e130-dc3b-4632-bc30-9f21ea3c8883",
-   "dependencyVersion": "live"
-  },
-  {
-   "isDeleted": false,
-   "createdAt": "2026-05-19T11:25:08.508516Z",
-   "updatedAt": "2026-05-20T11:02:27.517402Z",
-   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
-   "entityType": "workflow",
-   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
-   "entityVersion": "draft",
-   "entityNodeId": "n_yCsquW",
-   "dependencyType": "connector",
-   "dependencyId": "05484cee-d9a4-4920-950e-24b41ffe7a2a",
-   "dependencyVersion": "live"
-  },
-  {
-   "isDeleted": false,
-   "createdAt": "2026-05-19T07:30:31.617572Z",
-   "updatedAt": "2026-05-20T11:02:27.516519Z",
-   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
-   "entityType": "workflow",
-   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
-   "entityVersion": "draft",
-   "entityNodeId": "n_VODDjT",
-   "dependencyType": "connector",
-   "dependencyId": "894249c7-fe4d-478d-a7ed-641c948a44e5",
-   "dependencyVersion": "live"
-  },
-  {
-   "isDeleted": false,
    "createdAt": "2026-05-14T10:23:18.221946Z",
-   "updatedAt": "2026-05-20T11:02:27.515612Z",
+   "updatedAt": "2026-06-15T04:42:24.537688Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
@@ -6709,7 +6644,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-05-13T12:47:33.449884Z",
-   "updatedAt": "2026-05-20T11:02:27.51478Z",
+   "updatedAt": "2026-06-15T04:42:24.536229Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
@@ -6722,7 +6657,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-05-13T12:45:28.395543Z",
-   "updatedAt": "2026-05-20T11:02:27.513997Z",
+   "updatedAt": "2026-06-15T04:42:24.534075Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
@@ -6734,16 +6669,81 @@
   },
   {
    "isDeleted": false,
-   "createdAt": "2026-05-13T12:38:50.424203Z",
-   "updatedAt": "2026-05-20T11:02:27.51268Z",
+   "createdAt": "2026-05-13T12:44:19.202198Z",
+   "updatedAt": "2026-06-15T04:42:24.532004Z",
    "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
    "entityType": "workflow",
    "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
    "entityVersion": "draft",
-   "entityNodeId": "n_IeH2Hs",
-   "dependencyType": "workflow",
-   "dependencyId": "1e817591-f046-46e1-a970-259233c54f28",
-   "dependencyVersion": "draft"
+   "entityNodeId": "n_mTTT9b",
+   "dependencyType": "connector",
+   "dependencyId": "6b495f54-21f8-4ed8-ba9b-2d90d6ecd9bf",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-20T10:59:20.418758Z",
+   "updatedAt": "2026-06-15T04:42:24.529011Z",
+   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
+   "entityType": "workflow",
+   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
+   "entityVersion": "draft",
+   "entityNodeId": "n_OutRKD",
+   "dependencyType": "connector",
+   "dependencyId": "ecf308a0-0748-429d-af8f-d8c32635f581",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-20T08:17:50.563204Z",
+   "updatedAt": "2026-06-15T04:42:24.523804Z",
+   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
+   "entityType": "workflow",
+   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
+   "entityVersion": "draft",
+   "entityNodeId": "n_lRl23l",
+   "dependencyType": "connector",
+   "dependencyId": "ecf308a0-0748-429d-af8f-d8c32635f581",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-20T07:39:56.874979Z",
+   "updatedAt": "2026-06-15T04:42:24.43105Z",
+   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
+   "entityType": "workflow",
+   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
+   "entityVersion": "draft",
+   "entityNodeId": "n_zmsPcl",
+   "dependencyType": "connector",
+   "dependencyId": "0897e130-dc3b-4632-bc30-9f21ea3c8883",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-19T11:25:08.508516Z",
+   "updatedAt": "2026-06-15T04:42:24.4302Z",
+   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
+   "entityType": "workflow",
+   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
+   "entityVersion": "draft",
+   "entityNodeId": "n_yCsquW",
+   "dependencyType": "connector",
+   "dependencyId": "05484cee-d9a4-4920-950e-24b41ffe7a2a",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-05-19T07:30:31.617572Z",
+   "updatedAt": "2026-06-15T04:42:24.427989Z",
+   "entityCommitId": "commit-17ec8dd5-80d1-4a26-a2bc-ee39d0660c49",
+   "entityType": "workflow",
+   "entityId": "a54f5946-553f-4277-b35c-1ab6379e6357",
+   "entityVersion": "draft",
+   "entityNodeId": "n_VODDjT",
+   "dependencyType": "connector",
+   "dependencyId": "894249c7-fe4d-478d-a7ed-641c948a44e5",
+   "dependencyVersion": "live"
   }
  ]
 }

@@ -1,0 +1,40 @@
+{
+ "entityType": "testcase",
+ "category": "workflow",
+ "isList": true,
+ "dataList": [
+  {
+   "createdAt": "2026-06-12T10:38:41.037Z",
+   "updatedAt": "2026-06-12T10:38:41.037Z",
+   "isDeleted": false,
+   "entityId": "aa7fb307-5980-4357-835c-d58d740ddace",
+   "name": "TC_1",
+   "group": [
+    "G1"
+   ],
+   "input": {
+    "ci": {
+     "Date": {
+ "value": "12-06-2026"
+},
+     "name": {
+ "value": "Atul"
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": {
+ "key_0": "10",
+ "key_1": "[\"Atul\",\"Raizada\"]",
+ "key_2": "{\"Name\":\"Atul\"}"
+}
+   }
+  }
+ ]
+}

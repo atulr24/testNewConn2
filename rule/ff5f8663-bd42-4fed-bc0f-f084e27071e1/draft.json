@@ -1,0 +1,209 @@
+{
+ "entityType": "rule",
+ "category": "simpleRule",
+ "data": {
+  "createdAt": "2026-06-12T10:17:29.42Z",
+  "updatedAt": "2026-06-12T10:18:20.512266Z",
+  "isDeleted": false,
+  "testedAt": "2026-06-12T10:18:20.51Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "ff5f8663-bd42-4fed-bc0f-f084e27071e1",
+  "version": "draft",
+  "name": "sr1002",
+  "commitId": "commit-6cfcab0c-b5f3-4946-8840-c3317c0f30b5",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-06-12 10:17:29",
+   "timeStamp": "2026-06-12T10:17:29.420364803Z"
+  },
+  "customInput": {
+   "Name": {
+ "name": "Name",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "Atul",
+ "config": null,
+ "value": "",
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "key_name_1": {
+ "name": "key_name_1",
+ "dataType": "list",
+ "returnType": "array",
+ "value": "[\n  {\n    \"id\": 1,\n    \"name\": \"John\",\n    \"email\": \"john@example.com\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Jane\",\n    \"email\": \"jane@example.com\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Mike\",\n    \"email\": \"mike@example.com\"\n  }\n]",
+ "next": "",
+ "executedValue": [
+  {
+   "email": "john@example.com",
+   "id": 1,
+   "name": "John"
+  },
+  {
+   "email": "jane@example.com",
+   "id": 2,
+   "name": "Jane"
+  },
+  {
+   "email": "mike@example.com",
+   "id": 3,
+   "name": "Mike"
+  }
+ ],
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "key_name_1",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": {
+     
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rhs_TlqOOy": {
+ "value": "Atul",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_TlqOOy"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "params",
+ "attribute": "Name",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": "rule_01"
+  },
+  "firstCustomInput": "Name",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "",
+  "comment": "",
+  "type": "simpleRule",
+  "dataSetId": "",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ }
+}

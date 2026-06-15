@@ -2,9 +2,9 @@
  "entityType": "workflow",
  "data": {
   "createdAt": "2026-06-12T05:22:31.109Z",
-  "updatedAt": "2026-06-12T05:22:54.202686Z",
+  "updatedAt": "2026-06-12T09:38:36.805457Z",
   "isDeleted": false,
-  "testedAt": "2026-06-12T05:22:54.201Z",
+  "testedAt": "2026-06-12T09:38:36.805Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "4c9ac1b3-e7f2-4451-bfc2-c31d88a2d4b1",
   "version": "draft",
@@ -17,7 +17,7 @@
    "title": "Created at 2026-06-12 05:22:31",
    "timeStamp": "2026-06-12T05:22:31.109261517Z"
   },
-  "startNode": "n_3pywAT",
+  "startNode": "n_MAFhZ6",
   "description": "",
   "trigger": {
    "apiNode": "1",
@@ -36,6 +36,82 @@
     "type": "trigger",
     "data": {
      "input": {
+      "Age": {
+ "value": null,
+ "executedValue": 29,
+ "name": "Age",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "Date": {
+ "value": null,
+ "executedValue": "2026-06-12",
+ "name": "Date",
+ "dataType": "date",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "DateTime": {
+ "value": null,
+ "executedValue": "2026-06-20T00:00:00+05:30",
+ "name": "DateTime",
+ "dataType": "dateTime",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "List": {
+ "value": null,
+ "executedValue": [
+  1,
+  2,
+  3
+ ],
+ "name": "List",
+ "dataType": "list",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
       "Name": {
  "value": null,
  "executedValue": "Atul",
@@ -53,11 +129,42 @@
  "notSend": false,
  "order": 0,
  "schemaId": ""
+},
+      "json": {
+ "value": null,
+ "executedValue": {
+  "Nane": "atul"
+ },
+ "name": "json",
+ "dataType": "json",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
 }
      },
      "output": null,
      "executedValue": {
-      "Name": "Atul"
+      "Age": 29,
+      "Date": "2026-06-12",
+      "DateTime": "2026-06-20T00:00:00+05:30",
+      "List": [
+ 1,
+ 2,
+ 3
+],
+      "Name": "Atul",
+      "json": {
+ "Nane": "atul"
+}
      },
      "settings": {
       "authType": "private",
@@ -129,7 +236,7 @@
    {
     "position": {
      "x": 560.6018676757812,
-     "y": 205
+     "y": 690
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -155,13 +262,158 @@
  "notSend": false,
  "order": 0,
  "schemaId": ""
+},
+      "key_1": {
+ "value": "2026-06-12",
+ "executedValue": "2026-06-12",
+ "name": "key_1",
+ "dataType": "date",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 1,
+ "schemaId": ""
+},
+      "key_2": {
+ "value": "2026-06-12T11:46:24+05:30",
+ "executedValue": "2026-06-12T11:46:24+05:30",
+ "name": "key_2",
+ "dataType": "dateTime",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 2,
+ "schemaId": ""
+},
+      "key_3": {
+ "value": "[\"Atul\",\"Raizada\"]",
+ "executedValue": "[\"Atul\",\"Raizada\"]",
+ "name": "key_3",
+ "dataType": "list",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 3,
+ "schemaId": ""
+},
+      "key_4": {
+ "value": null,
+ "executedValue": {
+  "Body": {
+ "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+ "id": 2,
+ "title": "qui est esse",
+ "userId": 1
+},
+  "Headers": {
+ "Access-Control-Allow-Credentials": "true",
+ "Age": "6484",
+ "Alt-Svc": "h3=\":443\"; ma=86400",
+ "Cache-Control": "max-age=43200",
+ "Cf-Cache-Status": "HIT",
+ "Cf-Ray": "a0a75a4b6f7b4075-BOM",
+ "Content-Type": "application/json; charset=utf-8",
+ "Date": "Fri, 12 Jun 2026 08:05:49 GMT",
+ "Etag": "W/\"116-jnDuMpjju89+9j7e0BqkdFsVRjs\"",
+ "Expires": "-1",
+ "Nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+ "Pragma": "no-cache",
+ "Report-To": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=bWPiZrMrzzwDZjGN94OXrXX%2F4FZ3i8cuVP1%2FHdHvId0%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1781154006\"}],\"max_age\":3600}",
+ "Reporting-Endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=bWPiZrMrzzwDZjGN94OXrXX%2F4FZ3i8cuVP1%2FHdHvId0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1781154006\"",
+ "Server": "cloudflare",
+ "Server-Timing": "cfCacheStatus;desc=\"HIT\",cfEdge;dur=7,cfOrigin;dur=0",
+ "Vary": "Origin, Accept-Encoding",
+ "Via": "2.0 heroku-router",
+ "X-Content-Type-Options": "nosniff",
+ "X-Powered-By": "Express",
+ "X-Ratelimit-Limit": "1000",
+ "X-Ratelimit-Remaining": "999",
+ "X-Ratelimit-Reset": "1781154049"
+},
+  "StatusCode": 200
+ },
+ "name": "key_4",
+ "dataType": "json",
+ "source": "restAPI",
+ "attribute": "output",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 4,
+ "schemaId": ""
 }
      },
      "output": null,
      "executedValue": {
       "error": "",
       "output": {
- "key_0": "Value"
+ "key_0": "Value",
+ "key_1": "2026-06-12",
+ "key_2": "2026-06-12T11:46:24+05:30",
+ "key_3": [
+ "Atul",
+ "Raizada"
+],
+ "key_4": {
+ "Body": {
+ "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+ "id": 2,
+ "title": "qui est esse",
+ "userId": 1
+},
+ "Headers": {
+ "Access-Control-Allow-Credentials": "true",
+ "Age": "6484",
+ "Alt-Svc": "h3=\":443\"; ma=86400",
+ "Cache-Control": "max-age=43200",
+ "Cf-Cache-Status": "HIT",
+ "Cf-Ray": "a0a75a4b6f7b4075-BOM",
+ "Content-Type": "application/json; charset=utf-8",
+ "Date": "Fri, 12 Jun 2026 08:05:49 GMT",
+ "Etag": "W/\"116-jnDuMpjju89+9j7e0BqkdFsVRjs\"",
+ "Expires": "-1",
+ "Nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+ "Pragma": "no-cache",
+ "Report-To": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=bWPiZrMrzzwDZjGN94OXrXX%2F4FZ3i8cuVP1%2FHdHvId0%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1781154006\"}],\"max_age\":3600}",
+ "Reporting-Endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=bWPiZrMrzzwDZjGN94OXrXX%2F4FZ3i8cuVP1%2FHdHvId0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1781154006\"",
+ "Server": "cloudflare",
+ "Server-Timing": "cfCacheStatus;desc=\"HIT\",cfEdge;dur=7,cfOrigin;dur=0",
+ "Vary": "Origin, Accept-Encoding",
+ "Via": "2.0 heroku-router",
+ "X-Content-Type-Options": "nosniff",
+ "X-Powered-By": "Express",
+ "X-Ratelimit-Limit": "1000",
+ "X-Ratelimit-Remaining": "999",
+ "X-Ratelimit-Reset": "1781154049"
+},
+ "StatusCode": 200
+}
 }
      },
      "settings": {
@@ -187,7 +439,488 @@
      "switcher": null,
      "conditions": null,
      "blockName": "response",
-     "testedAt": "2026-06-12T05:22:54.201Z"
+     "testedAt": "2026-06-12T09:38:36.804Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 820
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_tRrbXw",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 410
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_IzzWk2",
+    "type": "rule",
+    "data": {
+     "input": {
+      "name": {
+ "value": "Atul",
+ "executedValue": null,
+ "name": "name",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "action": {
+ "action_1": {
+ "error": "",
+ "executionId": "action:1079:57ba9395-1e68-4e6f-ac4d-709f16816604:e0a9877e-1b74-4760-9d48-54a23d3ba4be/action_1",
+ "name": "action_1",
+ "nodeId": "action#then#actionData_action_1",
+ "output": {
+ "Result": {
+ "Body": {
+ "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+ "id": 2,
+ "title": "qui est esse",
+ "userId": 1
+},
+ "Headers": {
+ "Access-Control-Allow-Credentials": "true",
+ "Age": "12526",
+ "Alt-Svc": "h3=\":443\"; ma=86400",
+ "Cache-Control": "max-age=43200",
+ "Cf-Cache-Status": "HIT",
+ "Cf-Ray": "a0a74ecce981ff68-BOM",
+ "Content-Type": "application/json; charset=utf-8",
+ "Date": "Fri, 12 Jun 2026 07:57:59 GMT",
+ "Etag": "W/\"116-jnDuMpjju89+9j7e0BqkdFsVRjs\"",
+ "Expires": "-1",
+ "Nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+ "Pragma": "no-cache",
+ "Report-To": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=6uBkYeRYc8XNx28u8xOgK4q0I0SmwPKxyMwhqv2R8Yo%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1781238552\"}],\"max_age\":3600}",
+ "Reporting-Endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=6uBkYeRYc8XNx28u8xOgK4q0I0SmwPKxyMwhqv2R8Yo%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1781238552\"",
+ "Server": "cloudflare",
+ "Server-Timing": "cfCacheStatus;desc=\"HIT\",cfEdge;dur=3,cfOrigin;dur=0",
+ "Vary": "Origin, Accept-Encoding",
+ "Via": "2.0 heroku-router",
+ "X-Content-Type-Options": "nosniff",
+ "X-Powered-By": "Express",
+ "X-Ratelimit-Limit": "1000",
+ "X-Ratelimit-Remaining": "999",
+ "X-Ratelimit-Reset": "1781238584"
+},
+ "StatusCode": 200
+},
+ "error": null,
+ "name": "action_1"
+}
+}
+},
+      "error": "",
+      "executionTime": "173ms",
+      "name": "sr1001",
+      "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "Value"
+ }
+],
+      "ruleId": "57ba9395-1e68-4e6f-ac4d-709f16816604",
+      "version": "draft",
+      "warnings": []
+     },
+     "settings": {
+      "actionInSync": true,
+      "errorContinue": false,
+      "runAction": true,
+      "timeout": 10,
+      "timeoutAsync": 20
+     },
+     "nodeType": "srNode",
+     "entity": "rule",
+     "entityId": "57ba9395-1e68-4e6f-ac4d-709f16816604",
+     "pluginName": "",
+     "status": "success",
+     "name": "sr1001",
+     "rootId": "",
+     "sourceId": [
+      "source_VFUQ0Z",
+      "source_2y7dkd"
+     ],
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "simpleRule",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 445.60186767578125,
+     "y": 540
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_dsPT3A",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_IzzWk2",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 675.6018676757812,
+     "y": 540
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_M5Ta3y",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_IzzWk2",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 615
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_Yc9elj",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_IzzWk2",
+     "sourceId": null,
+     "isMergeNode": true,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_MAFhZ6",
+    "type": "restApiNode",
+    "data": {
+     "input": {
+      "authentication": {
+ "value": "None",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "baseUrl": {
+ "value": "https://jsonplaceholder.typicode.com",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "contentType": {
+ "value": "",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "headers": {
+ "value": [],
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "method": {
+ "value": "GET",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "path": {
+ "value": "/posts/2",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "queryParams": {
+ "value": [],
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "32ms",
+      "output": {
+ "Body": {
+ "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+ "id": 2,
+ "title": "qui est esse",
+ "userId": 1
+},
+ "Headers": {
+ "Access-Control-Allow-Credentials": "true",
+ "Age": "6484",
+ "Alt-Svc": "h3=\":443\"; ma=86400",
+ "Cache-Control": "max-age=43200",
+ "Cf-Cache-Status": "HIT",
+ "Cf-Ray": "a0a75a4b6f7b4075-BOM",
+ "Content-Type": "application/json; charset=utf-8",
+ "Date": "Fri, 12 Jun 2026 08:05:49 GMT",
+ "Etag": "W/\"116-jnDuMpjju89+9j7e0BqkdFsVRjs\"",
+ "Expires": "-1",
+ "Nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+ "Pragma": "no-cache",
+ "Report-To": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=bWPiZrMrzzwDZjGN94OXrXX%2F4FZ3i8cuVP1%2FHdHvId0%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1781154006\"}],\"max_age\":3600}",
+ "Reporting-Endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=bWPiZrMrzzwDZjGN94OXrXX%2F4FZ3i8cuVP1%2FHdHvId0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1781154006\"",
+ "Server": "cloudflare",
+ "Server-Timing": "cfCacheStatus;desc=\"HIT\",cfEdge;dur=7,cfOrigin;dur=0",
+ "Vary": "Origin, Accept-Encoding",
+ "Via": "2.0 heroku-router",
+ "X-Content-Type-Options": "nosniff",
+ "X-Powered-By": "Express",
+ "X-Ratelimit-Limit": "1000",
+ "X-Ratelimit-Remaining": "999",
+ "X-Ratelimit-Reset": "1781154049"
+},
+ "StatusCode": 200
+}
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "cacheKeys": "",
+      "durationUnit": "d",
+      "durationValue": 0,
+      "errorContinue": false,
+      "timeout": 10,
+      "timeoutAsync": 20
+     },
+     "nodeType": "restApiNode",
+     "entity": "connector",
+     "entityId": "d3ae73bf-cb76-453b-94aa-3e5a658aafff",
+     "pluginName": "",
+     "status": "success",
+     "name": "restAPI",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "restAPI",
+     "testedAt": "0001-01-01T00:00:00Z"
     },
     "draggable": false
    },
@@ -199,7 +932,7 @@
     "style": null,
     "sourcePosition": "bottom",
     "targetPosition": "top",
-    "id": "n_tRrbXw",
+    "id": "n_Odp8RK",
     "type": "addNode",
     "data": {
      "input": null,
@@ -271,11 +1004,137 @@
      "stroke": "gray",
      "strokeWidth": 1
     },
-    "id": "e_C2Z5vL",
+    "id": "e_B1tseU",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_Yc9elj",
+    "target": "n_3pywAT",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "source_VFUQ0Z",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_S8u5L6",
+    "markerEnd": "",
+    "label": "True",
+    "source": "n_IzzWk2",
+    "target": "n_dsPT3A",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "source_VFUQ0Z",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_8ydywc",
+    "markerEnd": "",
+    "label": "False",
+    "source": "n_IzzWk2",
+    "target": "n_M5Ta3y",
+    "data": {
+     "edgeType": "else",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "source_2y7dkd",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_xGTucD",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_dsPT3A",
+    "target": "n_Yc9elj",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "source_VFUQ0Z",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_Iz9bqz",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_M5Ta3y",
+    "target": "n_Yc9elj",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_bT2jjm",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_Odp8RK",
+    "target": "n_IzzWk2",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_kEGjUB",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_MAFhZ6",
+    "target": "n_Odp8RK",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_Ux8khf",
     "markerEnd": "",
     "label": "",
     "source": "n_5b7Ih9",
-    "target": "n_3pywAT",
+    "target": "n_MAFhZ6",
     "data": {
      "edgeType": "then",
      "pathId": ""
@@ -289,11 +1148,39 @@
   "settings": {
    "auditIO": null,
    "timezone": "Asia/Calcutta",
-   "dateFormat": "in",
+   "dateFormat": "us",
    "timeout": 0,
    "timeoutAsync": 0
   },
   "comment": "",
   "isDemo": false
- }
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-12T08:05:43.571581Z",
+   "updatedAt": "2026-06-12T08:06:34.044746Z",
+   "entityCommitId": "commit-afef12e1-ad2d-43c8-ac16-3f417c4f8306",
+   "entityType": "workflow",
+   "entityId": "4c9ac1b3-e7f2-4451-bfc2-c31d88a2d4b1",
+   "entityVersion": "draft",
+   "entityNodeId": "n_MAFhZ6",
+   "dependencyType": "connector",
+   "dependencyId": "d3ae73bf-cb76-453b-94aa-3e5a658aafff",
+   "dependencyVersion": "live"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-12T07:57:49.569531Z",
+   "updatedAt": "2026-06-12T08:06:34.039714Z",
+   "entityCommitId": "commit-afef12e1-ad2d-43c8-ac16-3f417c4f8306",
+   "entityType": "workflow",
+   "entityId": "4c9ac1b3-e7f2-4451-bfc2-c31d88a2d4b1",
+   "entityVersion": "draft",
+   "entityNodeId": "n_IzzWk2",
+   "dependencyType": "rule",
+   "dependencyId": "57ba9395-1e68-4e6f-ac4d-709f16816604",
+   "dependencyVersion": "draft"
+  }
+ ]
 }

@@ -2,50 +2,35 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-06-11T10:19:03.792Z",
-  "updatedAt": "2026-06-15T06:37:34.051454Z",
+  "createdAt": "2026-06-15T06:44:25.062Z",
+  "updatedAt": "2026-06-15T06:51:11.331207Z",
   "isDeleted": false,
   "testedAt": "0001-01-01T00:00:00Z",
   "publishedAt": "0001-01-01T00:00:00Z",
-  "entityId": "be3b449f-aa0e-4634-adde-a9637e7b3eaf",
+  "entityId": "1bb89191-5f4e-478b-95dc-e6d5f3133fa5",
   "version": "draft",
-  "name": "asd23",
-  "commitId": "commit-00df479b-1cb6-4edb-87f0-db22d242c332",
+  "name": "TestFinalDT",
+  "commitId": "commit-26343397-f832-44c4-8b6c-aeca8afd81c8",
   "status": "draft",
   "lastVersion": "",
   "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-06-11 10:19:03",
-   "timeStamp": "2026-06-11T10:19:03.792929027Z"
+   "title": "Created at 2026-06-15 06:44:25",
+   "timeStamp": "2026-06-15T06:44:25.062826057Z"
   },
   "customInput": {
-   "bool": {
- "name": "bool",
- "dataType": "boolean",
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "attribute": "",
- "sourceType": "",
- "executedValue": true,
- "config": null,
- "value": "",
- "next": "",
- "previous": "name",
- "schemaId": ""
-},
-   "name": {
- "name": "name",
+   "Name": {
+ "name": "Name",
  "dataType": "string",
  "isOptional": false,
  "isNullable": false,
  "isCaseSensitive": false,
  "attribute": "",
  "sourceType": "",
- "executedValue": "asd",
+ "executedValue": "Atul",
  "config": null,
  "value": "",
- "next": "bool",
+ "next": "",
  "previous": "",
  "schemaId": ""
 }
@@ -53,17 +38,24 @@
   "ruleChain": null,
   "decisionTable": {
    "rows": {
-    "g_HhOMo2": {
- "nextId": "",
+    "g_HXelgM": {
+ "nextId": "g_Y1I6jp",
  "prevId": "rule_01",
- "firstOutputData": "output_2RYONa",
+ "firstOutputData": "output_xvZlmp",
+ "isEnabled": true,
+ "annotation": ""
+},
+    "g_Y1I6jp": {
+ "nextId": "",
+ "prevId": "g_HXelgM",
+ "firstOutputData": "output_frM7Gu",
  "isEnabled": true,
  "annotation": ""
 },
     "rule_01": {
- "nextId": "g_HhOMo2",
+ "nextId": "g_HXelgM",
  "prevId": "",
- "firstOutputData": "output_XJ9HvU",
+ "firstOutputData": "output_vAAf7j",
  "isEnabled": true,
  "annotation": ""
 }
@@ -76,7 +68,7 @@
 }
    },
    "results": {
-    "result_Af41b4": {
+    "result_AVaNij": {
  "nextId": "",
  "prevId": "",
  "dataType": "string",
@@ -86,30 +78,41 @@
    },
    "firstRow": "rule_01",
    "firstProperty": "rule_03",
-   "firstResult": "result_Af41b4",
+   "firstResult": "result_AVaNij",
    "firstAggOutputData": ""
   },
   "action": {
    "then": {
     "outputData": {
-     "output_2RYONa": {
+     "output_frM7Gu": {
  "name": "result_1",
  "dataType": "string",
  "returnType": "",
- "value": null,
+ "value": "Value3",
  "next": "",
- "executedValue": null,
- "attribute": "NULL",
- "source": "systemVar",
+ "executedValue": "Value3",
+ "attribute": "",
+ "source": "",
  "schemaId": ""
 },
-     "output_XJ9HvU": {
+     "output_vAAf7j": {
  "name": "result_1",
  "dataType": "string",
  "returnType": "",
- "value": "Value",
+ "value": "Value1",
  "next": "",
- "executedValue": "Value",
+ "executedValue": "Value1",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_xvZlmp": {
+ "name": "result_1",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value2",
+ "next": "",
+ "executedValue": "Value2",
  "attribute": "",
  "source": "",
  "schemaId": ""
@@ -130,25 +133,47 @@
   },
   "conditions": {
    "nodes": {
-    "c_7T5NKu": {
+    "c_5cCT9K": {
  "value": null,
  "sourceType": "",
  "name": "Any",
- "operator": "t",
- "dataType": "boolean",
+ "operator": "eq",
+ "dataType": "string",
  "nodeType": "condition",
  "attribute": "",
  "query": "",
- "parent": "g_HhOMo2",
+ "parent": "g_HXelgM",
  "children": null,
  "leftNode": [
   "rule_03"
  ],
- "rightNode": [],
+ "rightNode": [
+  "rhs_yW4l92"
+ ],
  "siblingIndex": 1,
  "returnType": ""
 },
-    "g_HhOMo2": {
+    "c_HMbGgz": {
+ "value": null,
+ "sourceType": "",
+ "name": "Any",
+ "operator": "eq",
+ "dataType": "string",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "g_Y1I6jp",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_YALUfp"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_HXelgM": {
  "value": null,
  "sourceType": "",
  "name": "",
@@ -159,8 +184,74 @@
  "query": "",
  "parent": "",
  "children": [
-  "c_7T5NKu"
+  "c_5cCT9K"
  ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "g_Y1I6jp": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "and",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "c_HMbGgz"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_6pb953": {
+ "value": "Atul",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_YALUfp": {
+ "value": "Atul2",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "c_HMbGgz",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_yW4l92": {
+ "value": "Raizada",
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "c_5cCT9K",
+ "children": null,
  "leftNode": null,
  "rightNode": null,
  "siblingIndex": 1,
@@ -188,8 +279,8 @@
  "value": "",
  "sourceType": "",
  "name": "",
- "operator": "any",
- "dataType": "boolean",
+ "operator": "eq",
+ "dataType": "string",
  "nodeType": "condition",
  "attribute": "",
  "query": "",
@@ -198,7 +289,9 @@
  "leftNode": [
   "rule_03"
  ],
- "rightNode": [],
+ "rightNode": [
+  "rhs_6pb953"
+ ],
  "siblingIndex": 1,
  "returnType": ""
 },
@@ -207,9 +300,9 @@
  "sourceType": "customInput",
  "name": "",
  "operator": "",
- "dataType": "boolean",
+ "dataType": "string",
  "nodeType": "params",
- "attribute": "bool",
+ "attribute": "Name",
  "query": "",
  "parent": "",
  "children": null,
@@ -221,7 +314,7 @@
    },
    "startNode": ""
   },
-  "firstCustomInput": "name",
+  "firstCustomInput": "Name",
   "firstRuleChain": "",
   "ruleSetPolicy": "",
   "description": "",

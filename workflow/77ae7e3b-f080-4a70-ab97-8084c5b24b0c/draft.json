@@ -2,9 +2,9 @@
  "entityType": "workflow",
  "data": {
   "createdAt": "2026-06-11T08:07:43.45Z",
-  "updatedAt": "2026-06-12T12:57:46.754887Z",
+  "updatedAt": "2026-06-16T19:18:11.795229Z",
   "isDeleted": false,
-  "testedAt": "2026-06-11T09:46:15.277Z",
+  "testedAt": "2026-06-16T19:16:26.653Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "77ae7e3b-f080-4a70-ab97-8084c5b24b0c",
   "version": "draft",
@@ -17,7 +17,7 @@
    "title": "Created at 2026-06-11 08:07:43",
    "timeStamp": "2026-06-11T08:07:43.450604261Z"
   },
-  "startNode": "n_qJFuaK",
+  "startNode": "n_ZRkBu7",
   "description": "",
   "trigger": {
    "apiNode": "1",
@@ -148,7 +148,7 @@
    {
     "position": {
      "x": 560.6018676757812,
-     "y": 205
+     "y": 690
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -157,45 +157,9 @@
     "type": "responseNode",
     "data": {
      "input": {
-      "key_0": {
- "value": 10,
- "executedValue": "10",
- "name": "key_0",
- "dataType": "numeric",
- "source": "",
- "attribute": "",
- "keySource": "",
- "keyAttribute": "",
- "mapping": false,
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "sendNull": false,
- "notSend": false,
- "order": 0,
- "schemaId": ""
-},
-      "key_1": {
- "value": "[\"Atul\",\"Raizada\"]",
- "executedValue": "[\"Atul\",\"Raizada\"]",
- "name": "key_1",
- "dataType": "list",
- "source": "",
- "attribute": "",
- "keySource": "",
- "keyAttribute": "",
- "mapping": false,
- "isOptional": false,
- "isNullable": false,
- "isCaseSensitive": false,
- "sendNull": false,
- "notSend": false,
- "order": 1,
- "schemaId": ""
-},
       "key_2": {
- "value": "{\"Name\":\"Atul\"}",
- "executedValue": "{\"Name\":\"Atul\"}",
+ "value": "{\"Name\":\"Atul\",\"Age\":20}",
+ "executedValue": "{\"Name\":\"Atul\",\"Age\":20}",
  "name": "key_2",
  "dataType": "json",
  "source": "",
@@ -208,13 +172,16 @@
  "isCaseSensitive": false,
  "sendNull": false,
  "notSend": false,
- "order": 2,
+ "order": 0,
  "schemaId": ""
 }
      },
      "output": null,
      "executedValue": {
-      "key_0": 10
+      "key_2": {
+ "Age": 20,
+ "Name": "Atul"
+}
      },
      "settings": {
       "errorContinue": false,
@@ -225,7 +192,7 @@
      "entity": "responseNode",
      "entityId": "n_qJFuaK",
      "pluginName": "",
-     "status": "",
+     "status": "success",
      "name": "Response",
      "rootId": "",
      "sourceId": null,
@@ -246,7 +213,7 @@
    {
     "position": {
      "x": 560.6018676757812,
-     "y": 335
+     "y": 820
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -265,6 +232,348 @@
      "status": "",
      "name": "",
      "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_ZRkBu7",
+    "type": "switchNode",
+    "data": {
+     "input": {
+      "defaultPath": {
+ "value": true,
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "executionTime": "0ns",
+      "output": {
+ "path": "Path1"
+}
+     },
+     "settings": null,
+     "nodeType": "switchNode",
+     "entity": "switch",
+     "entityId": "n_ZRkBu7",
+     "pluginName": "",
+     "status": "success",
+     "name": "SwitchBlock",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": [
+      {
+       "name": "Path1",
+       "pathId": "g_byJCf3"
+      }
+     ],
+     "conditions": {
+      "nodes": {
+ "c_kPCIzP": {
+ "dataType": "string",
+ "leftNode": [
+ "lhs_IUSZVh"
+],
+ "nodeType": "condition",
+ "operator": "eq",
+ "parent": "g_byJCf3",
+ "rightNode": [
+ "rhs_VANNiC"
+]
+},
+ "g_byJCf3": {
+ "children": [
+ "c_kPCIzP"
+],
+ "name": "Path1",
+ "nodeType": "group",
+ "operator": ""
+},
+ "lhs_IUSZVh": {
+ "attribute": "name",
+ "dataType": "string",
+ "nodeType": "params",
+ "parent": "c_kPCIzP",
+ "sourceType": "Trigger",
+ "value": null
+},
+ "rhs_VANNiC": {
+ "attribute": null,
+ "dataType": "string",
+ "executedValue": "Atul",
+ "nodeType": "constant",
+ "otherFields": {
+ 
+},
+ "parent": "c_kPCIzP",
+ "sourceType": null,
+ "value": "Atul"
+}
+}
+     },
+     "blockName": "switchBlock",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 445.60186767578125,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_Dj2ORk",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_ZRkBu7",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 675.6018676757812,
+     "y": 540
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_2RjXRi",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_ZRkBu7",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 615
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_p1LAY8",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_ZRkBu7",
+     "sourceId": null,
+     "isMergeNode": true,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 445.60186767578125,
+     "y": 410
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_UD0MGl",
+    "type": "responseNode",
+    "data": {
+     "input": {
+      "key_0": {
+ "value": "Value",
+ "executedValue": "Value",
+ "name": "key_0",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "key_1": {
+ "value": 10,
+ "executedValue": "10",
+ "name": "key_1",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 1,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": {
+      "error": "",
+      "output": {
+ "key_0": "Value",
+ "key_1": 10
+}
+     },
+     "settings": {
+      "errorContinue": false,
+      "timeout": 10,
+      "timeoutAsync": 20
+     },
+     "nodeType": "responseNode",
+     "entity": "responseNode",
+     "entityId": "n_UD0MGl",
+     "pluginName": "",
+     "status": "success",
+     "name": "Response1",
+     "rootId": "n_ZRkBu7",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "response",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 445.60186767578125,
+     "y": 540
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_wTWaLk",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "n_ZRkBu7",
      "sourceId": null,
      "isMergeNode": false,
      "runInLoop": {
@@ -323,11 +632,137 @@
      "stroke": "gray",
      "strokeWidth": 1
     },
-    "id": "e_Su6tUc",
+    "id": "e_EWZpM8",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_p1LAY8",
+    "target": "n_qJFuaK",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_7X2X7T",
     "markerEnd": "",
     "label": "",
     "source": "n_siaGJv",
-    "target": "n_qJFuaK",
+    "target": "n_ZRkBu7",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_hvX5ox",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_ZRkBu7",
+    "target": "n_Dj2ORk",
+    "data": {
+     "edgeType": "case",
+     "pathId": "g_byJCf3"
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_lSOa6D",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_ZRkBu7",
+    "target": "n_2RjXRi",
+    "data": {
+     "edgeType": "defaultCase",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_bte3in",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_2RjXRi",
+    "target": "n_p1LAY8",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_vYvSal",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_wTWaLk",
+    "target": "n_p1LAY8",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_YzggRZ",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_UD0MGl",
+    "target": "n_wTWaLk",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_EKs7je",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_Dj2ORk",
+    "target": "n_UD0MGl",
     "data": {
      "edgeType": "then",
      "pathId": ""

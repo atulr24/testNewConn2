@@ -1,0 +1,315 @@
+{
+ "entityType": "rule",
+ "category": "simpleRule",
+ "data": {
+  "createdAt": "2026-06-16T10:18:42.257Z",
+  "updatedAt": "2026-06-16T10:44:54.707889Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "1d37f7aa-e8bd-4356-a128-d9027e9ebb54",
+  "version": "draft",
+  "name": "simpleRuleTest2",
+  "commitId": "commit-e417f245-d501-45d0-965f-c95506a00f56",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-06-16 10:18:42",
+   "timeStamp": "2026-06-16T10:18:42.257162665Z"
+  },
+  "customInput": {
+   "json": {
+ "name": "json",
+ "dataType": "json",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": {
+  "Name": "Atul"
+ },
+ "config": null,
+ "value": "",
+ "next": "",
+ "previous": "list",
+ "schemaId": ""
+},
+   "list": {
+ "name": "list",
+ "dataType": "list",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "config": null,
+ "value": "",
+ "next": "json",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "key_name_1": {
+ "name": "key_name_1",
+ "dataType": "string",
+ "returnType": "",
+ "value": "True",
+ "next": "",
+ "executedValue": "True",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     "actionData_action_1": {
+ "name": "action_1",
+ "connectorId": "",
+ "entity": "rule",
+ "entityId": "4009117e-e66b-49c8-87db-e1f51a289dc9",
+ "pluginName": "",
+ "config": {
+  "query": ""
+ },
+ "input": {
+  "Age": {
+ "name": "Age",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "value": 30,
+ "sendNull": false,
+ "notSend": false
+},
+  "Name": {
+ "name": "Name",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "value": "Atul",
+ "sendNull": false,
+ "notSend": false
+}
+ },
+ "next": "actionData_action_2"
+},
+     "actionData_action_2": {
+ "name": "action_2",
+ "connectorId": "",
+ "entity": "rule",
+ "entityId": "64c9bc67-3bf7-4817-91d9-567d48e99602",
+ "pluginName": "",
+ "config": {
+  "query": ""
+ },
+ "input": {
+  "Age": {
+ "name": "Age",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "value": 23,
+ "sendNull": false,
+ "notSend": false
+},
+  "Last": {
+ "name": "Last",
+ "dataType": "string",
+ "source": "",
+ "attribute": "",
+ "value": "Zd",
+ "sendNull": false,
+ "notSend": false
+}
+ },
+ "next": ""
+}
+    },
+    "firstOutputData": "key_name_1",
+    "firstActionNode": "actionData_action_1"
+   },
+   "else": {
+    "outputData": {
+     "key_name_1": {
+ "name": "key_name_1",
+ "dataType": "string",
+ "returnType": "",
+ "value": "False",
+ "next": "",
+ "executedValue": "False",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+}
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "key_name_1",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rhs_01knRO": {
+ "value": 1,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_01": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "",
+ "nodeType": "group",
+ "attribute": "",
+ "query": "",
+ "parent": "",
+ "children": [
+  "rule_02"
+ ],
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_02": {
+ "value": null,
+ "sourceType": "",
+ "name": "",
+ "operator": "eq",
+ "dataType": "numeric",
+ "nodeType": "condition",
+ "attribute": "",
+ "query": "",
+ "parent": "rule_01",
+ "children": null,
+ "leftNode": [
+  "rule_03"
+ ],
+ "rightNode": [
+  "rhs_01knRO"
+ ],
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rule_03": {
+ "value": null,
+ "sourceType": "customInput",
+ "name": "",
+ "operator": "",
+ "dataType": "numeric",
+ "nodeType": "params",
+ "attribute": "list[0]",
+ "query": "",
+ "parent": "rule_02",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+}
+   },
+   "startNode": "rule_01"
+  },
+  "firstCustomInput": "list",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "",
+  "comment": "",
+  "type": "simpleRule",
+  "dataSetId": "",
+  "ruleSet": [],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-16T10:19:20.0779Z",
+   "updatedAt": "2026-06-16T10:44:54.715193Z",
+   "entityCommitId": "commit-e417f245-d501-45d0-965f-c95506a00f56",
+   "entityType": "rule",
+   "entityId": "1d37f7aa-e8bd-4356-a128-d9027e9ebb54",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_action_1",
+   "dependencyType": "rule",
+   "dependencyId": "4009117e-e66b-49c8-87db-e1f51a289dc9",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-16T10:44:46.453464Z",
+   "updatedAt": "2026-06-16T10:44:54.71397Z",
+   "entityCommitId": "commit-e417f245-d501-45d0-965f-c95506a00f56",
+   "entityType": "rule",
+   "entityId": "1d37f7aa-e8bd-4356-a128-d9027e9ebb54",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_action_2",
+   "dependencyType": "rule",
+   "dependencyId": "64c9bc67-3bf7-4817-91d9-567d48e99602",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

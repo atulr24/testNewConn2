@@ -2,21 +2,21 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-06-15T06:44:25.062Z",
-  "updatedAt": "2026-06-15T07:22:46.670316Z",
+  "createdAt": "2026-06-15T07:42:26.989Z",
+  "updatedAt": "2026-06-15T07:59:54.763133Z",
   "isDeleted": false,
   "testedAt": "0001-01-01T00:00:00Z",
   "publishedAt": "0001-01-01T00:00:00Z",
-  "entityId": "1bb89191-5f4e-478b-95dc-e6d5f3133fa5",
+  "entityId": "33fad40a-7629-4fec-ad67-672156866d34",
   "version": "draft",
-  "name": "TestFinalDT",
-  "commitId": "commit-26343397-f832-44c4-8b6c-aeca8afd81c8",
+  "name": "Test2",
+  "commitId": "commit-4c054ad0-dd3a-435c-8ddd-04c29582088d",
   "status": "draft",
   "lastVersion": "",
   "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-06-15 06:44:25",
-   "timeStamp": "2026-06-15T06:44:25.062826057Z"
+   "title": "Created at 2026-06-15 07:42:26",
+   "timeStamp": "2026-06-15T07:42:26.989518156Z"
   },
   "customInput": {
    "Name": {
@@ -38,24 +38,17 @@
   "ruleChain": null,
   "decisionTable": {
    "rows": {
-    "g_HXelgM": {
- "nextId": "g_Y1I6jp",
- "prevId": "rule_01",
- "firstOutputData": "output_xvZlmp",
- "isEnabled": true,
- "annotation": ""
-},
-    "g_Y1I6jp": {
+    "g_IjTaI3": {
  "nextId": "",
- "prevId": "g_HXelgM",
- "firstOutputData": "output_frM7Gu",
+ "prevId": "rule_01",
+ "firstOutputData": "output_ykWFF4",
  "isEnabled": true,
  "annotation": ""
 },
     "rule_01": {
- "nextId": "g_HXelgM",
+ "nextId": "g_IjTaI3",
  "prevId": "",
- "firstOutputData": "output_vAAf7j",
+ "firstOutputData": "output_gvhYbQ",
  "isEnabled": true,
  "annotation": ""
 }
@@ -68,7 +61,7 @@
 }
    },
    "results": {
-    "result_AVaNij": {
+    "result_sNIcQi": {
  "nextId": "",
  "prevId": "",
  "dataType": "string",
@@ -78,41 +71,41 @@
    },
    "firstRow": "rule_01",
    "firstProperty": "rule_03",
-   "firstResult": "result_AVaNij",
-   "firstAggOutputData": ""
+   "firstResult": "result_sNIcQi",
+   "firstAggOutputData": "aggData_untitled"
   },
   "action": {
    "then": {
     "outputData": {
-     "output_frM7Gu": {
- "name": "result_1",
- "dataType": "string",
+     "aggData_untitled": {
+ "name": "untitled",
+ "dataType": "list",
  "returnType": "",
- "value": "Value3",
+ "value": "[1,2,3]",
  "next": "",
- "executedValue": "Value3",
+ "executedValue": "[1,2,3]",
  "attribute": "",
  "source": "",
  "schemaId": ""
 },
-     "output_vAAf7j": {
+     "output_gvhYbQ": {
+ "name": "result_1",
+ "dataType": "string",
+ "returnType": "",
+ "value": "Value",
+ "next": "",
+ "executedValue": "Value",
+ "attribute": "",
+ "source": "",
+ "schemaId": ""
+},
+     "output_ykWFF4": {
  "name": "result_1",
  "dataType": "string",
  "returnType": "",
  "value": "Value1",
  "next": "",
  "executedValue": "Value1",
- "attribute": "",
- "source": "",
- "schemaId": ""
-},
-     "output_xvZlmp": {
- "name": "result_1",
- "dataType": "string",
- "returnType": "",
- "value": "Value2",
- "next": "",
- "executedValue": "Value2",
  "attribute": "",
  "source": "",
  "schemaId": ""
@@ -133,7 +126,7 @@
   },
   "conditions": {
    "nodes": {
-    "c_5cCT9K": {
+    "c_o7nD7o": {
  "value": null,
  "sourceType": "",
  "name": "Any",
@@ -142,38 +135,18 @@
  "nodeType": "condition",
  "attribute": "",
  "query": "",
- "parent": "g_HXelgM",
+ "parent": "g_IjTaI3",
  "children": null,
  "leftNode": [
   "rule_03"
  ],
  "rightNode": [
-  "rhs_yW4l92"
+  "rhs_3oHavB"
  ],
  "siblingIndex": 1,
  "returnType": ""
 },
-    "c_HMbGgz": {
- "value": null,
- "sourceType": "",
- "name": "Any",
- "operator": "eq",
- "dataType": "string",
- "nodeType": "condition",
- "attribute": "",
- "query": "",
- "parent": "g_Y1I6jp",
- "children": null,
- "leftNode": [
-  "rule_03"
- ],
- "rightNode": [
-  "rhs_YALUfp"
- ],
- "siblingIndex": 1,
- "returnType": ""
-},
-    "g_HXelgM": {
+    "g_IjTaI3": {
  "value": null,
  "sourceType": "",
  "name": "",
@@ -184,32 +157,30 @@
  "query": "",
  "parent": "",
  "children": [
-  "c_5cCT9K"
+  "c_o7nD7o"
  ],
  "leftNode": null,
  "rightNode": null,
  "siblingIndex": 1,
  "returnType": ""
 },
-    "g_Y1I6jp": {
- "value": null,
+    "rhs_3oHavB": {
+ "value": "Atul1",
  "sourceType": "",
  "name": "",
- "operator": "and",
- "dataType": "",
- "nodeType": "group",
+ "operator": "",
+ "dataType": "string",
+ "nodeType": "constant",
  "attribute": "",
  "query": "",
- "parent": "",
- "children": [
-  "c_HMbGgz"
- ],
+ "parent": "c_o7nD7o",
+ "children": null,
  "leftNode": null,
  "rightNode": null,
  "siblingIndex": 1,
  "returnType": ""
 },
-    "rhs_6pb953": {
+    "rhs_dF7h59": {
  "value": "Atul",
  "sourceType": "",
  "name": "",
@@ -219,38 +190,6 @@
  "attribute": "",
  "query": "",
  "parent": "rule_02",
- "children": null,
- "leftNode": null,
- "rightNode": null,
- "siblingIndex": 1,
- "returnType": ""
-},
-    "rhs_YALUfp": {
- "value": "Atul2",
- "sourceType": "",
- "name": "",
- "operator": "",
- "dataType": "string",
- "nodeType": "constant",
- "attribute": "",
- "query": "",
- "parent": "c_HMbGgz",
- "children": null,
- "leftNode": null,
- "rightNode": null,
- "siblingIndex": 1,
- "returnType": ""
-},
-    "rhs_yW4l92": {
- "value": "Raizada",
- "sourceType": "",
- "name": "",
- "operator": "",
- "dataType": "string",
- "nodeType": "constant",
- "attribute": "",
- "query": "",
- "parent": "c_5cCT9K",
  "children": null,
  "leftNode": null,
  "rightNode": null,
@@ -290,7 +229,7 @@
   "rule_03"
  ],
  "rightNode": [
-  "rhs_6pb953"
+  "rhs_dF7h59"
  ],
  "siblingIndex": 1,
  "returnType": ""

@@ -1,0 +1,220 @@
+{
+ "entityType": "rule",
+ "category": "ruleSet",
+ "data": {
+  "createdAt": "2026-06-15T08:11:10.291Z",
+  "updatedAt": "2026-06-17T07:07:40.198801Z",
+  "isDeleted": false,
+  "testedAt": "2026-06-16T10:56:30.143Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "e34eeb44-8648-41d2-8d82-8b60fd52709f",
+  "version": "draft",
+  "name": "RS123",
+  "commitId": "commit-64ec71d6-b722-4612-849a-cf6d88af12ee",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2026-06-15 08:11:10",
+   "timeStamp": "2026-06-15T08:11:10.291158858Z"
+  },
+  "customInput": {
+   "Age": {
+ "name": "Age",
+ "dataType": "numeric",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": 29,
+ "config": {
+  
+ },
+ "value": "",
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+},
+   "Last": {
+ "name": "Last",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "Raizada",
+ "config": {
+  
+ },
+ "value": "",
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+},
+   "Name": {
+ "name": "Name",
+ "dataType": "string",
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "attribute": "",
+ "sourceType": "",
+ "executedValue": "Atul",
+ "config": {
+  
+ },
+ "value": "",
+ "next": "",
+ "previous": "",
+ "schemaId": ""
+}
+  },
+  "ruleChain": {
+   "1425326d-7421-4818-b766-ddf75c46fdfb": {
+ "prevRuleId": "",
+ "nextRuleId": "4009117e-e66b-49c8-87db-e1f51a289dc9",
+ "isEnabled": true
+},
+   "4009117e-e66b-49c8-87db-e1f51a289dc9": {
+ "prevRuleId": "1425326d-7421-4818-b766-ddf75c46fdfb",
+ "nextRuleId": "64c9bc67-3bf7-4817-91d9-567d48e99602",
+ "isEnabled": true
+},
+   "64c9bc67-3bf7-4817-91d9-567d48e99602": {
+ "prevRuleId": "4009117e-e66b-49c8-87db-e1f51a289dc9",
+ "nextRuleId": "83c353fa-058d-4667-afcb-e6f1d65f5050",
+ "isEnabled": true
+},
+   "83c353fa-058d-4667-afcb-e6f1d65f5050": {
+ "prevRuleId": "64c9bc67-3bf7-4817-91d9-567d48e99602",
+ "nextRuleId": "",
+ "isEnabled": false
+}
+  },
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": null,
+   "startNode": ""
+  },
+  "firstCustomInput": "",
+  "firstRuleChain": "1425326d-7421-4818-b766-ddf75c46fdfb",
+  "ruleSetPolicy": "evaluteAll",
+  "description": "",
+  "policy": "",
+  "comment": "",
+  "type": "ruleSet",
+  "dataSetId": null,
+  "ruleSet": [
+   "1425326d-7421-4818-b766-ddf75c46fdfb",
+   "4009117e-e66b-49c8-87db-e1f51a289dc9",
+   "64c9bc67-3bf7-4817-91d9-567d48e99602",
+   "83c353fa-058d-4667-afcb-e6f1d65f5050"
+  ],
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0,
+   "styles": null
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-15T08:11:31.858625Z",
+   "updatedAt": "2026-06-17T07:07:40.20921Z",
+   "entityCommitId": "commit-64ec71d6-b722-4612-849a-cf6d88af12ee",
+   "entityType": "rule",
+   "entityId": "e34eeb44-8648-41d2-8d82-8b60fd52709f",
+   "entityVersion": "draft",
+   "entityNodeId": "83c353fa-058d-4667-afcb-e6f1d65f5050",
+   "dependencyType": "rule",
+   "dependencyId": "83c353fa-058d-4667-afcb-e6f1d65f5050",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-15T08:24:25.085103Z",
+   "updatedAt": "2026-06-17T07:07:40.208467Z",
+   "entityCommitId": "commit-64ec71d6-b722-4612-849a-cf6d88af12ee",
+   "entityType": "rule",
+   "entityId": "e34eeb44-8648-41d2-8d82-8b60fd52709f",
+   "entityVersion": "draft",
+   "entityNodeId": "1425326d-7421-4818-b766-ddf75c46fdfb",
+   "dependencyType": "rule",
+   "dependencyId": "1425326d-7421-4818-b766-ddf75c46fdfb",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-15T08:24:27.360356Z",
+   "updatedAt": "2026-06-17T07:07:40.20762Z",
+   "entityCommitId": "commit-64ec71d6-b722-4612-849a-cf6d88af12ee",
+   "entityType": "rule",
+   "entityId": "e34eeb44-8648-41d2-8d82-8b60fd52709f",
+   "entityVersion": "draft",
+   "entityNodeId": "4009117e-e66b-49c8-87db-e1f51a289dc9",
+   "dependencyType": "rule",
+   "dependencyId": "4009117e-e66b-49c8-87db-e1f51a289dc9",
+   "dependencyVersion": "draft"
+  },
+  {
+   "isDeleted": false,
+   "createdAt": "2026-06-15T09:47:44.51982Z",
+   "updatedAt": "2026-06-17T07:07:40.206244Z",
+   "entityCommitId": "commit-64ec71d6-b722-4612-849a-cf6d88af12ee",
+   "entityType": "rule",
+   "entityId": "e34eeb44-8648-41d2-8d82-8b60fd52709f",
+   "entityVersion": "draft",
+   "entityNodeId": "64c9bc67-3bf7-4817-91d9-567d48e99602",
+   "dependencyType": "rule",
+   "dependencyId": "64c9bc67-3bf7-4817-91d9-567d48e99602",
+   "dependencyVersion": "draft"
+  }
+ ]
+}

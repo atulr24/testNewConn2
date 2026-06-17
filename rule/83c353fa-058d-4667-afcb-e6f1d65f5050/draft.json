@@ -2,32 +2,37 @@
  "entityType": "rule",
  "category": "decisionTable",
  "data": {
-  "createdAt": "2026-06-15T06:44:25.062Z",
-  "updatedAt": "2026-06-15T07:22:46.670316Z",
+  "createdAt": "2026-06-15T08:02:12.353Z",
+  "updatedAt": "2026-06-16T13:05:53.299451Z",
   "isDeleted": false,
-  "testedAt": "0001-01-01T00:00:00Z",
+  "testedAt": "2026-06-15T10:50:56.642Z",
   "publishedAt": "0001-01-01T00:00:00Z",
-  "entityId": "1bb89191-5f4e-478b-95dc-e6d5f3133fa5",
+  "entityId": "83c353fa-058d-4667-afcb-e6f1d65f5050",
   "version": "draft",
-  "name": "TestFinalDT",
-  "commitId": "commit-26343397-f832-44c4-8b6c-aeca8afd81c8",
+  "name": "ListJsonDT",
+  "commitId": "commit-a9f62fc6-3c2a-4aec-a891-f93f8e5520da",
   "status": "draft",
   "lastVersion": "",
   "isLive": false,
   "commitInfo": {
-   "title": "Created at 2026-06-15 06:44:25",
-   "timeStamp": "2026-06-15T06:44:25.062826057Z"
+   "title": "Created at 2026-06-15 08:02:12",
+   "timeStamp": "2026-06-15T08:02:12.353238324Z"
   },
   "customInput": {
-   "Name": {
- "name": "Name",
- "dataType": "string",
+   "List": {
+ "name": "List",
+ "dataType": "list",
  "isOptional": false,
  "isNullable": false,
  "isCaseSensitive": false,
  "attribute": "",
  "sourceType": "",
- "executedValue": "Atul",
+ "executedValue": [
+  1,
+  2,
+  3,
+  4
+ ],
  "config": null,
  "value": "",
  "next": "",
@@ -38,24 +43,17 @@
   "ruleChain": null,
   "decisionTable": {
    "rows": {
-    "g_HXelgM": {
- "nextId": "g_Y1I6jp",
- "prevId": "rule_01",
- "firstOutputData": "output_xvZlmp",
- "isEnabled": true,
- "annotation": ""
-},
-    "g_Y1I6jp": {
+    "g_xM3VY4": {
  "nextId": "",
- "prevId": "g_HXelgM",
- "firstOutputData": "output_frM7Gu",
+ "prevId": "rule_01",
+ "firstOutputData": "output_dIBNJ3",
  "isEnabled": true,
  "annotation": ""
 },
     "rule_01": {
- "nextId": "g_HXelgM",
+ "nextId": "g_xM3VY4",
  "prevId": "",
- "firstOutputData": "output_vAAf7j",
+ "firstOutputData": "output_2xMVnn",
  "isEnabled": true,
  "annotation": ""
 }
@@ -68,51 +66,40 @@
 }
    },
    "results": {
-    "result_AVaNij": {
+    "result_cDFaoR": {
  "nextId": "",
  "prevId": "",
- "dataType": "string",
+ "dataType": "list",
  "keyName": "result_1",
  "schemaId": ""
 }
    },
    "firstRow": "rule_01",
    "firstProperty": "rule_03",
-   "firstResult": "result_AVaNij",
+   "firstResult": "result_cDFaoR",
    "firstAggOutputData": ""
   },
   "action": {
    "then": {
     "outputData": {
-     "output_frM7Gu": {
+     "output_2xMVnn": {
  "name": "result_1",
- "dataType": "string",
+ "dataType": "list",
  "returnType": "",
- "value": "Value3",
+ "value": "[\"Atul\",\"R\",1]",
  "next": "",
- "executedValue": "Value3",
+ "executedValue": "[\"Atul\",\"R\",1]",
  "attribute": "",
  "source": "",
  "schemaId": ""
 },
-     "output_vAAf7j": {
+     "output_dIBNJ3": {
  "name": "result_1",
- "dataType": "string",
+ "dataType": "list",
  "returnType": "",
- "value": "Value1",
+ "value": "[\"2025-11-11\"]",
  "next": "",
- "executedValue": "Value1",
- "attribute": "",
- "source": "",
- "schemaId": ""
-},
-     "output_xvZlmp": {
- "name": "result_1",
- "dataType": "string",
- "returnType": "",
- "value": "Value2",
- "next": "",
- "executedValue": "Value2",
+ "executedValue": "[\"2025-11-11\"]",
  "attribute": "",
  "source": "",
  "schemaId": ""
@@ -133,47 +120,27 @@
   },
   "conditions": {
    "nodes": {
-    "c_5cCT9K": {
+    "c_1xvjMt": {
  "value": null,
  "sourceType": "",
  "name": "Any",
  "operator": "eq",
- "dataType": "string",
+ "dataType": "list",
  "nodeType": "condition",
  "attribute": "",
  "query": "",
- "parent": "g_HXelgM",
+ "parent": "g_xM3VY4",
  "children": null,
  "leftNode": [
   "rule_03"
  ],
  "rightNode": [
-  "rhs_yW4l92"
+  "rhs_6ibUqr"
  ],
  "siblingIndex": 1,
  "returnType": ""
 },
-    "c_HMbGgz": {
- "value": null,
- "sourceType": "",
- "name": "Any",
- "operator": "eq",
- "dataType": "string",
- "nodeType": "condition",
- "attribute": "",
- "query": "",
- "parent": "g_Y1I6jp",
- "children": null,
- "leftNode": [
-  "rule_03"
- ],
- "rightNode": [
-  "rhs_YALUfp"
- ],
- "siblingIndex": 1,
- "returnType": ""
-},
-    "g_HXelgM": {
+    "g_xM3VY4": {
  "value": null,
  "sourceType": "",
  "name": "",
@@ -184,73 +151,45 @@
  "query": "",
  "parent": "",
  "children": [
-  "c_5cCT9K"
+  "c_1xvjMt"
  ],
  "leftNode": null,
  "rightNode": null,
  "siblingIndex": 1,
  "returnType": ""
 },
-    "g_Y1I6jp": {
- "value": null,
- "sourceType": "",
- "name": "",
- "operator": "and",
- "dataType": "",
- "nodeType": "group",
- "attribute": "",
- "query": "",
- "parent": "",
- "children": [
-  "c_HMbGgz"
+    "rhs_6ibUqr": {
+ "value": [
+  "Atul1",
+  "Raizada1"
  ],
- "leftNode": null,
- "rightNode": null,
- "siblingIndex": 1,
- "returnType": ""
-},
-    "rhs_6pb953": {
- "value": "Atul",
  "sourceType": "",
  "name": "",
  "operator": "",
- "dataType": "string",
+ "dataType": "list",
+ "nodeType": "constant",
+ "attribute": "",
+ "query": "",
+ "parent": "c_1xvjMt",
+ "children": null,
+ "leftNode": null,
+ "rightNode": null,
+ "siblingIndex": 1,
+ "returnType": ""
+},
+    "rhs_hWhTHP": {
+ "value": [
+  "Atul",
+  "Raizada"
+ ],
+ "sourceType": "",
+ "name": "",
+ "operator": "",
+ "dataType": "list",
  "nodeType": "constant",
  "attribute": "",
  "query": "",
  "parent": "rule_02",
- "children": null,
- "leftNode": null,
- "rightNode": null,
- "siblingIndex": 1,
- "returnType": ""
-},
-    "rhs_YALUfp": {
- "value": "Atul2",
- "sourceType": "",
- "name": "",
- "operator": "",
- "dataType": "string",
- "nodeType": "constant",
- "attribute": "",
- "query": "",
- "parent": "c_HMbGgz",
- "children": null,
- "leftNode": null,
- "rightNode": null,
- "siblingIndex": 1,
- "returnType": ""
-},
-    "rhs_yW4l92": {
- "value": "Raizada",
- "sourceType": "",
- "name": "",
- "operator": "",
- "dataType": "string",
- "nodeType": "constant",
- "attribute": "",
- "query": "",
- "parent": "c_5cCT9K",
  "children": null,
  "leftNode": null,
  "rightNode": null,
@@ -280,7 +219,7 @@
  "sourceType": "",
  "name": "",
  "operator": "eq",
- "dataType": "string",
+ "dataType": "list",
  "nodeType": "condition",
  "attribute": "",
  "query": "",
@@ -290,7 +229,7 @@
   "rule_03"
  ],
  "rightNode": [
-  "rhs_6pb953"
+  "rhs_hWhTHP"
  ],
  "siblingIndex": 1,
  "returnType": ""
@@ -300,9 +239,9 @@
  "sourceType": "customInput",
  "name": "",
  "operator": "",
- "dataType": "string",
+ "dataType": "list",
  "nodeType": "params",
- "attribute": "Name",
+ "attribute": "List",
  "query": "",
  "parent": "",
  "children": null,
@@ -314,11 +253,11 @@
    },
    "startNode": ""
   },
-  "firstCustomInput": "Name",
+  "firstCustomInput": "List",
   "firstRuleChain": "",
   "ruleSetPolicy": "",
   "description": "",
-  "policy": "evaluteAll",
+  "policy": "first",
   "comment": "",
   "type": "decisionTable",
   "dataSetId": "",

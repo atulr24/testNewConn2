@@ -3,7 +3,7 @@
  "category": "ruleSet",
  "data": {
   "createdAt": "2026-06-15T08:11:10.291Z",
-  "updatedAt": "2026-06-17T07:07:40.198801Z",
+  "updatedAt": "2026-06-17T12:30:41.463547Z",
   "isDeleted": false,
   "testedAt": "2026-06-16T10:56:30.143Z",
   "publishedAt": "0001-01-01T00:00:00Z",
@@ -75,7 +75,7 @@
    "1425326d-7421-4818-b766-ddf75c46fdfb": {
  "prevRuleId": "",
  "nextRuleId": "4009117e-e66b-49c8-87db-e1f51a289dc9",
- "isEnabled": true
+ "isEnabled": false
 },
    "4009117e-e66b-49c8-87db-e1f51a289dc9": {
  "prevRuleId": "1425326d-7421-4818-b766-ddf75c46fdfb",
@@ -167,7 +167,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-06-15T08:11:31.858625Z",
-   "updatedAt": "2026-06-17T07:07:40.20921Z",
+   "updatedAt": "2026-06-17T12:30:41.473786Z",
    "entityCommitId": "commit-64ec71d6-b722-4612-849a-cf6d88af12ee",
    "entityType": "rule",
    "entityId": "e34eeb44-8648-41d2-8d82-8b60fd52709f",
@@ -180,7 +180,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-06-15T08:24:25.085103Z",
-   "updatedAt": "2026-06-17T07:07:40.208467Z",
+   "updatedAt": "2026-06-17T12:30:41.472909Z",
    "entityCommitId": "commit-64ec71d6-b722-4612-849a-cf6d88af12ee",
    "entityType": "rule",
    "entityId": "e34eeb44-8648-41d2-8d82-8b60fd52709f",
@@ -193,7 +193,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-06-15T08:24:27.360356Z",
-   "updatedAt": "2026-06-17T07:07:40.20762Z",
+   "updatedAt": "2026-06-17T12:30:41.471761Z",
    "entityCommitId": "commit-64ec71d6-b722-4612-849a-cf6d88af12ee",
    "entityType": "rule",
    "entityId": "e34eeb44-8648-41d2-8d82-8b60fd52709f",
@@ -206,7 +206,7 @@
   {
    "isDeleted": false,
    "createdAt": "2026-06-15T09:47:44.51982Z",
-   "updatedAt": "2026-06-17T07:07:40.206244Z",
+   "updatedAt": "2026-06-17T12:30:41.470236Z",
    "entityCommitId": "commit-64ec71d6-b722-4612-849a-cf6d88af12ee",
    "entityType": "rule",
    "entityId": "e34eeb44-8648-41d2-8d82-8b60fd52709f",

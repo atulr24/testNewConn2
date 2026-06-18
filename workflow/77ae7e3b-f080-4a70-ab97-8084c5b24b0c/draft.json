@@ -2,9 +2,9 @@
  "entityType": "workflow",
  "data": {
   "createdAt": "2026-06-11T08:07:43.45Z",
-  "updatedAt": "2026-06-16T19:18:11.795229Z",
+  "updatedAt": "2026-06-18T06:35:50.832511Z",
   "isDeleted": false,
-  "testedAt": "2026-06-16T19:16:26.653Z",
+  "testedAt": "2026-06-18T05:55:07.554Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "77ae7e3b-f080-4a70-ab97-8084c5b24b0c",
   "version": "draft",
@@ -17,7 +17,7 @@
    "title": "Created at 2026-06-11 08:07:43",
    "timeStamp": "2026-06-11T08:07:43.450604261Z"
   },
-  "startNode": "n_ZRkBu7",
+  "startNode": "n_xXXy1h",
   "description": "",
   "trigger": {
    "apiNode": "1",
@@ -26,7 +26,7 @@
   "nodes": [
    {
     "position": {
-     "x": 560.6018676757812,
+     "x": 493.046875,
      "y": 0
     },
     "style": null,
@@ -79,7 +79,7 @@
       "name": "Atul"
      },
      "settings": {
-      "authType": "private",
+      "authType": "none",
       "cacheEnabled": false,
       "cacheKeys": "",
       "durationUnit": "d",
@@ -110,7 +110,7 @@
    },
    {
     "position": {
-     "x": 560.6018676757812,
+     "x": 493.046875,
      "y": 130
     },
     "style": null,
@@ -147,8 +147,8 @@
    },
    {
     "position": {
-     "x": 560.6018676757812,
-     "y": 690
+     "x": 493.046875,
+     "y": 895
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -212,8 +212,8 @@
    },
    {
     "position": {
-     "x": 560.6018676757812,
-     "y": 820
+     "x": 493.046875,
+     "y": 1025
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -249,8 +249,8 @@
    },
    {
     "position": {
-     "x": 560.6018676757812,
-     "y": 205
+     "x": 493.046875,
+     "y": 410
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -359,8 +359,8 @@
    },
    {
     "position": {
-     "x": 445.60186767578125,
-     "y": 335
+     "x": 378.046875,
+     "y": 540
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -396,8 +396,8 @@
    },
    {
     "position": {
-     "x": 675.6018676757812,
-     "y": 540
+     "x": 608.046875,
+     "y": 745
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -433,8 +433,8 @@
    },
    {
     "position": {
-     "x": 560.6018676757812,
-     "y": 615
+     "x": 493.046875,
+     "y": 820
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -470,8 +470,8 @@
    },
    {
     "position": {
-     "x": 445.60186767578125,
-     "y": 410
+     "x": 378.046875,
+     "y": 615
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -554,8 +554,8 @@
    },
    {
     "position": {
-     "x": 445.60186767578125,
-     "y": 540
+     "x": 378.046875,
+     "y": 745
     },
     "style": null,
     "sourcePosition": "bottom",
@@ -574,6 +574,117 @@
      "status": "",
      "name": "",
      "rootId": "n_ZRkBu7",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 205
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_xXXy1h",
+    "type": "sleepNode",
+    "data": {
+     "input": {
+      "amount": {
+ "value": 30,
+ "executedValue": "30",
+ "name": "",
+ "dataType": "numeric",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+},
+      "unit": {
+ "value": "s",
+ "executedValue": null,
+ "name": "",
+ "dataType": "",
+ "source": "",
+ "attribute": "",
+ "keySource": "",
+ "keyAttribute": "",
+ "mapping": false,
+ "isOptional": false,
+ "isNullable": false,
+ "isCaseSensitive": false,
+ "sendNull": false,
+ "notSend": false,
+ "order": 0,
+ "schemaId": ""
+}
+     },
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "sleepNode",
+     "entity": "sleepNode",
+     "entityId": "n_xXXy1h",
+     "pluginName": "",
+     "status": "",
+     "name": "Sleep10",
+     "rootId": "",
+     "sourceId": null,
+     "isMergeNode": false,
+     "runInLoop": {
+      "status": false,
+      "source": "",
+      "attribute": "",
+      "value": null
+     },
+     "switcher": null,
+     "conditions": null,
+     "blockName": "sleep",
+     "testedAt": "0001-01-01T00:00:00Z"
+    },
+    "draggable": false
+   },
+   {
+    "position": {
+     "x": 493.046875,
+     "y": 335
+    },
+    "style": null,
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_UDk35X",
+    "type": "addNode",
+    "data": {
+     "input": null,
+     "output": null,
+     "executedValue": null,
+     "settings": null,
+     "nodeType": "addNodeMd",
+     "entity": "",
+     "entityId": "",
+     "pluginName": "",
+     "status": "",
+     "name": "",
+     "rootId": "",
      "sourceId": null,
      "isMergeNode": false,
      "runInLoop": {
@@ -637,24 +748,6 @@
     "label": "",
     "source": "n_p1LAY8",
     "target": "n_qJFuaK",
-    "data": {
-     "edgeType": "then",
-     "pathId": ""
-    },
-    "type": "smoothEdge",
-    "sourceHandle": "",
-    "animated": false
-   },
-   {
-    "style": {
-     "stroke": "gray",
-     "strokeWidth": 1
-    },
-    "id": "e_7X2X7T",
-    "markerEnd": "",
-    "label": "",
-    "source": "n_siaGJv",
-    "target": "n_ZRkBu7",
     "data": {
      "edgeType": "then",
      "pathId": ""
@@ -763,6 +856,60 @@
     "label": "",
     "source": "n_Dj2ORk",
     "target": "n_UD0MGl",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_cyEK0V",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_siaGJv",
+    "target": "n_xXXy1h",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_8h7NJl",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_xXXy1h",
+    "target": "n_UDk35X",
+    "data": {
+     "edgeType": "then",
+     "pathId": ""
+    },
+    "type": "smoothEdge",
+    "sourceHandle": "",
+    "animated": false
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_DGsRJh",
+    "markerEnd": "",
+    "label": "",
+    "source": "n_UDk35X",
+    "target": "n_ZRkBu7",
     "data": {
      "edgeType": "then",
      "pathId": ""

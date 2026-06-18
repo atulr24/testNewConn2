@@ -1,0 +1,4466 @@
+{
+ "entityType": "testcase",
+ "category": "rule",
+ "isList": true,
+ "dataList": [
+  {
+   "createdAt": "2026-06-16T10:26:28.942Z",
+   "updatedAt": "2026-06-18T10:03:52.48857Z",
+   "isDeleted": false,
+   "entityId": "dfb1522d-f882-4b81-8be8-098ab60e3f16",
+   "name": "Test 99",
+   "source": "import",
+   "group": [
+    "p1"
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true,
+ "action_2": true
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "True"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-18T10:03:14.052Z",
+   "updatedAt": "2026-06-18T10:03:14.052Z",
+   "isDeleted": false,
+   "entityId": "fcbae981-6b85-4a37-acd1-1c3d8b606a61",
+   "name": "Test 1091",
+   "group": [
+    "p1"
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": null,
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "True"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.808Z",
+   "updatedAt": "2026-06-18T09:28:32.236204Z",
+   "isDeleted": false,
+   "entityId": "8f7e9dd9-5008-452c-86dc-f85239070856",
+   "name": "Test 105",
+   "source": "import",
+   "group": [
+    "p3"
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.878Z",
+   "updatedAt": "2026-06-18T09:28:07.343748Z",
+   "isDeleted": false,
+   "entityId": "b3594590-4e14-4693-879b-dc34e9ef9e7f",
+   "name": "Test 53",
+   "source": "import",
+   "group": [
+    "p2"
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.941Z",
+   "updatedAt": "2026-06-16T10:46:19.818238Z",
+   "isDeleted": false,
+   "entityId": "4acd13b2-9c71-4b2c-80aa-edec8a9fe391",
+   "name": "Test 98",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true,
+ "action_2": false
+},
+    "additionalOutput": null,
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.939Z",
+   "updatedAt": "2026-06-16T10:26:28.939Z",
+   "isDeleted": false,
+   "entityId": "99b8315f-3936-4968-9827-b7bf36c4b5b1",
+   "name": "Test 97",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.938Z",
+   "updatedAt": "2026-06-16T10:26:28.938Z",
+   "isDeleted": false,
+   "entityId": "af4cc85f-a38f-46a7-90d9-055dc3f26239",
+   "name": "Test 96",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.937Z",
+   "updatedAt": "2026-06-16T10:26:28.937Z",
+   "isDeleted": false,
+   "entityId": "17581c8e-37b9-4dcf-9d19-be0f56ac125a",
+   "name": "Test 95",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.936Z",
+   "updatedAt": "2026-06-16T10:26:28.936Z",
+   "isDeleted": false,
+   "entityId": "7c3f28ad-8832-4a63-a1e3-537f011cd038",
+   "name": "Test 94",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.934Z",
+   "updatedAt": "2026-06-16T10:26:28.934Z",
+   "isDeleted": false,
+   "entityId": "81976b97-2517-4e55-9ec6-912fe30b9825",
+   "name": "Test 93",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.933Z",
+   "updatedAt": "2026-06-16T10:26:28.933Z",
+   "isDeleted": false,
+   "entityId": "0d8ea0b6-4206-4544-8d79-77e684101046",
+   "name": "Test 92",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.932Z",
+   "updatedAt": "2026-06-16T10:26:28.932Z",
+   "isDeleted": false,
+   "entityId": "8f44c0aa-c7ae-4144-87f2-cb3b70cc1443",
+   "name": "Test 91",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.931Z",
+   "updatedAt": "2026-06-16T10:26:28.931Z",
+   "isDeleted": false,
+   "entityId": "7724e7a7-c764-492e-83aa-225cd8b0fe97",
+   "name": "Test 90",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.929Z",
+   "updatedAt": "2026-06-16T10:26:28.929Z",
+   "isDeleted": false,
+   "entityId": "6ccb94b5-f6eb-4a82-b443-60b7ba9ceaad",
+   "name": "Test 9",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.928Z",
+   "updatedAt": "2026-06-16T10:26:28.928Z",
+   "isDeleted": false,
+   "entityId": "4328a3a7-62ad-43a7-8d59-b97ec91aa25d",
+   "name": "Test 89",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.927Z",
+   "updatedAt": "2026-06-16T10:26:28.927Z",
+   "isDeleted": false,
+   "entityId": "08cd3fbc-96e2-4083-bda7-0caa9a35cce5",
+   "name": "Test 88",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.926Z",
+   "updatedAt": "2026-06-16T10:26:28.926Z",
+   "isDeleted": false,
+   "entityId": "766761e7-8c31-47e4-9210-5a1530878fe4",
+   "name": "Test 87",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.923Z",
+   "updatedAt": "2026-06-16T10:26:28.923Z",
+   "isDeleted": false,
+   "entityId": "27c9fda9-97f5-4674-a3c1-3fe82706531f",
+   "name": "Test 86",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.922Z",
+   "updatedAt": "2026-06-16T10:26:28.922Z",
+   "isDeleted": false,
+   "entityId": "e33e87ac-2d80-4a47-a497-e7318ab1eea7",
+   "name": "Test 85",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.921Z",
+   "updatedAt": "2026-06-16T10:26:28.921Z",
+   "isDeleted": false,
+   "entityId": "8bb39f6a-d3ae-47f2-8d18-7190217d5d15",
+   "name": "Test 84",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.92Z",
+   "updatedAt": "2026-06-16T10:26:28.92Z",
+   "isDeleted": false,
+   "entityId": "4945e7fb-e6d6-4179-8e66-e22c30374a24",
+   "name": "Test 83",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.918Z",
+   "updatedAt": "2026-06-16T10:26:28.918Z",
+   "isDeleted": false,
+   "entityId": "72a9b216-af06-4a59-838d-f9cf89c41448",
+   "name": "Test 82",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.917Z",
+   "updatedAt": "2026-06-16T10:26:28.917Z",
+   "isDeleted": false,
+   "entityId": "11f34743-29e5-42a7-ac31-c4201bac80a2",
+   "name": "Test 81",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.916Z",
+   "updatedAt": "2026-06-16T10:26:28.916Z",
+   "isDeleted": false,
+   "entityId": "8346fce7-c6e0-436b-b9bc-42338549122f",
+   "name": "Test 80",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.915Z",
+   "updatedAt": "2026-06-16T10:26:28.915Z",
+   "isDeleted": false,
+   "entityId": "2fa9c1b3-d030-48d8-af29-9f9467014d85",
+   "name": "Test 8",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.913Z",
+   "updatedAt": "2026-06-16T10:26:28.913Z",
+   "isDeleted": false,
+   "entityId": "d7cd4a64-f3e4-46b5-9467-422d3674ed41",
+   "name": "Test 79",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.912Z",
+   "updatedAt": "2026-06-16T10:26:28.912Z",
+   "isDeleted": false,
+   "entityId": "2756063e-5b9b-4f4e-bf4a-a6be88ae4f98",
+   "name": "Test 78",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.911Z",
+   "updatedAt": "2026-06-16T10:26:28.911Z",
+   "isDeleted": false,
+   "entityId": "89e33108-4b2d-4567-873d-512429222005",
+   "name": "Test 77",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.91Z",
+   "updatedAt": "2026-06-16T10:26:28.91Z",
+   "isDeleted": false,
+   "entityId": "95fb72f9-06e6-4e86-85de-23637d126c59",
+   "name": "Test 76",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.908Z",
+   "updatedAt": "2026-06-16T10:26:28.908Z",
+   "isDeleted": false,
+   "entityId": "dd2c7d33-676e-408a-9d75-05c9d38ee726",
+   "name": "Test 75",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.907Z",
+   "updatedAt": "2026-06-16T10:26:28.907Z",
+   "isDeleted": false,
+   "entityId": "ae8f11e0-7067-4726-8a28-c33b31cd8a04",
+   "name": "Test 74",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.906Z",
+   "updatedAt": "2026-06-16T10:26:28.906Z",
+   "isDeleted": false,
+   "entityId": "348abfa2-7812-4d97-907e-71e3b40b51b0",
+   "name": "Test 73",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.905Z",
+   "updatedAt": "2026-06-16T10:26:28.905Z",
+   "isDeleted": false,
+   "entityId": "be908663-9c60-4da8-968a-2cdce8219765",
+   "name": "Test 72",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.903Z",
+   "updatedAt": "2026-06-16T10:26:28.903Z",
+   "isDeleted": false,
+   "entityId": "e6601a16-864f-4c0f-94b1-a5c86d67ed07",
+   "name": "Test 71",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.902Z",
+   "updatedAt": "2026-06-16T10:26:28.902Z",
+   "isDeleted": false,
+   "entityId": "543b0505-9d54-40da-9067-3ebb96a2ec4b",
+   "name": "Test 70",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.9Z",
+   "updatedAt": "2026-06-16T10:26:28.9Z",
+   "isDeleted": false,
+   "entityId": "01c32827-dc7c-446f-8a3f-7367503e224d",
+   "name": "Test 7",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.899Z",
+   "updatedAt": "2026-06-16T10:26:28.899Z",
+   "isDeleted": false,
+   "entityId": "5a48807d-0b4d-4231-9bd1-09cb7b162e38",
+   "name": "Test 69",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.898Z",
+   "updatedAt": "2026-06-16T10:26:28.898Z",
+   "isDeleted": false,
+   "entityId": "519a23af-a438-4c04-a2dc-d2968fc79dd8",
+   "name": "Test 68",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.897Z",
+   "updatedAt": "2026-06-16T10:26:28.897Z",
+   "isDeleted": false,
+   "entityId": "87d6cef8-12e5-4c19-8116-e2488da4d04d",
+   "name": "Test 67",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.895Z",
+   "updatedAt": "2026-06-16T10:26:28.895Z",
+   "isDeleted": false,
+   "entityId": "4479664d-fde8-45f6-b665-12d7551740bd",
+   "name": "Test 66",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.894Z",
+   "updatedAt": "2026-06-16T10:26:28.894Z",
+   "isDeleted": false,
+   "entityId": "ef634efd-40d9-4d04-b002-f1018ef9e206",
+   "name": "Test 65",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.893Z",
+   "updatedAt": "2026-06-16T10:26:28.893Z",
+   "isDeleted": false,
+   "entityId": "a9ef1d01-b4d5-41eb-8f3e-6e5fe674a21c",
+   "name": "Test 64",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.892Z",
+   "updatedAt": "2026-06-16T10:26:28.892Z",
+   "isDeleted": false,
+   "entityId": "4fe7b951-7112-4ffb-bc15-917de76b5996",
+   "name": "Test 63",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.89Z",
+   "updatedAt": "2026-06-16T10:26:28.89Z",
+   "isDeleted": false,
+   "entityId": "f7ffc358-ae1b-4c60-92b4-ee524be9387f",
+   "name": "Test 62",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.889Z",
+   "updatedAt": "2026-06-16T10:26:28.889Z",
+   "isDeleted": false,
+   "entityId": "2a07accf-a3e4-40c0-9649-1fbf165715cf",
+   "name": "Test 61",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.888Z",
+   "updatedAt": "2026-06-16T10:26:28.888Z",
+   "isDeleted": false,
+   "entityId": "7e1a500b-71de-4593-97f5-c6e0a78225d9",
+   "name": "Test 60",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.887Z",
+   "updatedAt": "2026-06-16T10:26:28.887Z",
+   "isDeleted": false,
+   "entityId": "edda1b6c-c20c-46b4-8df3-c9112aa7b4a9",
+   "name": "Test 6",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.885Z",
+   "updatedAt": "2026-06-16T10:26:28.885Z",
+   "isDeleted": false,
+   "entityId": "882cb9d9-fa74-4fcb-8e5e-8910a8cd28c9",
+   "name": "Test 59",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.884Z",
+   "updatedAt": "2026-06-16T10:26:28.884Z",
+   "isDeleted": false,
+   "entityId": "651703c4-37df-4ffe-b459-67fb6ea1f9ea",
+   "name": "Test 58",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.883Z",
+   "updatedAt": "2026-06-16T10:26:28.883Z",
+   "isDeleted": false,
+   "entityId": "a41b8e86-0f3f-4145-bc31-4db7364ea72b",
+   "name": "Test 57",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.882Z",
+   "updatedAt": "2026-06-16T10:26:28.882Z",
+   "isDeleted": false,
+   "entityId": "bb2a3dbf-ce06-4bf2-8a87-8f25137b2689",
+   "name": "Test 56",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.881Z",
+   "updatedAt": "2026-06-16T10:26:28.881Z",
+   "isDeleted": false,
+   "entityId": "ce2d1a26-f912-4759-8a09-e96718c38255",
+   "name": "Test 55",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.879Z",
+   "updatedAt": "2026-06-16T10:26:28.879Z",
+   "isDeleted": false,
+   "entityId": "e7f0ccb0-a03e-4816-8ea1-39e830cd25ed",
+   "name": "Test 54",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.877Z",
+   "updatedAt": "2026-06-16T10:26:28.877Z",
+   "isDeleted": false,
+   "entityId": "bb050231-ade8-4eae-8d67-07e4d9b20996",
+   "name": "Test 52",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.876Z",
+   "updatedAt": "2026-06-16T10:26:28.876Z",
+   "isDeleted": false,
+   "entityId": "3fd9f36c-411e-4b50-84f0-bffdf46f174e",
+   "name": "Test 51",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.874Z",
+   "updatedAt": "2026-06-16T10:26:28.874Z",
+   "isDeleted": false,
+   "entityId": "9fc07640-c290-476a-85b2-3d56b1ed202a",
+   "name": "Test 50",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.873Z",
+   "updatedAt": "2026-06-16T10:26:28.873Z",
+   "isDeleted": false,
+   "entityId": "5d9ed164-8168-4cfb-bb65-1d741f0e5731",
+   "name": "Test 5",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.872Z",
+   "updatedAt": "2026-06-16T10:26:28.872Z",
+   "isDeleted": false,
+   "entityId": "b3dc4405-c4b6-45ed-b6b4-9fd381e4a900",
+   "name": "Test 49",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.871Z",
+   "updatedAt": "2026-06-16T10:26:28.871Z",
+   "isDeleted": false,
+   "entityId": "2c0b38ea-a20b-48dc-bc86-092699020b02",
+   "name": "Test 48",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.869Z",
+   "updatedAt": "2026-06-16T10:26:28.869Z",
+   "isDeleted": false,
+   "entityId": "f1e1163e-3152-4ec1-aae0-a00ea124ac3e",
+   "name": "Test 47",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.868Z",
+   "updatedAt": "2026-06-16T10:26:28.868Z",
+   "isDeleted": false,
+   "entityId": "a87077e7-0d24-49af-ba20-f062ed705c21",
+   "name": "Test 46",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.867Z",
+   "updatedAt": "2026-06-16T10:26:28.867Z",
+   "isDeleted": false,
+   "entityId": "81ca2251-d900-4898-9566-4a227f996622",
+   "name": "Test 45",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.866Z",
+   "updatedAt": "2026-06-16T10:26:28.866Z",
+   "isDeleted": false,
+   "entityId": "074dd4f1-be4d-455a-8ffe-753cc3071205",
+   "name": "Test 44",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.864Z",
+   "updatedAt": "2026-06-16T10:26:28.864Z",
+   "isDeleted": false,
+   "entityId": "ea10944a-b38f-4ff4-954f-e6ea191afbaf",
+   "name": "Test 43",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.863Z",
+   "updatedAt": "2026-06-16T10:26:28.863Z",
+   "isDeleted": false,
+   "entityId": "5697cec7-b151-43a2-8149-5219bf6e3b3c",
+   "name": "Test 42",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.862Z",
+   "updatedAt": "2026-06-16T10:26:28.862Z",
+   "isDeleted": false,
+   "entityId": "3d1c0d66-f9ea-4576-b079-167a396621dd",
+   "name": "Test 41",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.861Z",
+   "updatedAt": "2026-06-16T10:26:28.861Z",
+   "isDeleted": false,
+   "entityId": "1248fcfe-2d6d-4efe-9ca8-e78ec0ca7cb0",
+   "name": "Test 40",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.859Z",
+   "updatedAt": "2026-06-16T10:26:28.859Z",
+   "isDeleted": false,
+   "entityId": "29237e1b-03c5-466b-a73a-58fd3c57ea42",
+   "name": "Test 4",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.858Z",
+   "updatedAt": "2026-06-16T10:26:28.858Z",
+   "isDeleted": false,
+   "entityId": "8aa047d2-f25b-4c62-b522-3905c4043c9f",
+   "name": "Test 39",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.857Z",
+   "updatedAt": "2026-06-16T10:26:28.857Z",
+   "isDeleted": false,
+   "entityId": "ee996769-2d00-4291-b6ca-38f1a43ddb3b",
+   "name": "Test 38",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.856Z",
+   "updatedAt": "2026-06-16T10:26:28.856Z",
+   "isDeleted": false,
+   "entityId": "4ac26853-3fe9-4078-a686-5e3ff99e5ae3",
+   "name": "Test 37",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.855Z",
+   "updatedAt": "2026-06-16T10:26:28.855Z",
+   "isDeleted": false,
+   "entityId": "a1ee71fd-4e07-4a89-9b50-893ff5175bae",
+   "name": "Test 36",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.853Z",
+   "updatedAt": "2026-06-16T10:26:28.853Z",
+   "isDeleted": false,
+   "entityId": "d0d99be3-430b-43bd-aec4-9edc992ba860",
+   "name": "Test 35",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.852Z",
+   "updatedAt": "2026-06-16T10:26:28.852Z",
+   "isDeleted": false,
+   "entityId": "bfc37a5d-c45b-4f38-bbea-d90d3ce7d293",
+   "name": "Test 34",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.851Z",
+   "updatedAt": "2026-06-16T10:26:28.851Z",
+   "isDeleted": false,
+   "entityId": "6b5a3ed5-8ed1-4e28-9024-0ddf398cf681",
+   "name": "Test 33",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.849Z",
+   "updatedAt": "2026-06-16T10:26:28.849Z",
+   "isDeleted": false,
+   "entityId": "0db35e44-1741-49b9-8a4b-f9d74e4b2e13",
+   "name": "Test 32",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.848Z",
+   "updatedAt": "2026-06-16T10:26:28.848Z",
+   "isDeleted": false,
+   "entityId": "8d5378fc-5c71-4ef5-9840-bc7f2d928b3a",
+   "name": "Test 31",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.847Z",
+   "updatedAt": "2026-06-16T10:26:28.847Z",
+   "isDeleted": false,
+   "entityId": "07953241-ca51-4c1c-86b6-10705c024770",
+   "name": "Test 30",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.845Z",
+   "updatedAt": "2026-06-16T10:26:28.845Z",
+   "isDeleted": false,
+   "entityId": "8f0941b0-c43a-456f-b1db-49a0551667ab",
+   "name": "Test 3",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.843Z",
+   "updatedAt": "2026-06-16T10:26:28.843Z",
+   "isDeleted": false,
+   "entityId": "c5bbd727-8b64-49c5-93d9-7393a61440de",
+   "name": "Test 29",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.842Z",
+   "updatedAt": "2026-06-16T10:26:28.842Z",
+   "isDeleted": false,
+   "entityId": "063ece42-3c3b-4d8d-aead-130a610f57e5",
+   "name": "Test 28",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.841Z",
+   "updatedAt": "2026-06-16T10:26:28.841Z",
+   "isDeleted": false,
+   "entityId": "7393ecbd-c4e3-4a0d-b1bf-8fe19f6c55a0",
+   "name": "Test 27",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.839Z",
+   "updatedAt": "2026-06-16T10:26:28.839Z",
+   "isDeleted": false,
+   "entityId": "9c954f5e-45fc-494f-8384-f19d13b5afb9",
+   "name": "Test 26",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.838Z",
+   "updatedAt": "2026-06-16T10:26:28.838Z",
+   "isDeleted": false,
+   "entityId": "e58e396a-4279-412c-9ca3-0c0828732e3c",
+   "name": "Test 25",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.837Z",
+   "updatedAt": "2026-06-16T10:26:28.837Z",
+   "isDeleted": false,
+   "entityId": "5c1603f5-910d-4efb-a78e-f30f11474040",
+   "name": "Test 24",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.835Z",
+   "updatedAt": "2026-06-16T10:26:28.835Z",
+   "isDeleted": false,
+   "entityId": "2b6065ad-a203-4fed-b9d1-4a5e56049621",
+   "name": "Test 23",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.833Z",
+   "updatedAt": "2026-06-16T10:26:28.833Z",
+   "isDeleted": false,
+   "entityId": "b94cb64a-ec77-4dd5-91c9-45154808e7a1",
+   "name": "Test 21",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.832Z",
+   "updatedAt": "2026-06-16T10:26:28.832Z",
+   "isDeleted": false,
+   "entityId": "d18ae258-6a33-4a16-b15f-061776a0bf01",
+   "name": "Test 200",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:21:53.673Z",
+   "updatedAt": "2026-06-16T10:26:28.828754Z",
+   "isDeleted": false,
+   "entityId": "772ae73b-72ea-4737-a005-820e6262f851",
+   "name": "Test 2",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  3,
+  4
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ 
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": false,
+  "key_name_1": "FALSE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.826Z",
+   "updatedAt": "2026-06-16T10:26:28.826Z",
+   "isDeleted": false,
+   "entityId": "980f1f73-7583-41ff-b6c6-5117b44d9f96",
+   "name": "Test 19",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.824Z",
+   "updatedAt": "2026-06-16T10:26:28.824Z",
+   "isDeleted": false,
+   "entityId": "ab4008e5-fac1-4966-bc89-f52894153ccb",
+   "name": "Test 18",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.823Z",
+   "updatedAt": "2026-06-16T10:26:28.823Z",
+   "isDeleted": false,
+   "entityId": "7633d3a3-f07d-4a1b-9d38-4358ff1f3338",
+   "name": "Test 17",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.822Z",
+   "updatedAt": "2026-06-16T10:26:28.822Z",
+   "isDeleted": false,
+   "entityId": "be23d8d5-f7b2-462e-9ac1-40a0727816cd",
+   "name": "Test 16",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.82Z",
+   "updatedAt": "2026-06-16T10:26:28.82Z",
+   "isDeleted": false,
+   "entityId": "36885e2e-9293-424a-afe6-e3db3c86a236",
+   "name": "Test 15",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.819Z",
+   "updatedAt": "2026-06-16T10:26:28.819Z",
+   "isDeleted": false,
+   "entityId": "1de93f2c-a062-4e3c-8f71-0213e20e65d3",
+   "name": "Test 14",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.818Z",
+   "updatedAt": "2026-06-16T10:26:28.818Z",
+   "isDeleted": false,
+   "entityId": "2a447586-8e19-4bb3-bb9b-413f93182624",
+   "name": "Test 13",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.816Z",
+   "updatedAt": "2026-06-16T10:26:28.816Z",
+   "isDeleted": false,
+   "entityId": "3b94979f-d8c3-41dd-9c13-b0491f42eacf",
+   "name": "Test 12",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.815Z",
+   "updatedAt": "2026-06-16T10:26:28.815Z",
+   "isDeleted": false,
+   "entityId": "286643b7-8c46-42cd-b7da-b4f24c94e97b",
+   "name": "Test 11",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.814Z",
+   "updatedAt": "2026-06-16T10:26:28.814Z",
+   "isDeleted": false,
+   "entityId": "a997f0cb-3a89-4258-b5a2-4be5cc7377d3",
+   "name": "Test 109",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.812Z",
+   "updatedAt": "2026-06-16T10:26:28.812Z",
+   "isDeleted": false,
+   "entityId": "1ac0c839-252a-47fb-8b8a-b2bd76298b1d",
+   "name": "Test 108",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.811Z",
+   "updatedAt": "2026-06-16T10:26:28.811Z",
+   "isDeleted": false,
+   "entityId": "5346c145-bdfa-49bb-8af0-92b4cdda99c7",
+   "name": "Test 107",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.809Z",
+   "updatedAt": "2026-06-16T10:26:28.809Z",
+   "isDeleted": false,
+   "entityId": "6069a91f-5817-429e-b4eb-6450a62dbb14",
+   "name": "Test 106",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.807Z",
+   "updatedAt": "2026-06-16T10:26:28.807Z",
+   "isDeleted": false,
+   "entityId": "d35b4956-fcb0-44af-a406-315bed573c83",
+   "name": "Test 104",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.805Z",
+   "updatedAt": "2026-06-16T10:26:28.805Z",
+   "isDeleted": false,
+   "entityId": "db04d358-3202-4c79-9622-37386c7bd7e9",
+   "name": "Test 103",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.804Z",
+   "updatedAt": "2026-06-16T10:26:28.804Z",
+   "isDeleted": false,
+   "entityId": "c882ac8d-6315-46c3-9f45-45a3d6fb1baa",
+   "name": "Test 102",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.803Z",
+   "updatedAt": "2026-06-16T10:26:28.803Z",
+   "isDeleted": false,
+   "entityId": "9d7965dd-8a39-4e90-b0f9-3149bfda0a9b",
+   "name": "Test 101",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.801Z",
+   "updatedAt": "2026-06-16T10:26:28.801Z",
+   "isDeleted": false,
+   "entityId": "49595ae5-4854-43fe-b3eb-794d4a54a98e",
+   "name": "Test 100",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:26:28.799Z",
+   "updatedAt": "2026-06-16T10:26:28.799Z",
+   "isDeleted": false,
+   "entityId": "3efc48c7-b228-4998-86c2-28c271e74367",
+   "name": "Test 10",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  },
+  {
+   "createdAt": "2026-06-16T10:21:27.046Z",
+   "updatedAt": "2026-06-16T10:26:28.7953Z",
+   "isDeleted": false,
+   "entityId": "3d23396d-bfea-4a52-b920-b090f684c3bb",
+   "name": "Test 1",
+   "source": "import",
+   "group": [
+    ""
+   ],
+   "input": {
+    "ci": {
+     "json": {
+ "value": {
+  "Name": "Atul"
+ }
+},
+     "list": {
+ "value": [
+  1,
+  2,
+  3
+ ]
+}
+    }
+   },
+   "output": {
+    "action": {
+ "action_1": true
+},
+    "additionalOutput": {
+ 
+},
+    "output": [
+ {
+  "defaultOutputData": true,
+  "key_name_1": "TRUE"
+ }
+]
+   }
+  }
+ ]
+}
